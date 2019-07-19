@@ -3,3 +3,100 @@
 ---
 @charset "utf-8";
 @import "main";
+
+// Main page formatting
+#rcornersbox {
+  border-radius: 15px;
+  background: #44BAAA;
+  padding: 20px;
+  height: 280px;
+  width: 400px;
+  display: inline-block;
+}
+
+img.floatleft {
+    float: left;
+}
+
+img.floatright {
+    float: right;
+}
+
+
+// People page formatting
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+}
+
+img.rcornersimage {
+    border-radius: 15px;
+    height: 200px;
+}
+
+.caption {
+    display: block;
+}
+
+
+// Hover text
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #44BAAA;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 6px;
+  padding: 5px 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -150px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #44BAAA transparent;
+}
+
+
+// Research page formatting
+#rcornersbox1 {
+  border-radius: 15px;
+  background: #44BAAA;
+  padding: 20px;
+  height: 450px;
+  width: 400px;
+  display: inline-block;
+}
+
+#rcornersbox2 {
+  border-radius: 15px;
+  background: #61CCA0;
+  padding: 20px;
+  height: 750px;
+  width: 400px;
+  display: inline-block;
+}
