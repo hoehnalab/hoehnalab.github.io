@@ -3,7 +3,7 @@ title_left    : "Hoehna"
 title_right   : "Lab" # default: ""
 description   : "Website for Sebastian Höhna's lab at LMU Munich"
 keywords      : "Jekyll, theme, free, download, SEO, blog, web, minimalist, thinkspace"
-url           : https://hoehnalab.github.io/thinkspace # site url
+url           : https://hoehnalab.github.io/ # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
 
