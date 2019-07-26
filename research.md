@@ -8,7 +8,7 @@ Phylogenies depict the evolutionary relationships among species. Much of the cur
 
 
 <!-- Section 1 -->
-<img class="floatleft" src="/assets/images/tree.jpg" width="350">
+<img align="right" src="/assets/images/tree.jpg" width="350">
 <div id="rcornersbox1">
     <p class="lead">
         <h2>Robust Estimation of Gene Trees</h2>
@@ -21,7 +21,7 @@ To answer these questions we develop more realistic substitution models in RevBa
 <br>
 
 <!-- Section 2 -->
-<img class="floatright" src="/assets/images/tree.jpg" width="350">
+<img class="floattop" src="/assets/images/Figure_2.png" width="350">
 <div id="rcornersbox2">
     <p class="lead">
         <h2>Understanding Discordance Between Species Trees and Gene Trees</h2>
@@ -31,7 +31,8 @@ Phylogenetic inferences from genomic data consist of many loci. Each locus is as
 
 
 <!-- Section 3 -->
-<img class="floatright" src="/assets/images/tree.jpg" width="350">
+<img class="floatright" src="/assets/images/Figure_3.png" width="350">
+<img class="floatright" src="/assets/images/Figure_4.png" width="350">
 <div id="rcornersbox2">
     <p class="lead">
         <h2>Inference of Macroevolutionary Processes</h2>
