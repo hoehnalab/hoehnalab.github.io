@@ -15,7 +15,9 @@ permalink: /people/
                     </span>
                 </div></h5>
                     <em>Group Leader</em> <br>
-                    <a href="https://github.com/hoehna" target="_blank">github</a> | <a href="mailto:hoehna@lmu.de">contact</a>
+                    <a href="https://github.com/hoehna" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
+                    <a href="https://twitter.com/sebastianhoehna?lang=en" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
+                    <a href="mailto:hoehna@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
             </div>
         </td>
 
@@ -28,7 +30,9 @@ permalink: /people/
                     </span>
                 </div></h5>
                     <em>Postdoctoral Researcher</em> <br>
-                    <a href="https://github.com/ahsiang" target="_blank">github</a> | <a href="https://ahsiang.github.io/" target="_blank">website</a> | <a href="mailto:allison.hsiang@lmu.de">contact</a>
+                    <a href="https://github.com/ahsiang" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
+                    <a href="https://ahsiang.github.io/" target="_blank"><img src="/assets/icons/globe.svg" width="25px"></a>
+                    <a href="mailto:allison.hsiang@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
             </div>
         </td>
 
@@ -41,7 +45,8 @@ permalink: /people/
                     </span>
                 </div></h5>
                     <em>Graduate Student</em> <br>
-                    <a href="https://github.com/lfabreti" target="_blank">github</a> | <a href="mailto:l.fabreti@lmu.de">contact</a>
+                    <a href="https://github.com/lfabreti" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
+                    <a href="mailto:l.fabreti@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
             </div>
         </td>
 
