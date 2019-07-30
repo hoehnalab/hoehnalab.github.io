@@ -12,7 +12,7 @@ Our research is focused on several aspect of theoretical and computational phylo
 <br />
 
 <!-- Section 1 -->
-<img align="right" src="/assets/images/tree.jpg" width="350">
+<img align="right" src="/assets/images/Figure_1_v2.png" width="450">
 <div id="rcornersbox1">
     <p>
         <h2>Robust Estimation of Gene Trees</h2>
