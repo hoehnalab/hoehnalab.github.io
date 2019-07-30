@@ -41,7 +41,7 @@ permalink: /people/
                 <img class="rcornersimage" src="/assets/images/luiza.jpg">
                 <h5><div class="tooltip">Luiza Fabreti
                     <span class="tooltiptext">
-                        Insert text here.
+                        I'm interested in computational and evolutionary biology. Specially, improving the way we model evolution. My research involves Bayesian phylogenetic inference and underlying topics such as, model selection, testing the adequacy of the most commonly used substitution models and assessing convergence of the Markov Chain Monte Carlo.
                     </span>
                 </div></h5>
                     <em>Graduate Student</em> <br>
