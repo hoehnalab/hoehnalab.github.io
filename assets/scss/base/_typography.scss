@@ -50,6 +50,11 @@ p {
     font-size: rem(22);
     font-weight: 300;
   }
+
+  &.follow {
+      font-size: rem(18);
+      font-weight: 300;
+  }
 }
 
 a {
@@ -143,5 +148,5 @@ ul {
     list-style-type: square;
     list-style-position: outside;
     list-style-image: none;
-    font-size: 1.1em;
+    font-size: rem(18);
 }
