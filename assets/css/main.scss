@@ -9,18 +9,22 @@
   border-radius: 15px;
   background: #44BAAA;
   padding: 20px;
-  height: 450px;
-  width: 600px;
+  height: auto;
+  width: 50%;
   display: inline-block;
 }
 
 img.floatleft {
     float: left;
-    margin-top: 100px;
+    width: 45%;
+    max-width: 450px;
+    min-width: 200px;
+    margin-right: 20px;
 }
 
 img.floatright {
     float: right;
+    position: relative;
 }
 
 
@@ -29,12 +33,14 @@ div.item {
     vertical-align: top;
     display: inline-block;
     text-align: center;
-    width: 300px;
+    width: 50%;
 }
 
 img.rcornersimage {
     border-radius: 15px;
-    height: 200px;
+    vertical-align: top;
+    height: auto;
+    width: 100%
 }
 
 .caption {
@@ -88,16 +94,29 @@ img.rcornersimage {
   border-radius: 15px;
   background: #44BAAA;
   padding: 20px;
-  height: 300;
-  width: 400px;
   display: inline-block;
+  height: auto;
+  width: 45%;
+  min-width: 200px;
 }
 
 #rcornersbox2 {
   border-radius: 15px;
   background: #73BC78;
   padding: 20px;
-  height: 600px;
-  width: 400px;
   display: inline-block;
+  height: auto;
+  width: 45%;
+  min-width: 200px;
+}
+
+
+// Software page formatting
+img.floatleft-small {
+    float: left;
+    width: 40%;
+    max-width: 150px;
+    min-width: 50px;
+    margin-right: 2%;
+    margin-bottom: 2%;
 }

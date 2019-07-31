@@ -24,7 +24,8 @@ h1 {
 }
 
 h2 {
-  font-size: rem(26);
+  //font-size: rem(26);
+  font-size: calc(10px + 1vw);
 }
 
 h3 {
@@ -44,16 +45,23 @@ h6 {
 }
 
 p {
-  margin: 0 0 $small-spacing;
 
   &.lead {
-    font-size: rem(22);
+    //font-size: rem(22);
+    font-size: calc(10px + 0.8vw);
     font-weight: 300;
+    margin: 0 0 $small-spacing;
   }
 
   &.follow {
-      font-size: rem(18);
+      //font-size: rem(18);
+      font-size: calc(10px + 0.5vw);
       font-weight: 300;
+      margin: 0 0 $small-spacing;
+  }
+
+  &.text {
+      font-size: calc(8px + 0.5vw);
   }
 }
 
@@ -148,5 +156,5 @@ ul {
     list-style-type: square;
     list-style-position: outside;
     list-style-image: none;
-    font-size: rem(18);
+    font-size: calc(10px + 0.5vw);
 }
