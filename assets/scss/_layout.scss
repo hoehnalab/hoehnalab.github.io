@@ -316,4 +316,14 @@ hr {
     max-width: 80%;
     font-weight: normal;
   }
+
+  img.floatleft {
+      float: left;
+      width: 45%;
+      max-width: 400px;
+      min-width: 300px;
+      margin-left: -20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+  }
 }
