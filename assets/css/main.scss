@@ -12,13 +12,13 @@
   height: auto;
   width: 50%;
   display: inline-block;
-  min-width: 300px;
+  min-width: 250px;
 }
 
 img.floatleft {
     float: left;
     width: 45%;
-    max-width: 450px;
+    max-width: 400px;
     min-width: 300px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -117,6 +117,7 @@ img.rcornersimage {
   height: auto;
   width: 45%;
   min-width: 300px;
+  max-width: 500px;
 }
 
 #rcornersbox2 {
@@ -127,6 +128,7 @@ img.rcornersimage {
   height: auto;
   width: 45%;
   min-width: 300px;
+  max-width: 500px;
 }
 
 

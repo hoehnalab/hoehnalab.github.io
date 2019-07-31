@@ -8,7 +8,7 @@ permalink: /research/
 Phylogenies depict the evolutionary relationships among species. Much of the current interest in phylogenetics comes from advances in DNA sequencing technologies that now allow the phylogenetic comparison of hundreds or thousands of genes. The availability of genome-size dataset enable new research directions, such as, studying heterogeneity in the process of molecular evolution due to adaptation and studying differential evolutionary histories of genes. A major challenge in phylogenetics is to infer events that occurred million of years ago while only having data from extant species. Nevertheless, new mathematical and statistical methods continue to advance and improve our ability to effectively study these problems.
 -->
 <p class="text">
-Our research is focused on several aspect of theoretical and computational phylogenetics. Here we list the main directions, but see the publications for more details.
+Our research is focused on several aspects of theoretical and computational phylogenetics. Here we list the main directions, but see the publications for more details.
 </p>
 
 <br />
@@ -31,6 +31,7 @@ To answer these questions we develop more realistic substitution models in RevBa
 </div>
 
 <br>
+<br>
 
 <!-- Section 2 -->
 <div class="container-small">
@@ -50,7 +51,8 @@ Phylogenetic inferences from genomic data consist of many loci. Each locus is as
 </div>
 </div>
 
-<br/>
+<br>
+<br>
 
 <!-- Section 3 -->
 <div class="container-small">
