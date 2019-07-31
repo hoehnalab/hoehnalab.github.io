@@ -3,7 +3,7 @@ layout: page
 title: Research
 permalink: /research/
 ---
-<div class="container">
+
 <!--
 Phylogenies depict the evolutionary relationships among species. Much of the current interest in phylogenetics comes from advances in DNA sequencing technologies that now allow the phylogenetic comparison of hundreds or thousands of genes. The availability of genome-size dataset enable new research directions, such as, studying heterogeneity in the process of molecular evolution due to adaptation and studying differential evolutionary histories of genes. A major challenge in phylogenetics is to infer events that occurred million of years ago while only having data from extant species. Nevertheless, new mathematical and statistical methods continue to advance and improve our ability to effectively study these problems.
 -->
@@ -66,6 +66,4 @@ Phylogenetic inferences from genomic data consist of many loci. Each locus is as
     </p>
 
 </div>
-</div>
-
 </div>

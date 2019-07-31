@@ -60,9 +60,15 @@ p {
       margin: 0 0 $small-spacing;
   }
 
-  &.text {
-      font-size: calc(8px + 0.5vw);
+  &.ttext {
+      font-size: calc(10px + 0.5vw);
   }
+
+  &.text {
+      font-size: calc(10px + 0.5vw);
+      margin: 0 0 $small-spacing;
+  }
+
 }
 
 a {

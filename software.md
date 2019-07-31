@@ -4,8 +4,6 @@ title: Software
 permalink: /software/
 ---
 
-<div class="container">
-
 <div class="container-small">
 <img class="floatleft-small" src="/assets/images/aquabayes-desaturated.png">
 <p class="text">
@@ -30,5 +28,3 @@ Development in RevBayes is ongoing and extremely active. Specifically, we use Re
 </div>
 
 <br>
-
-</div>
