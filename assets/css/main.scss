@@ -12,6 +12,7 @@
   height: auto;
   width: 50%;
   display: inline-block;
+  min-width: 300px;
 }
 
 img.floatleft {
@@ -20,6 +21,7 @@ img.floatleft {
     max-width: 450px;
     min-width: 200px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 img.floatright {
@@ -33,14 +35,18 @@ div.item {
     vertical-align: top;
     display: inline-block;
     text-align: center;
-    width: 50%;
+    width: 100%;
+    max-width: 250px;
+    margin-right: 40px;
+    margin-bottom: 50px;
 }
 
 img.rcornersimage {
     border-radius: 15px;
     vertical-align: top;
     height: auto;
-    width: 100%
+    width: 80%
+
 }
 
 .caption {
@@ -57,7 +63,7 @@ img.rcornersimage {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 300px;
+  width: 400px;
   background-color: #44BAAA;
   color: #fff;
   text-align: center;
@@ -70,7 +76,7 @@ img.rcornersimage {
   z-index: 1;
   top: 100%;
   left: 50%;
-  margin-left: -150px;
+  margin-left: -200px;
 }
 
 .tooltip:hover .tooltiptext {

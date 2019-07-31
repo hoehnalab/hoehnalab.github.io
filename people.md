@@ -5,9 +5,7 @@ permalink: /people/
 ---
 
 <div class="container">
-<table>
-    <tr>
-        <td>
+
             <div class="item">
                 <img class="rcornersimage" src="/assets/images/sebastian.jpg">
                 <h5><div class="tooltip"><p class="text">Sebastian Höhna</p>
@@ -16,15 +14,11 @@ permalink: /people/
                     </span>
                 </div></h5>
                     <p class="text"><em>Group Leader</em></p>
-
-                    <br>
                     <a href="https://github.com/hoehna" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
                     <a href="https://twitter.com/sebastianhoehna?lang=en" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
                     <a href="mailto:hoehna@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
             </div>
-        </td>
 
-        <td>
             <div class="item">
                 <img class="rcornersimage" src="/assets/images/allison.jpg">
                 <h5><div class="tooltip"><p class="text">Allison Hsiang</p>
@@ -33,15 +27,11 @@ permalink: /people/
                     </span>
                 </div></h5>
                     <p class="text"><em>Postdoctoral Researcher</em></p>
-
-                    <br>
                     <a href="https://github.com/ahsiang" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
                     <a href="https://ahsiang.github.io/" target="_blank"><img src="/assets/icons/globe.svg" width="25px"></a>
                     <a href="mailto:allison.hsiang@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
             </div>
-        </td>
 
-        <td>
             <div class="item">
                 <img class="rcornersimage" src="/assets/images/luiza.jpg">
                 <h5><div class="tooltip"><p class="text">Luiza Fabreti</p>
@@ -50,14 +40,8 @@ permalink: /people/
                     </span>
                 </div></h5>
                     <p class="text"><em>Graduate Student</em></p>
-
-                    <br>
                     <a href="https://github.com/lfabreti" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
                     <a href="mailto:l.fabreti@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
             </div>
-        </td>
 
-    </tr>
-
-</table>
 </div>
