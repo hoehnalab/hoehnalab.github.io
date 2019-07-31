@@ -19,7 +19,7 @@ img.floatleft {
     float: left;
     width: 45%;
     max-width: 450px;
-    min-width: 200px;
+    min-width: 300px;
     margin-right: 20px;
     margin-bottom: 20px;
 }
@@ -51,6 +51,17 @@ img.rcornersimage {
 
 .caption {
     display: block;
+}
+
+.blurb {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .blurb {
+        display: block;
+        font-size: calc(10px + 0.5vw);
+    }
 }
 
 
@@ -103,7 +114,7 @@ img.rcornersimage {
   display: inline-block;
   height: auto;
   width: 45%;
-  min-width: 200px;
+  min-width: 300px;
 }
 
 #rcornersbox2 {
@@ -113,7 +124,7 @@ img.rcornersimage {
   display: inline-block;
   height: auto;
   width: 45%;
-  min-width: 200px;
+  min-width: 300px;
 }
 
 
