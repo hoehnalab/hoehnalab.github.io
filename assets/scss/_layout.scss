@@ -308,4 +308,12 @@ hr {
       margin-bottom: $small-spacing;
       height: 120px;
   }
+
+  .container {
+    padding: $base-spacing;
+    margin-left: 20px;
+    margin-right: auto;
+    max-width: 80%;
+    font-weight: normal;
+  }
 }
