@@ -7,7 +7,7 @@ permalink: /software/
 <div class="container-small">
 <img class="floatleft-small" src="/assets/images/aquabayes-desaturated.png">
 <p class="text">
-<a href="https://revbayes.github.io/" target="_blank">RevBayes</a> - `Bayesian phylogenetic inference using probabilistic graphical models and an interpreted language.` RevBayes provides a flexible framework for performing Bayesian statistical analysis of phylogeny and related topics, such as divergence time estimation, diversification rate estimation, continuous and discrete trait evolution and historical biogeography.
+<a href="https://revbayes.github.io/" target="_blank">RevBayes</a> - <span style="background-color: #CECECE">Bayesian phylogenetic inference using probabilistic graphical models and an interpreted language.</span> RevBayes provides a flexible framework for performing Bayesian statistical analysis of phylogeny and related topics, such as divergence time estimation, diversification rate estimation, continuous and discrete trait evolution and historical biogeography.
 </p>
 </div>
 
@@ -23,7 +23,7 @@ Development in RevBayes is ongoing and extremely active. Specifically, we use Re
 <div class="container-small">
 <p class="text">
 <img class="floatleft-small" src="/assets/images/TESS_logo.png">
-<a href="https://cran.r-project.org/web/packages/TESS/" target="_blank">TESS</a> - An R package for `Diversification Rate Estimation and Fast Simulation of Reconstructed Phylogenetic Trees` under Tree-Wide Time-Heterogeneous Birth-Death Processes Including Mass-Extinction Events. TESS both provides the likelihood function as well as reversible-jump method to estimate global diversification rates and rate shifts.
+<a href="https://cran.r-project.org/web/packages/TESS/" target="_blank">TESS</a> - An R package for <span style="background-color: #CECECE">Diversification Rate Estimation and Fast Simulation of Reconstructed Phylogenetic Trees</span> under Tree-Wide Time-Heterogeneous Birth-Death Processes Including Mass-Extinction Events. TESS both provides the likelihood function as well as reversible-jump method to estimate global diversification rates and rate shifts.
 </p>
 </div>
 

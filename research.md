@@ -35,7 +35,7 @@ To answer these questions we develop more realistic substitution models in RevBa
 
 <!-- Section 2 -->
 <div class="container-small">
-<img class="floatleft" src="/assets/images/Figure_2_v2.png" width="500">
+<img class="floatright" src="/assets/images/Figure_2_v2.png" width="400">
 <div id="rcornersbox2">
     <h2>Understanding Discordance Between Species Trees and Gene Trees</h2>
 <!--
@@ -49,6 +49,7 @@ Phylogenetic inferences from genomic data consist of many loci. Each locus is as
     </p>
 
 </div>
+
 </div>
 
 <br>

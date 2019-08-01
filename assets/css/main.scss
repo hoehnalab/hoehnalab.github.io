@@ -26,7 +26,11 @@ img.floatleft {
 
 img.floatright {
     float: right;
-    position: relative;
+    width: 45%;
+    max-width: 400px;
+    min-width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -117,7 +121,7 @@ img.rcornersimage {
   height: auto;
   width: 45%;
   min-width: 300px;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 #rcornersbox2 {
@@ -128,7 +132,7 @@ img.rcornersimage {
   height: auto;
   width: 45%;
   min-width: 300px;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 
