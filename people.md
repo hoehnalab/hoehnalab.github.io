@@ -4,6 +4,8 @@ title: People
 permalink: /people/
 ---
 
+<div class="cpeople">
+
 <div class="item">
     <img class="rcornersimage" src="/assets/images/sebastian.jpg">
     <h5><div class="tooltip"><p class="ttext">Sebastian Höhna</p>
@@ -56,4 +58,6 @@ permalink: /people/
     <div class="blurb">
         I'm interested in computational and evolutionary biology. Specially, improving the way we model evolution. My research involves Bayesian phylogenetic inference and underlying topics such as, model selection, testing the adequacy of the most commonly used substitution models and assessing convergence of the Markov Chain Monte Carlo.
     </div>
+</div>
+
 </div>

@@ -35,7 +35,11 @@ img.floatright {
 
 
 // People page formatting
-div.item {
+.cpeople {
+    text-align: center;
+}
+
+.item {
     vertical-align: top;
     display: inline-block;
     text-align: center;
