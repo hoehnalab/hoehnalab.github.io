@@ -315,7 +315,7 @@ hr {
     padding: $base-spacing;
     margin-left: 10px;
     margin-right: 10px;
-    max-width: 80%;
+    max-width: 100%;
     font-weight: normal;
   }
 
@@ -326,7 +326,7 @@ hr {
 
   img.floatleft {
       float: left;
-      width: 45%;
+      width: 50%;
       max-width: 300px;
       min-width: 300px;
       margin-right: 20px;
@@ -335,11 +335,34 @@ hr {
 
   img.floatright {
       float: right;
-      width: 45%;
+      width: 50%;
       max-width: 300px;
       min-width: 300px;
       margin-right: 20px;
       margin-bottom: 20px;
       margin-left: 0px;
   }
+
+  #rcornersbox1 {
+    border-radius: 15px;
+    background: #44BAAA;
+    padding: 20px;
+    display: inline-block;
+    height: auto;
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+  }
+
+  #rcornersbox2 {
+    border-radius: 15px;
+    background: #73BC78;
+    padding: 20px;
+    display: inline-block;
+    height: auto;
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+  }
+
 }
