@@ -17,19 +17,20 @@
 
 img.floatleft {
     float: left;
-    width: 45%;
+    width: 50%;
     max-width: 400px;
     min-width: 300px;
-    margin-right: 20px;
     margin-bottom: 20px;
+    padding-right: 20px;
 }
 
 img.floatright {
     float: right;
-    width: 45%;
+    width: 50%;
     max-width: 400px;
     min-width: 300px;
     margin-bottom: 20px;
+    padding-left: 20px;
 }
 
 
@@ -122,9 +123,9 @@ img.rcornersimage {
   padding: 20px;
   display: inline-block;
   height: auto;
-  width: 45%;
+  width: 50%;
   min-width: 300px;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 #rcornersbox2 {
@@ -133,9 +134,9 @@ img.rcornersimage {
   padding: 20px;
   display: inline-block;
   height: auto;
-  width: 45%;
+  width: 50%;
   min-width: 300px;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 

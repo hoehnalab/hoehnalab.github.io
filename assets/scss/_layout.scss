@@ -48,7 +48,7 @@ hr {
 
 .container-small {
     width: 800px;
-    max-width: 100%;
+    min-width: 400px;
     margin: 0 auto;
 }
 
@@ -320,13 +320,14 @@ hr {
   }
 
   .container-small {
-      max-width: 100%;
+      max-width: 80%;
+      min-width: 50%;
       margin: 0 auto;
   }
 
   img.floatleft {
       float: left;
-      width: 50%;
+      width: 40%;
       max-width: 300px;
       min-width: 300px;
       margin-right: 20px;
@@ -335,12 +336,10 @@ hr {
 
   img.floatright {
       float: right;
-      width: 50%;
+      width: 40%;
       max-width: 300px;
       min-width: 300px;
-      margin-right: 20px;
       margin-bottom: 20px;
-      margin-left: 0px;
   }
 
   #rcornersbox1 {
@@ -349,7 +348,7 @@ hr {
     padding: 20px;
     display: inline-block;
     height: auto;
-    width: 50%;
+    width: 40%;
     min-width: 300px;
     max-width: 600px;
   }
@@ -360,7 +359,7 @@ hr {
     padding: 20px;
     display: inline-block;
     height: auto;
-    width: 50%;
+    width: 40%;
     min-width: 300px;
     max-width: 600px;
   }
