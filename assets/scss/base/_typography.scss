@@ -25,7 +25,7 @@ h1 {
 
 h2 {
   //font-size: rem(26);
-  font-size: calc(10px + 1vw);
+  font-size: calc(12px + 1vw);
 }
 
 h3 {
@@ -47,25 +47,23 @@ h6 {
 p {
 
   &.lead {
-    //font-size: rem(22);
-    font-size: calc(10px + 0.8vw);
+    font-size: calc(12px + 0.8vw);
     font-weight: 300;
     margin: 0 0 $small-spacing;
   }
 
   &.follow {
-      //font-size: rem(18);
-      font-size: calc(10px + 0.5vw);
+      font-size: calc(12px + 0.5vw);
       font-weight: 300;
       margin: 0 0 $small-spacing;
   }
 
   &.ttext {
-      font-size: calc(10px + 0.5vw);
+      font-size: calc(12px + 0.5vw);
   }
 
   &.text {
-      font-size: calc(10px + 0.5vw);
+      font-size: calc(12px + 0.5vw);
       margin: 0 0 $small-spacing;
   }
 
@@ -162,5 +160,5 @@ ul {
     list-style-type: square;
     list-style-position: outside;
     list-style-image: none;
-    font-size: calc(10px + 0.5vw);
+    font-size: calc(12px + 0.5vw);
 }

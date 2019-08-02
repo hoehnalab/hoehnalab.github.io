@@ -13,6 +13,8 @@ Our research is focused on several aspects of theoretical and computational phyl
 
 <br />
 
+<div class="center">
+
 <!-- Section 1 -->
 <div class="container-small">
 <img class="floatleft" src="/assets/images/Figure_1_v2.png">
@@ -67,4 +69,6 @@ Phylogenetic inferences from genomic data consist of many loci. Each locus is as
     </p>
 
 </div>
+</div>
+
 </div>

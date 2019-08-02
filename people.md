@@ -4,7 +4,7 @@ title: People
 permalink: /people/
 ---
 
-<div class="cpeople">
+<div class="center">
 
 <div class="item">
     <img class="rcornersimage" src="/assets/images/sebastian.jpg">

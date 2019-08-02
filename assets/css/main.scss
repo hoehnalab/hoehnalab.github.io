@@ -4,6 +4,11 @@
 @charset "utf-8";
 @import "main";
 
+
+.center {
+    text-align: center;
+}
+
 // Main page formatting
 #rcornersbox {
   border-radius: 15px;
@@ -35,10 +40,6 @@ img.floatright {
 
 
 // People page formatting
-.cpeople {
-    text-align: center;
-}
-
 .item {
     vertical-align: top;
     display: inline-block;
@@ -70,7 +71,7 @@ img.rcornersimage {
 @media only screen and (max-width: 768px) {
     .blurb {
         display: block;
-        font-size: calc(10px + 0.5vw);
+        font-size: calc(12px + 0.5vw);
     }
 }
 
