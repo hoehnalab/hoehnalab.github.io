@@ -15,7 +15,7 @@ Our research is focused on several aspects of theoretical and computational phyl
 
 <!-- Section 1 -->
 <div class="container-small">
-<img class="floatleft" src="/assets/images/Figure_1_v2.png" width="450">
+<img class="floatleft" src="/assets/images/Figure_1_v2.png">
 <div id="rcornersbox1">
     <h2>Robust Estimation of Gene Trees</h2>
 <!--
@@ -35,7 +35,7 @@ To answer these questions we develop more realistic substitution models in RevBa
 
 <!-- Section 2 -->
 <div class="container-small">
-<img class="floatright" src="/assets/images/Figure_2_v2.png" width="400">
+<img class="floatright" src="/assets/images/Figure_2_v2.png">
 <div id="rcornersbox2">
     <h2>Understanding Discordance Between Species Trees and Gene Trees</h2>
 <!--
@@ -57,7 +57,7 @@ Phylogenetic inferences from genomic data consist of many loci. Each locus is as
 
 <!-- Section 3 -->
 <div class="container-small">
-<img class="floatleft" src="/assets/images/Figure_4.png" width="400">
+<img class="floatleft" src="/assets/images/Figure_4.png">
 <div id="rcornersbox1">
     <h2>Inference of Macroevolutionary Processes</h2>
 
