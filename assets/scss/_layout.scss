@@ -48,6 +48,7 @@ hr {
 
 .container-small {
     width: 800px;
+    max-width: 80%;
     min-width: 400px;
     margin: 0 auto;
 }
@@ -315,53 +316,15 @@ hr {
     padding: $base-spacing;
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
+    width: 480px;
+    max-width: 80%;
     font-weight: normal;
   }
 
   .container-small {
-      max-width: 80%;
-      min-width: 50%;
+      width: 480px;
+      min-width: 300px;
       margin: 0 auto;
-  }
-
-  img.floatleft {
-      float: left;
-      width: 40%;
-      max-width: 300px;
-      min-width: 300px;
-      margin-right: 20px;
-      margin-bottom: 20px;
-  }
-
-  img.floatright {
-      float: right;
-      width: 40%;
-      max-width: 300px;
-      min-width: 300px;
-      margin-bottom: 20px;
-  }
-
-  #rcornersbox1 {
-    border-radius: 15px;
-    background: #44BAAA;
-    padding: 20px;
-    display: inline-block;
-    height: auto;
-    width: 40%;
-    min-width: 300px;
-    max-width: 600px;
-  }
-
-  #rcornersbox2 {
-    border-radius: 15px;
-    background: #73BC78;
-    padding: 20px;
-    display: inline-block;
-    height: auto;
-    width: 40%;
-    min-width: 300px;
-    max-width: 600px;
   }
 
 }
