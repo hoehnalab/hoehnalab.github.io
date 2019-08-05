@@ -42,8 +42,22 @@ hr {
   padding: $base-spacing;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1000px;
+  width: 1000px;
+  max-width: 80%;
   font-weight: normal;
+}
+
+.container-small {
+    width: 800px;
+    max-width: 80%;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
 }
 
 .pull-left {
@@ -73,6 +87,7 @@ hr {
   margin-bottom: $small-spacing;
   min-height: 80px;
 }
+
 
 .intro {
   .author-name {
@@ -264,7 +279,7 @@ hr {
 }
 
 // This applies from 0px to 600px
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .date-label {
     float: left !important;
     border: 0 !important;
@@ -291,4 +306,26 @@ hr {
       color: $green-color;
     }
   }
+
+  .site-header {
+      border-bottom: 1px solid lighten($light-gray-color, 5%);
+      margin-bottom: $small-spacing;
+      height: 150px;
+  }
+
+  .container {
+    padding: $base-spacing;
+    margin-left: 10px;
+    margin-right: auto;
+    width: 480px;
+    max-width: 80%;
+    font-weight: normal;
+  }
+
+  .container-small {
+      width: 480px;
+      min-width: 300px;
+      margin: 0 auto;
+  }
+
 }

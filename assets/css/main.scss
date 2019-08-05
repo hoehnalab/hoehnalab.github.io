@@ -4,41 +4,75 @@
 @charset "utf-8";
 @import "main";
 
+
+.center {
+    text-align: center;
+}
+
 // Main page formatting
 #rcornersbox {
   border-radius: 15px;
   background: #44BAAA;
   padding: 20px;
-  height: 470px;
-  width: 600px;
+  height: auto;
+  width: 50%;
   display: inline-block;
+  min-width: 300px;
 }
 
 img.floatleft {
     float: left;
-    margin-top: 100px;
+    width: 50%;
+    max-width: 400px;
+    min-width: 300px;
+    margin-bottom: 20px;
+    padding-right: 20px;
 }
 
 img.floatright {
     float: right;
+    width: 50%;
+    max-width: 400px;
+    min-width: 300px;
+    margin-bottom: 20px;
+    padding-left: 20px;
 }
 
 
 // People page formatting
-div.item {
+.item {
     vertical-align: top;
     display: inline-block;
     text-align: center;
-    width: 300px;
+    width: 100%;
+    max-width: 250px;
+    margin-right: 30px;
+    margin-bottom: 50px;
 }
 
 img.rcornersimage {
     border-radius: 15px;
-    height: 200px;
+    vertical-align: top;
+    height: auto;
+    width: 80%
+
 }
 
 .caption {
     display: block;
+}
+
+
+// Showing the tooltip text on mobile
+.blurb {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .blurb {
+        display: block;
+        font-size: calc(12px + 0.5vw);
+    }
 }
 
 
@@ -51,7 +85,7 @@ img.rcornersimage {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 300px;
+  width: 400px;
   background-color: #44BAAA;
   color: #fff;
   text-align: center;
@@ -64,7 +98,7 @@ img.rcornersimage {
   z-index: 1;
   top: 100%;
   left: 50%;
-  margin-left: -150px;
+  margin-left: -200px;
 }
 
 .tooltip:hover .tooltiptext {
@@ -88,16 +122,31 @@ img.rcornersimage {
   border-radius: 15px;
   background: #44BAAA;
   padding: 20px;
-  height: 300;
-  width: 400px;
   display: inline-block;
+  height: auto;
+  width: 50%;
+  min-width: 300px;
+  max-width: 400px;
 }
 
 #rcornersbox2 {
   border-radius: 15px;
   background: #73BC78;
   padding: 20px;
-  height: 600px;
-  width: 400px;
   display: inline-block;
+  height: auto;
+  width: 50%;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+
+// Software page formatting
+img.floatleft-small {
+    float: left;
+    width: 40%;
+    max-width: 150px;
+    min-width: 50px;
+    margin-right: 2%;
+    margin-bottom: 2%;
 }
