@@ -6,6 +6,8 @@ permalink: /join/
 
 New positions in the lab will be advertised here.
 Please contact [Sebastian Höhna](mailto:hoehna@lmu.de) for inquiries.
+* [PhD position to work on modeling species diversification](/job_adverts/PhD_DivRates.pdf): Deadline 31st August.
+* [PhD position to work on species tree estimation](/job_adverts/PhD_SpeciesTree.pdf): Deadline 31st August.
 
 If you are interested in joining the lab and applying for your own funding, then you can find some information here:
 * [Overview of funding in Germany](https://www.research-in-germany.org/en)
