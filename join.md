@@ -20,3 +20,4 @@ Postdoctoral researchers:
 * [DFG Independent Postdocs (senior postdocs)](https://www.dfg.de/formulare/52_02/52_02_en.pdf)
 * [Humboldt Fellowship](https://www.humboldt-foundation.de/web/sponsorship.html)
 * [Marie Curie Fellowship](https://ec.europa.eu/research/mariecurieactions/actions/individual-fellowships_en)
+* [LMU Incoming Research Fellowships](https://www.en.uni-muenchen.de/about_lmu/research/excellence_initiative/institutional_strategy/junior_academics/academic_career/research_fellowship/incoming/index.html)
