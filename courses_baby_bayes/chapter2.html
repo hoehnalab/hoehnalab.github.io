@@ -1,0 +1,549 @@
+---
+layout: chapter
+title: Alignments and Reading Data
+output:
+  html_document:
+    toc: true
+    toc_float: true
+pdf: true
+---
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Alignments and Reading Data</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style>
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Alignments and Reading Data</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#chapter-2-alignments-and-reading-data">Chapter 2: Alignments and Reading Data</a><ul>
+<li><a href="#section-2.2-the-alignment-class">Section 2.2: The <em>Alignment</em> class</a></li>
+<li><a href="#section-1.2-a-phylip-format-alignment-reader">Section 1.2: A <em>phylip</em> format alignment reader</a></li>
+<li><a href="#section-1.4-putting-it-together">Section 1.4: Putting it together</a></li>
+</ul></li>
+</ul>
+</nav>
+<div>
+<p><a href="{{site.baseurl}}/pdf/chapter2.pdf">pdf version</a></p>
+</div>
+<h1 id="chapter-2-alignments-and-reading-data">Chapter 2: Alignments and Reading Data</h1>
+<p>In our fist class we learnt about how to set up our c++ environment and we wrote our first, very simple program. Importantly, you should know by now how to compile a c++ software. In this chapter we will start with our <em>BabyBayes</em> implementation. The first part of this implementation is to implement an alignment class and a simple alignment reader, i.e., another class that reads in alignments from a file.</p>
+<p>Here we will start with one of the most basic alignment formats: the <em>phylip</em> file format. You can read up about this on Joe Felsenstein’s <a href="http://evolution.genetics.washington.edu/phylip/doc/sequence.html">website</a>. Here is an example of the <strong>primates.phy</strong> alignment file.</p>
+<pre><code>12   898
+Tarsius_sy  AAGTTTCATT GGAGCCACCA CTCTTATAAT TGCCCATGGC CTCACCTCCT CCCTATTATT
+Lemur_catt  AAGCTTCATA GGAGCAACCA TTCTAATAAT CGCACATGGC CTTACATCAT CCATATTATT
+Homo_sapie  AAGCTTCACC GGCGCAGTCA TTCTCATAAT CGCCCACGGG CTTACATCCT CATTACTATT
+Pan         AAGCTTCACC GGCGCAATTA TCCTCATAAT CGCCCACGGA CTTACATCCT CATTATTATT
+Gorilla     AAGCTTCACC GGCGCAGTTG TTCTTATAAT TGCCCACGGA CTTACATCAT CATTATTATT
+Pongo       AAGCTTCACC GGCGCAACCA CCCTCATGAT TGCCCATGGA CTCACATCCT CCCTACTGTT
+Hylobates   AAGCTTTACA GGTGCAACCG TCCTCATAAT CGCCCACGGA CTAACCTCTT CCCTGCTATT
+Macaca_fus  AAGCTTTTCC GGCGCAACCA TCCTTATGAT CGCTCACGGA CTCACCTCTT CCATATATTT
+M_mulatta   AAGCTTTTCT GGCGCAACCA TCCTCATGAT TGCTCACGGA CTCACCTCTT CCATATATTT
+M_fascicul  AAGCTTCTCC GGCGCAACCA CCCTTATAAT CGCCCACGGG CTCACCTCTT CCATGTATTT
+M_sylvanus  AAGCTTCTCC GGTGCAACTA TCCTTATAGT TGCCCATGGA CTCACCTCTT CCATATACTT
+Saimiri_sc  AAGCTTCACC GGCGCAATGA TCCTAATAAT CGCTCACGGG TTTACTTCGT CTATGCTATT
+
+            TTGCCTAGCA AATACAAACT ACGAACGAGT CCACAGTCGA ACAATAGCAC TAGCCCGTGG
+            CTGTCTAGCC AACTCTAACT ACGAACGAAT CCATAGCCGT ACAATACTAC TAGCACGAGG
+            CTGCCTAGCA AACTCAAACT ACGAACGCAC TCACAGTCGC ATCATAATCC TCTCTCAAGG
+            CTGCCTAGCA AACTCAAATT ATGAACGCAC CCACAGTCGC ATCATAATTC TCTCCCAAGG
+            CTGCCTAGCA AACTCAAACT ACGAACGAAC CCACAGCCGC ATCATAATTC TCTCTCAAGG
+            CTGCCTAGCA AACTCAAACT ACGAACGAAC CCACAGCCGC ATCATAATCC TCTCTCAAGG
+            CTGCCTTGCA AACTCAAACT ACGAACGAAC TCACAGCCGC ATCATAATCC TATCTCGAGG
+            CTGCCTAGCC AATTCAAACT ATGAACGCAC TCACAACCGT ACCATACTAC TGTCCCGAGG
+            CTGCCTAGCC AATTCAAACT ATGAACGCAC TCACAACCGT ACCATACTAC TGTCCCGGGG
+            CTGCTTGGCC AATTCAAACT ATGAGCGCAC TCATAACCGT ACCATACTAC TATCCCGAGG
+            CTGCTTGGCC AACTCAAACT ACGAACGCAC CCACAGCCGC ATCATACTAC TATCCCGAGG
+            CTGCCTAGCA AACTCAAATT ACGAACGAAT TCACAGCCGA ACAATAACAT TTACTCGAGG
+
+...</code></pre>
+<p>A <em>phylip</em> formatted alignment file always starts with a line containing two numbers: the number of taxa and the number of characters. The two numbers are separated by any number of whitespace characters (e.g., spaces or tabs). Then, we have the sequence data in each row. The row starts with the name of the taxon which can be at most 10 characters long.</p>
+<h2 id="section-2.2-the-alignment-class">Section 2.2: The <em>Alignment</em> class</h2>
+<p>Each class start with the header file to define the class with its methods and variables. Write a new files called <strong>Alignment.h</strong> with the following content.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1"></a><span class="pp">#ifndef Alignment_h</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="pp">#define Alignment_h</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="pp">#include </span><span class="im">&lt;string&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="pp">#include </span><span class="im">&lt;vector&gt;</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a></span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="co">/**</span></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="co">* </span><span class="an">\class</span><span class="co"> </span><span class="cv">Alignment</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="co">*</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="co">* </span><span class="an">\brief</span><span class="co"> Represents the multiple sequence alignment class holding the data matrix.</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a><span class="co">*</span></span>
+<span id="cb2-13"><a href="#cb2-13"></a><span class="co">* This class represent the multiple sequence alignment.</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="co">* It&#39;s main purpose is to hold and manage the character data matrix.</span></span>
+<span id="cb2-15"><a href="#cb2-15"></a><span class="co">*</span></span>
+<span id="cb2-16"><a href="#cb2-16"></a><span class="co">*</span></span>
+<span id="cb2-17"><a href="#cb2-17"></a><span class="co">* </span><span class="an">\author</span><span class="co"> Sebastian Höhna</span></span>
+<span id="cb2-18"><a href="#cb2-18"></a><span class="co">*</span></span>
+<span id="cb2-19"><a href="#cb2-19"></a><span class="co">*/</span></span>
+<span id="cb2-20"><a href="#cb2-20"></a></span>
+<span id="cb2-21"><a href="#cb2-21"></a><span class="kw">class</span> Alignment {</span>
+<span id="cb2-22"><a href="#cb2-22"></a></span>
+<span id="cb2-23"><a href="#cb2-23"></a><span class="kw">public</span>:</span>
+<span id="cb2-24"><a href="#cb2-24"></a></span>
+<span id="cb2-25"><a href="#cb2-25"></a>    Alignment(<span class="dt">size_t</span> nt, <span class="dt">size_t</span> ns);</span>
+<span id="cb2-26"><a href="#cb2-26"></a>    ~Alignment(<span class="dt">void</span>);</span>
+<span id="cb2-27"><a href="#cb2-27"></a></span>
+<span id="cb2-28"><a href="#cb2-28"></a>    <span class="dt">char</span>                                getNucleotide(<span class="dt">size_t</span> i, <span class="dt">size_t</span> j) <span class="at">const</span>;</span>
+<span id="cb2-29"><a href="#cb2-29"></a>    <span class="dt">size_t</span>                              getNumberOfSites(<span class="dt">void</span>) <span class="at">const</span>;</span>
+<span id="cb2-30"><a href="#cb2-30"></a>    <span class="dt">size_t</span>                              getNumberOfTaxa(<span class="dt">void</span>) <span class="at">const</span>;</span>
+<span id="cb2-31"><a href="#cb2-31"></a>    <span class="at">const</span> <span class="bu">std::</span>vector&lt;<span class="bu">std::</span>string&gt;&amp;     getTaxonNames(<span class="dt">void</span>) <span class="at">const</span>;</span>
+<span id="cb2-32"><a href="#cb2-32"></a>    <span class="bu">std::</span>vector&lt;<span class="dt">int</span>&gt;                    getPossibleNucleotides (<span class="dt">char</span> nuc) <span class="at">const</span>;</span>
+<span id="cb2-33"><a href="#cb2-33"></a>    <span class="dt">void</span>                                print(<span class="bu">std::</span>ostream &amp; o) <span class="at">const</span>;</span>
+<span id="cb2-34"><a href="#cb2-34"></a>    <span class="dt">void</span>                                setMatrix(<span class="at">const</span> <span class="bu">std::</span>vector&lt;<span class="bu">std::</span>vector&lt;<span class="dt">char</span>&gt; &gt; &amp;m);</span>
+<span id="cb2-35"><a href="#cb2-35"></a>    <span class="dt">void</span>                                setNucleotide(<span class="dt">char</span> x, <span class="dt">size_t</span> i, <span class="dt">size_t</span> j);</span>
+<span id="cb2-36"><a href="#cb2-36"></a>    <span class="dt">void</span>                                setTaxonNames(<span class="at">const</span> <span class="bu">std::</span>vector&lt;<span class="bu">std::</span>string&gt; &amp;n);</span>
+<span id="cb2-37"><a href="#cb2-37"></a></span>
+<span id="cb2-38"><a href="#cb2-38"></a><span class="kw">private</span>:</span>
+<span id="cb2-39"><a href="#cb2-39"></a></span>
+<span id="cb2-40"><a href="#cb2-40"></a>    <span class="dt">size_t</span>                              num_taxa;</span>
+<span id="cb2-41"><a href="#cb2-41"></a>    <span class="dt">size_t</span>                              num_sites;</span>
+<span id="cb2-42"><a href="#cb2-42"></a>    <span class="bu">std::</span>vector&lt;<span class="bu">std::</span>string&gt;            taxon_names;</span>
+<span id="cb2-43"><a href="#cb2-43"></a>    <span class="bu">std::</span>vector&lt;<span class="bu">std::</span>vector&lt;<span class="dt">char</span>&gt; &gt;     data_matrix;</span>
+<span id="cb2-44"><a href="#cb2-44"></a></span>
+<span id="cb2-45"><a href="#cb2-45"></a>};</span>
+<span id="cb2-46"><a href="#cb2-46"></a></span>
+<span id="cb2-47"><a href="#cb2-47"></a></span>
+<span id="cb2-48"><a href="#cb2-48"></a><span class="pp">#endif </span><span class="co">/* Alignment_h */</span></span></code></pre></div>
+<p>This class has all the definition that we need.</p>
+<p>Then, we write a new file called <strong>Alignment.cpp</strong>. We start <em>implementing</em> each function that we defined in <strong>Alignment.h</strong> now. First, we load the libraries and other header files needed,</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1"></a><span class="pp">#include </span><span class="im">&quot;Alignment.h&quot;</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="pp">#include </span><span class="im">&lt;iomanip&gt;</span></span></code></pre></div>
+<p>Then, we continue with the constructor function. The constructor has always the same name as the class. Here the constructor will create an empty data matrix.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">/**</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="co"> * Constructor of the alignment class.</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="co"> * We will construct an empty data matrix of size nt rows and nc columns.</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="co"> *</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="co"> * </span><span class="an">@param</span><span class="co">    </span><span class="cv">nt</span><span class="co">     number of taxa/rows in the alignment</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="co"> * </span><span class="an">@param</span><span class="co">    </span><span class="cv">ns</span><span class="co">     number of sites/characters/columns in the alignment</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="co"> */</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a>Alignment::Alignment( <span class="dt">size_t</span> nt, <span class="dt">size_t</span> ns ) :</span>
+<span id="cb4-9"><a href="#cb4-9"></a>    num_taxa( nt ),</span>
+<span id="cb4-10"><a href="#cb4-10"></a>    num_sites( ns )</span>
+<span id="cb4-11"><a href="#cb4-11"></a>{</span>
+<span id="cb4-12"><a href="#cb4-12"></a>    <span class="co">// create an empty data matrix of num_taxa rows and num_sites columns.</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a>    <span class="co">// By default we set every entry to &#39;?&#39;, the missing character</span></span>
+<span id="cb4-14"><a href="#cb4-14"></a>    data_matrix = <span class="bu">std::</span>vector&lt;<span class="bu">std::</span>vector&lt;<span class="dt">char</span>&gt; &gt;(num_taxa, <span class="bu">std::</span>vector&lt;<span class="dt">char</span>&gt;(num_sites, <span class="ch">&#39;?&#39;</span>));</span>
+<span id="cb4-15"><a href="#cb4-15"></a>}</span></code></pre></div>
+<p>It is a good style to also always add a destructor. The destructor is always called when the object is destroyed and should free all the memory from an object. So we will do this here that you will learn how to add one.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1"></a><span class="co">/**</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="co"> * Desctructor of the alignment class.</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="co"> *</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="co"> * Since we don&#39;t have any allocated memory we don&#39;t need to free any.</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="co"> */</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a>Alignment::~Alignment( <span class="dt">void</span> )</span>
+<span id="cb5-7"><a href="#cb5-7"></a>{</span>
+<span id="cb5-8"><a href="#cb5-8"></a>    <span class="co">// nothing to do in here.</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a>}</span></code></pre></div>
+<p>Now, our first actual method is the <em>getNucleotide</em> method. This is a faily simple method that exactly does what the name suggests; it returns a nucleotide from the data matrix.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1"></a><span class="co">/**</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="co"> * Get the character for the i-th taxon/row and j-th site/column.</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="co"> *</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="co"> *</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">i</span><span class="co">           the i-th taxa in the alignment</span></span>
+<span id="cb6-6"><a href="#cb6-6"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">j</span><span class="co">           the j-th site in the alignment</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a><span class="co"> *</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              the character.</span></span>
+<span id="cb6-9"><a href="#cb6-9"></a><span class="co"> */</span></span>
+<span id="cb6-10"><a href="#cb6-10"></a><span class="dt">char</span> Alignment::getNucleotide(<span class="dt">size_t</span> i, <span class="dt">size_t</span> j) <span class="at">const</span></span>
+<span id="cb6-11"><a href="#cb6-11"></a>{</span>
+<span id="cb6-12"><a href="#cb6-12"></a>    <span class="co">// simply return</span></span>
+<span id="cb6-13"><a href="#cb6-13"></a>    <span class="cf">return</span> data_matrix[i][j];</span>
+<span id="cb6-14"><a href="#cb6-14"></a>}</span></code></pre></div>
+<p>For future use, we might also provide more helper methods that return, for example, the number of sites.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb7-1"><a href="#cb7-1"></a><span class="co">/**</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="co"> * Get the number of sites/characters/columns for this alignment.</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="co"> *</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              the number of sites.</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="co"> */</span></span>
+<span id="cb7-6"><a href="#cb7-6"></a><span class="dt">size_t</span> Alignment::getNumberOfSites( <span class="dt">void</span> ) <span class="at">const</span></span>
+<span id="cb7-7"><a href="#cb7-7"></a>{</span>
+<span id="cb7-8"><a href="#cb7-8"></a>    <span class="co">// return our private variable for the number of sites</span></span>
+<span id="cb7-9"><a href="#cb7-9"></a>    <span class="cf">return</span> num_sites;</span>
+<span id="cb7-10"><a href="#cb7-10"></a>}</span></code></pre></div>
+<p>Similary, we implement a method for the number of taxa.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb8-1"><a href="#cb8-1"></a><span class="co">/**</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="co"> * Get the number of taxa/rows for this alignment.</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="co"> *</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              the number of taxa.</span></span>
+<span id="cb8-5"><a href="#cb8-5"></a><span class="co"> */</span></span>
+<span id="cb8-6"><a href="#cb8-6"></a><span class="dt">size_t</span> Alignment::getNumberOfTaxa( <span class="dt">void</span> ) <span class="at">const</span></span>
+<span id="cb8-7"><a href="#cb8-7"></a>{</span>
+<span id="cb8-8"><a href="#cb8-8"></a>    <span class="co">// return our private variable for the number of taxa</span></span>
+<span id="cb8-9"><a href="#cb8-9"></a>    <span class="cf">return</span> num_taxa;</span>
+<span id="cb8-10"><a href="#cb8-10"></a>}</span></code></pre></div>
+<p>And we also implement a method to retrieve the taxon names.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb9-1"><a href="#cb9-1"></a><span class="co">/**</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="co"> * Get the taxa names.</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a><span class="co"> *</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              a vector of strings with the names of the taxa.</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a><span class="co"> */</span></span>
+<span id="cb9-6"><a href="#cb9-6"></a><span class="at">const</span> <span class="bu">std::</span>vector&lt;<span class="bu">std::</span>string&gt;&amp; Alignment::getTaxonNames(<span class="dt">void</span>) <span class="at">const</span></span>
+<span id="cb9-7"><a href="#cb9-7"></a>{</span>
+<span id="cb9-8"><a href="#cb9-8"></a>    <span class="co">// return our private variable for the taxon names</span></span>
+<span id="cb9-9"><a href="#cb9-9"></a>    <span class="cf">return</span> taxon_names;</span>
+<span id="cb9-10"><a href="#cb9-10"></a>}</span></code></pre></div>
+<p>Most Importantly, we want to see what we actually stored in the data matrix. So for our own purpose, we print the data matrix.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb10-1"><a href="#cb10-1"></a><span class="co">/**</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="co"> * Print the alignment to the given stream.</span></span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="co"> * For simplicity, we will assume that the number of  character</span></span>
+<span id="cb10-4"><a href="#cb10-4"></a><span class="co"> *</span></span>
+<span id="cb10-5"><a href="#cb10-5"></a><span class="co"> */</span></span>
+<span id="cb10-6"><a href="#cb10-6"></a><span class="dt">void</span> Alignment::print(<span class="bu">std::</span>ostream &amp; o) <span class="at">const</span></span>
+<span id="cb10-7"><a href="#cb10-7"></a>{</span>
+<span id="cb10-8"><a href="#cb10-8"></a>    <span class="co">// first, we print some information about the alignment</span></span>
+<span id="cb10-9"><a href="#cb10-9"></a>    <span class="co">// print the number of sites</span></span>
+<span id="cb10-10"><a href="#cb10-10"></a>    o &lt;&lt; <span class="st">&quot;Number of sites = &quot;</span> &lt;&lt; num_sites &lt;&lt; <span class="ch">&#39;</span><span class="sc">\n</span><span class="ch">&#39;</span>;</span>
+<span id="cb10-11"><a href="#cb10-11"></a>    o &lt;&lt; <span class="st">&quot;              &quot;</span>;</span>
+<span id="cb10-12"><a href="#cb10-12"></a></span>
+<span id="cb10-13"><a href="#cb10-13"></a>    <span class="co">// then print the index for each taxon</span></span>
+<span id="cb10-14"><a href="#cb10-14"></a>    <span class="cf">for</span> (<span class="dt">int</span> i=<span class="dv">0</span>; i&lt;num_taxa; i++)</span>
+<span id="cb10-15"><a href="#cb10-15"></a>        o &lt;&lt; <span class="bu">std::</span>setw(<span class="dv">3</span>) &lt;&lt; i &lt;&lt; <span class="st">&quot; &quot;</span>;</span>
+<span id="cb10-16"><a href="#cb10-16"></a>    o &lt;&lt; <span class="ch">&#39;</span><span class="sc">\n</span><span class="ch">&#39;</span>;</span>
+<span id="cb10-17"><a href="#cb10-17"></a></span>
+<span id="cb10-18"><a href="#cb10-18"></a>    <span class="co">// we nicely separate these by &#39;-&#39;</span></span>
+<span id="cb10-19"><a href="#cb10-19"></a>    o &lt;&lt; <span class="st">&quot;------------------------&quot;</span>;</span>
+<span id="cb10-20"><a href="#cb10-20"></a>    <span class="cf">for</span> (<span class="dt">int</span> i=<span class="dv">0</span>; i&lt;num_taxa; i++)</span>
+<span id="cb10-21"><a href="#cb10-21"></a>        o &lt;&lt; <span class="st">&quot;---&quot;</span>;</span>
+<span id="cb10-22"><a href="#cb10-22"></a>    o &lt;&lt; <span class="ch">&#39;</span><span class="sc">\n</span><span class="ch">&#39;</span>;</span>
+<span id="cb10-23"><a href="#cb10-23"></a></span>
+<span id="cb10-24"><a href="#cb10-24"></a>    <span class="co">// now we print on each line the column/site</span></span>
+<span id="cb10-25"><a href="#cb10-25"></a>    <span class="cf">for</span> (<span class="dt">int</span> j=<span class="dv">0</span>; j&lt;num_sites; j++)</span>
+<span id="cb10-26"><a href="#cb10-26"></a>    {</span>
+<span id="cb10-27"><a href="#cb10-27"></a>        o &lt;&lt; <span class="bu">std::</span>setw(<span class="dv">10</span>) &lt;&lt; j+<span class="dv">1</span> &lt;&lt; <span class="st">&quot; -- &quot;</span>;</span>
+<span id="cb10-28"><a href="#cb10-28"></a>        <span class="co">// so we iterate over all taxa to print the actual data matrix</span></span>
+<span id="cb10-29"><a href="#cb10-29"></a>        <span class="cf">for</span> (<span class="dt">int</span> i=<span class="dv">0</span>; i&lt;num_taxa; i++)</span>
+<span id="cb10-30"><a href="#cb10-30"></a>        {</span>
+<span id="cb10-31"><a href="#cb10-31"></a>            o &lt;&lt; <span class="bu">std::</span>setw(<span class="dv">3</span>) &lt;&lt; data_matrix[i][j] &lt;&lt; <span class="st">&quot; &quot;</span>;</span>
+<span id="cb10-32"><a href="#cb10-32"></a>        }</span>
+<span id="cb10-33"><a href="#cb10-33"></a>        o &lt;&lt; <span class="ch">&#39;</span><span class="sc">\n</span><span class="ch">&#39;</span>;</span>
+<span id="cb10-34"><a href="#cb10-34"></a>    }</span>
+<span id="cb10-35"><a href="#cb10-35"></a></span>
+<span id="cb10-36"><a href="#cb10-36"></a>    <span class="co">// make sure to flush the stream so that it is printed.</span></span>
+<span id="cb10-37"><a href="#cb10-37"></a>    o.flush();</span>
+<span id="cb10-38"><a href="#cb10-38"></a>}</span></code></pre></div>
+<p>As before with the <em>get</em> methods, we provide a set of <em>set</em> methods. In general, it is a good programming style to have your variables to be private. This means, no one can change them from the outside. Only through getters and setters can the variables be used.</p>
+<p>First, we add a set method for a specific character.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb11-1"><a href="#cb11-1"></a><span class="co">/**</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="co"> * Set the nucleotide for taxon i at site j.</span></span>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="co"> *</span></span>
+<span id="cb11-4"><a href="#cb11-4"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">x</span><span class="co">               The new nucleotide.</span></span>
+<span id="cb11-5"><a href="#cb11-5"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">i</span><span class="co">               The index of the taxon.</span></span>
+<span id="cb11-6"><a href="#cb11-6"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">j</span><span class="co">               The index of the site.</span></span>
+<span id="cb11-7"><a href="#cb11-7"></a><span class="co"> */</span></span>
+<span id="cb11-8"><a href="#cb11-8"></a><span class="dt">void</span> Alignment::setNucleotide(<span class="dt">char</span> x, <span class="dt">size_t</span> i, <span class="dt">size_t</span> j)</span>
+<span id="cb11-9"><a href="#cb11-9"></a>{</span>
+<span id="cb11-10"><a href="#cb11-10"></a>    <span class="co">// set the character of our internal data matrix</span></span>
+<span id="cb11-11"><a href="#cb11-11"></a>    data_matrix[i][j] = x;</span>
+<span id="cb11-12"><a href="#cb11-12"></a>}</span></code></pre></div>
+<p>Then, we also add a set function for the entire matrix, just for convenience.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb12-1"><a href="#cb12-1"></a><span class="co">/**</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a><span class="co">* Set the data matrix.</span></span>
+<span id="cb12-3"><a href="#cb12-3"></a><span class="co">*</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a><span class="co">* </span><span class="an">@param</span><span class="co">   </span><span class="cv">m</span><span class="co">               The new data matrix.</span></span>
+<span id="cb12-5"><a href="#cb12-5"></a><span class="co">*/</span></span>
+<span id="cb12-6"><a href="#cb12-6"></a><span class="dt">void</span> Alignment::setMatrix(<span class="at">const</span> <span class="bu">std::</span>vector&lt;<span class="bu">std::</span>vector&lt;<span class="dt">char</span>&gt; &gt; &amp;m)</span>
+<span id="cb12-7"><a href="#cb12-7"></a>{</span>
+<span id="cb12-8"><a href="#cb12-8"></a>    <span class="co">// set the internal variable</span></span>
+<span id="cb12-9"><a href="#cb12-9"></a>    data_matrix = m;</span>
+<span id="cb12-10"><a href="#cb12-10"></a>}</span></code></pre></div>
+<p>And another set function for the taxon names.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb13-1"><a href="#cb13-1"></a><span class="co">/**</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a><span class="co">* Set the taxon names.</span></span>
+<span id="cb13-3"><a href="#cb13-3"></a><span class="co">*</span></span>
+<span id="cb13-4"><a href="#cb13-4"></a><span class="co">* </span><span class="an">@param</span><span class="co">   </span><span class="cv">n</span><span class="co">               A vector of strings with the new taxon names.</span></span>
+<span id="cb13-5"><a href="#cb13-5"></a><span class="co">*/</span></span>
+<span id="cb13-6"><a href="#cb13-6"></a><span class="dt">void</span> Alignment::setTaxonNames(<span class="at">const</span> <span class="bu">std::</span>vector&lt;<span class="bu">std::</span>string&gt; &amp;n)</span>
+<span id="cb13-7"><a href="#cb13-7"></a>{</span>
+<span id="cb13-8"><a href="#cb13-8"></a>    taxon_names = n;</span>
+<span id="cb13-9"><a href="#cb13-9"></a>}</span></code></pre></div>
+<p>This was it for our alignment class. If you finished with this, you can take a coffee break :)</p>
+<h2 id="section-1.2-a-phylip-format-alignment-reader">Section 1.2: A <em>phylip</em> format alignment reader</h2>
+<p>In this next section we write a reader class to read in alignments in <em>phylip</em> format.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb14-1"><a href="#cb14-1"></a><span class="pp">#ifndef AlignmentReader_h</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a><span class="pp">#define AlignmentReader_h</span></span>
+<span id="cb14-3"><a href="#cb14-3"></a></span>
+<span id="cb14-4"><a href="#cb14-4"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb14-5"><a href="#cb14-5"></a><span class="pp">#include </span><span class="im">&lt;string&gt;</span></span>
+<span id="cb14-6"><a href="#cb14-6"></a></span>
+<span id="cb14-7"><a href="#cb14-7"></a><span class="co">/**</span></span>
+<span id="cb14-8"><a href="#cb14-8"></a><span class="co">* </span><span class="an">\class</span><span class="co"> </span><span class="cv">AlignmentReader</span></span>
+<span id="cb14-9"><a href="#cb14-9"></a><span class="co">*</span></span>
+<span id="cb14-10"><a href="#cb14-10"></a><span class="co">* </span><span class="an">\brief</span><span class="co"> A reader for alignments from files in different formats.</span></span>
+<span id="cb14-11"><a href="#cb14-11"></a><span class="co">*</span></span>
+<span id="cb14-12"><a href="#cb14-12"></a><span class="co">* This class provides the functionality of a reader for alignments.</span></span>
+<span id="cb14-13"><a href="#cb14-13"></a><span class="co">* The alignments will be read from file. Currently, we support only</span></span>
+<span id="cb14-14"><a href="#cb14-14"></a><span class="co">* the Phylip data format.</span></span>
+<span id="cb14-15"><a href="#cb14-15"></a><span class="co">*</span></span>
+<span id="cb14-16"><a href="#cb14-16"></a><span class="co">*</span></span>
+<span id="cb14-17"><a href="#cb14-17"></a><span class="co">* </span><span class="an">\author</span><span class="co"> Sebastian Höhna</span></span>
+<span id="cb14-18"><a href="#cb14-18"></a><span class="co">*</span></span>
+<span id="cb14-19"><a href="#cb14-19"></a><span class="co">*/</span></span>
+<span id="cb14-20"><a href="#cb14-20"></a><span class="kw">class</span> AlignmentReader {</span>
+<span id="cb14-21"><a href="#cb14-21"></a></span>
+<span id="cb14-22"><a href="#cb14-22"></a><span class="kw">public</span>:</span>
+<span id="cb14-23"><a href="#cb14-23"></a>    AlignmentReader(<span class="dt">void</span>);</span>
+<span id="cb14-24"><a href="#cb14-24"></a>    ~AlignmentReader(<span class="dt">void</span>);</span>
+<span id="cb14-25"><a href="#cb14-25"></a></span>
+<span id="cb14-26"><a href="#cb14-26"></a>    Alignment                           readPhylip(<span class="at">const</span> <span class="bu">std::</span>string &amp;fn);</span>
+<span id="cb14-27"><a href="#cb14-27"></a></span>
+<span id="cb14-28"><a href="#cb14-28"></a>};</span>
+<span id="cb14-29"><a href="#cb14-29"></a></span>
+<span id="cb14-30"><a href="#cb14-30"></a></span>
+<span id="cb14-31"><a href="#cb14-31"></a><span class="pp">#endif </span><span class="co">/* Alignment_h */</span></span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb15-1"><a href="#cb15-1"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span><span class="pp">     </span><span class="co">// for std::cerr</span></span>
+<span id="cb15-2"><a href="#cb15-2"></a><span class="pp">#include </span><span class="im">&lt;sstream&gt;</span><span class="pp">      </span><span class="co">// for spliting strings</span></span>
+<span id="cb15-3"><a href="#cb15-3"></a><span class="pp">#include </span><span class="im">&lt;fstream&gt;</span><span class="pp">      </span><span class="co">// for reading from a file</span></span>
+<span id="cb15-4"><a href="#cb15-4"></a></span>
+<span id="cb15-5"><a href="#cb15-5"></a><span class="pp">#include </span><span class="im">&lt;string&gt;</span></span>
+<span id="cb15-6"><a href="#cb15-6"></a><span class="pp">#include </span><span class="im">&lt;vector&gt;</span></span>
+<span id="cb15-7"><a href="#cb15-7"></a></span>
+<span id="cb15-8"><a href="#cb15-8"></a><span class="pp">#include </span><span class="im">&quot;Alignment.h&quot;</span></span>
+<span id="cb15-9"><a href="#cb15-9"></a><span class="pp">#include </span><span class="im">&quot;AlignmentReader.h&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb16-1"><a href="#cb16-1"></a><span class="co">/**</span></span>
+<span id="cb16-2"><a href="#cb16-2"></a><span class="co"> * A default constructor that does nothing besides creating an object of this class.</span></span>
+<span id="cb16-3"><a href="#cb16-3"></a><span class="co"> */</span></span>
+<span id="cb16-4"><a href="#cb16-4"></a>AlignmentReader::AlignmentReader( <span class="dt">void</span> )</span>
+<span id="cb16-5"><a href="#cb16-5"></a>{</span>
+<span id="cb16-6"><a href="#cb16-6"></a>    <span class="co">// nothing to initalize</span></span>
+<span id="cb16-7"><a href="#cb16-7"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb17-1"><a href="#cb17-1"></a><span class="co">/**</span></span>
+<span id="cb17-2"><a href="#cb17-2"></a><span class="co">* A default destructor that does nothing because we don&#39;t have any allocated variables.</span></span>
+<span id="cb17-3"><a href="#cb17-3"></a><span class="co">*/</span></span>
+<span id="cb17-4"><a href="#cb17-4"></a>AlignmentReader::~AlignmentReader( <span class="dt">void</span> )</span>
+<span id="cb17-5"><a href="#cb17-5"></a>{</span>
+<span id="cb17-6"><a href="#cb17-6"></a>    <span class="co">// nothing to delete here</span></span>
+<span id="cb17-7"><a href="#cb17-7"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb18-1"><a href="#cb18-1"></a>Alignment AlignmentReader::readPhylip(<span class="at">const</span> <span class="bu">std::</span>string &amp;fn)</span>
+<span id="cb18-2"><a href="#cb18-2"></a>{</span>
+<span id="cb18-3"><a href="#cb18-3"></a></span>
+<span id="cb18-4"><a href="#cb18-4"></a>    <span class="co">// first, we open the file stream</span></span>
+<span id="cb18-5"><a href="#cb18-5"></a>    <span class="co">// this uses a ifstream object and needs the filesname</span></span>
+<span id="cb18-6"><a href="#cb18-6"></a>    <span class="bu">std::</span>ifstream in_stream(fn.c_str());</span>
+<span id="cb18-7"><a href="#cb18-7"></a>    <span class="co">// let&#39;s see if the stream was opened</span></span>
+<span id="cb18-8"><a href="#cb18-8"></a>    <span class="cf">if</span> (!in_stream)</span>
+<span id="cb18-9"><a href="#cb18-9"></a>    {</span>
+<span id="cb18-10"><a href="#cb18-10"></a>        <span class="co">// it was not opened, so the file did not exist</span></span>
+<span id="cb18-11"><a href="#cb18-11"></a>        <span class="co">// we need to tell the user and terminate</span></span>
+<span id="cb18-12"><a href="#cb18-12"></a>        <span class="bu">std::</span>cerr &lt;&lt; <span class="st">&quot;Cannot open file </span><span class="sc">\&quot;</span><span class="st">&quot;</span> + fn + <span class="st">&quot;</span><span class="sc">\&quot;</span><span class="st">&quot;</span> &lt;&lt; <span class="bu">std::</span>endl;</span>
+<span id="cb18-13"><a href="#cb18-13"></a>        exit(<span class="dv">1</span>);</span>
+<span id="cb18-14"><a href="#cb18-14"></a>    }</span>
+<span id="cb18-15"><a href="#cb18-15"></a></span>
+<span id="cb18-16"><a href="#cb18-16"></a>    <span class="co">// now we can initialize some helper variables</span></span>
+<span id="cb18-17"><a href="#cb18-17"></a>    <span class="co">// we a string for the current line of the file</span></span>
+<span id="cb18-18"><a href="#cb18-18"></a>    <span class="bu">std::</span>string linestring = <span class="st">&quot;&quot;</span>;</span>
+<span id="cb18-19"><a href="#cb18-19"></a>    <span class="co">// we also need the current taxon number</span></span>
+<span id="cb18-20"><a href="#cb18-20"></a>    <span class="dt">size_t</span> taxon_num = <span class="dv">0</span>;</span>
+<span id="cb18-21"><a href="#cb18-21"></a>    <span class="co">// the number of taxa</span></span>
+<span id="cb18-22"><a href="#cb18-22"></a>    <span class="dt">size_t</span> num_taxa = <span class="dv">0</span>;</span>
+<span id="cb18-23"><a href="#cb18-23"></a>    <span class="co">// the number of sites</span></span>
+<span id="cb18-24"><a href="#cb18-24"></a>    <span class="dt">size_t</span> num_sites = <span class="dv">0</span>;</span>
+<span id="cb18-25"><a href="#cb18-25"></a>    <span class="co">// and if all the taxon names have been read in</span></span>
+<span id="cb18-26"><a href="#cb18-26"></a>    <span class="dt">bool</span> taxon_names_read = <span class="kw">false</span>;</span>
+<span id="cb18-27"><a href="#cb18-27"></a>    <span class="co">// finally we also need a vector of strings for the taxon names</span></span>
+<span id="cb18-28"><a href="#cb18-28"></a>    <span class="bu">std::</span>vector&lt;<span class="bu">std::</span>string&gt; taxon_names;</span>
+<span id="cb18-29"><a href="#cb18-29"></a></span>
+<span id="cb18-30"><a href="#cb18-30"></a>    <span class="co">// first, we need to read the number of taxa and sites</span></span>
+<span id="cb18-31"><a href="#cb18-31"></a>    <span class="co">// this should be the first line, so we load the first line into the linestring variable</span></span>
+<span id="cb18-32"><a href="#cb18-32"></a>    getline(in_stream, linestring);</span>
+<span id="cb18-33"><a href="#cb18-33"></a></span>
+<span id="cb18-34"><a href="#cb18-34"></a>    <span class="co">// now we split the line into tokens separated by a white space</span></span>
+<span id="cb18-35"><a href="#cb18-35"></a>    <span class="co">// this assumme that the number of taxa and sites are provided in this line with only whitespaces separating them</span></span>
+<span id="cb18-36"><a href="#cb18-36"></a>    <span class="co">// we create stringstream for this</span></span>
+<span id="cb18-37"><a href="#cb18-37"></a>    <span class="bu">std::</span>istringstream word_iss(linestring);</span>
+<span id="cb18-38"><a href="#cb18-38"></a>    <span class="co">// and then separate the line by whitespaces</span></span>
+<span id="cb18-39"><a href="#cb18-39"></a>    <span class="bu">std::</span>vector&lt;<span class="bu">std::</span>string&gt; words((<span class="bu">std::</span>istream_iterator&lt;<span class="bu">std::</span>string&gt;(word_iss)),</span>
+<span id="cb18-40"><a href="#cb18-40"></a>                                    <span class="bu">std::</span>istream_iterator&lt;<span class="bu">std::</span>string&gt;());</span>
+<span id="cb18-41"><a href="#cb18-41"></a></span>
+<span id="cb18-42"><a href="#cb18-42"></a>    <span class="co">// now we store the number of taxa and sites into our variables</span></span>
+<span id="cb18-43"><a href="#cb18-43"></a>    num_taxa = <span class="bu">std::</span>atoi( words[<span class="dv">0</span>].c_str() );</span>
+<span id="cb18-44"><a href="#cb18-44"></a>    num_sites = <span class="bu">std::</span>atoi( words[<span class="dv">1</span>].c_str() );</span>
+<span id="cb18-45"><a href="#cb18-45"></a>    <span class="co">// with these two, we can now create our alignment</span></span>
+<span id="cb18-46"><a href="#cb18-46"></a>    Alignment this_alignment = Alignment(num_taxa, num_sites);</span>
+<span id="cb18-47"><a href="#cb18-47"></a>    <span class="co">// for the actual data, and for convenience, we create a data matrix that has num_taxa rows but no columns yet</span></span>
+<span id="cb18-48"><a href="#cb18-48"></a>    <span class="bu">std::</span>vector&lt;<span class="bu">std::</span>vector&lt;<span class="dt">char</span>&gt; &gt; matrix = <span class="bu">std::</span>vector&lt;<span class="bu">std::</span>vector&lt;<span class="dt">char</span>&gt; &gt;( num_taxa, <span class="bu">std::</span>vector&lt;<span class="dt">char</span>&gt;() );</span>
+<span id="cb18-49"><a href="#cb18-49"></a></span>
+<span id="cb18-50"><a href="#cb18-50"></a>    <span class="co">// then we start to loop over the entire file</span></span>
+<span id="cb18-51"><a href="#cb18-51"></a>    <span class="co">// we do this with an endless loop which we will stop when the end of file has been reached.</span></span>
+<span id="cb18-52"><a href="#cb18-52"></a>    <span class="cf">while</span> ( <span class="kw">true</span> )</span>
+<span id="cb18-53"><a href="#cb18-53"></a>    {</span>
+<span id="cb18-54"><a href="#cb18-54"></a>        <span class="co">// first, check if there are more lines to be read</span></span>
+<span id="cb18-55"><a href="#cb18-55"></a>        <span class="dt">bool</span> more_lines_in_file = getline(in_stream, linestring).good();</span>
+<span id="cb18-56"><a href="#cb18-56"></a>        <span class="co">// then, we skip forward over any empty line</span></span>
+<span id="cb18-57"><a href="#cb18-57"></a>        <span class="cf">while</span> ( more_lines_in_file &amp;&amp; linestring == <span class="st">&quot;&quot;</span> )</span>
+<span id="cb18-58"><a href="#cb18-58"></a>        {</span>
+<span id="cb18-59"><a href="#cb18-59"></a>            <span class="co">// check again if we reached the end of file</span></span>
+<span id="cb18-60"><a href="#cb18-60"></a>            more_lines_in_file = getline(in_stream, linestring).good();</span>
+<span id="cb18-61"><a href="#cb18-61"></a>        }</span>
+<span id="cb18-62"><a href="#cb18-62"></a>        <span class="co">// if we reached the end of the file, then we should break out of endless loop</span></span>
+<span id="cb18-63"><a href="#cb18-63"></a>        <span class="cf">if</span> ( more_lines_in_file == <span class="kw">false</span> )</span>
+<span id="cb18-64"><a href="#cb18-64"></a>        {</span>
+<span id="cb18-65"><a href="#cb18-65"></a>            <span class="co">// this break command stops the endless loop</span></span>
+<span id="cb18-66"><a href="#cb18-66"></a>            <span class="cf">break</span>;</span>
+<span id="cb18-67"><a href="#cb18-67"></a>        }</span>
+<span id="cb18-68"><a href="#cb18-68"></a></span>
+<span id="cb18-69"><a href="#cb18-69"></a>        <span class="co">// now we split the line by whitespaces using again a stringstream</span></span>
+<span id="cb18-70"><a href="#cb18-70"></a>        <span class="bu">std::</span>istringstream iss(linestring);</span>
+<span id="cb18-71"><a href="#cb18-71"></a>        <span class="bu">std::</span>vector&lt;<span class="bu">std::</span>string&gt; tokens((<span class="bu">std::</span>istream_iterator&lt;<span class="bu">std::</span>string&gt;(iss)),</span>
+<span id="cb18-72"><a href="#cb18-72"></a>                                        <span class="bu">std::</span>istream_iterator&lt;<span class="bu">std::</span>string&gt;());</span>
+<span id="cb18-73"><a href="#cb18-73"></a></span>
+<span id="cb18-74"><a href="#cb18-74"></a>        <span class="co">// we then iterate over all the tokens/words that we received.</span></span>
+<span id="cb18-75"><a href="#cb18-75"></a>        <span class="cf">for</span> ( <span class="dt">int</span> i=<span class="dv">0</span>; i&lt;tokens.size(); i++ )</span>
+<span id="cb18-76"><a href="#cb18-76"></a>        {</span>
+<span id="cb18-77"><a href="#cb18-77"></a>            <span class="co">// the first word should be the taxon name</span></span>
+<span id="cb18-78"><a href="#cb18-78"></a>            <span class="co">// this should only be done if we haven&#39;t read all taxon names in interleaved file format</span></span>
+<span id="cb18-79"><a href="#cb18-79"></a>            <span class="cf">if</span> ( i == <span class="dv">0</span> &amp;&amp; taxon_names_read == <span class="kw">false</span> )</span>
+<span id="cb18-80"><a href="#cb18-80"></a>            {</span>
+<span id="cb18-81"><a href="#cb18-81"></a>                <span class="co">// so we push the first word to the end of the names of the taxa</span></span>
+<span id="cb18-82"><a href="#cb18-82"></a>                taxon_names.push_back(tokens[i]);</span>
+<span id="cb18-83"><a href="#cb18-83"></a>            }</span>
+<span id="cb18-84"><a href="#cb18-84"></a>            <span class="cf">else</span></span>
+<span id="cb18-85"><a href="#cb18-85"></a>            {</span>
+<span id="cb18-86"><a href="#cb18-86"></a>                <span class="co">// otherwise, we have an actual sequence</span></span>
+<span id="cb18-87"><a href="#cb18-87"></a>                <span class="at">const</span> <span class="bu">std::</span>string &amp;the_sequence = tokens[i];</span>
+<span id="cb18-88"><a href="#cb18-88"></a>                <span class="co">// so we add the sequence to the end of the sequence for this taxon</span></span>
+<span id="cb18-89"><a href="#cb18-89"></a>                <span class="co">// thus, we append our data matrix using the insert function</span></span>
+<span id="cb18-90"><a href="#cb18-90"></a>                matrix[taxon_num].insert(matrix[taxon_num].end(), the_sequence.begin(), the_sequence.end());</span>
+<span id="cb18-91"><a href="#cb18-91"></a>            }</span>
+<span id="cb18-92"><a href="#cb18-92"></a>        }</span>
+<span id="cb18-93"><a href="#cb18-93"></a></span>
+<span id="cb18-94"><a href="#cb18-94"></a>        <span class="co">// since we finished we this line, we need to move on to the next taxon.</span></span>
+<span id="cb18-95"><a href="#cb18-95"></a>        taxon_num++;</span>
+<span id="cb18-96"><a href="#cb18-96"></a>        <span class="co">// if we have finished with all taxa, then we start with the first one again (for interleaved files)</span></span>
+<span id="cb18-97"><a href="#cb18-97"></a>        <span class="cf">if</span> ( taxon_num == num_taxa )</span>
+<span id="cb18-98"><a href="#cb18-98"></a>        {</span>
+<span id="cb18-99"><a href="#cb18-99"></a>            <span class="co">// hence, set the taxon index to 0 (we start counting with 0)</span></span>
+<span id="cb18-100"><a href="#cb18-100"></a>            taxon_num = <span class="dv">0</span>;</span>
+<span id="cb18-101"><a href="#cb18-101"></a>            <span class="co">// and remember that we read all taxon names</span></span>
+<span id="cb18-102"><a href="#cb18-102"></a>            taxon_names_read = <span class="kw">true</span>;</span>
+<span id="cb18-103"><a href="#cb18-103"></a>        }</span>
+<span id="cb18-104"><a href="#cb18-104"></a></span>
+<span id="cb18-105"><a href="#cb18-105"></a>    } <span class="co">// the end of our while ( true ) loop</span></span>
+<span id="cb18-106"><a href="#cb18-106"></a></span>
+<span id="cb18-107"><a href="#cb18-107"></a></span>
+<span id="cb18-108"><a href="#cb18-108"></a>    <span class="co">// always remember to close the file</span></span>
+<span id="cb18-109"><a href="#cb18-109"></a>    in_stream.close();</span>
+<span id="cb18-110"><a href="#cb18-110"></a></span>
+<span id="cb18-111"><a href="#cb18-111"></a>    <span class="co">// now we propagate the taxon names and data matrix into our alignment</span></span>
+<span id="cb18-112"><a href="#cb18-112"></a>    this_alignment.setTaxonNames( taxon_names );</span>
+<span id="cb18-113"><a href="#cb18-113"></a>    this_alignment.setMatrix( matrix );</span>
+<span id="cb18-114"><a href="#cb18-114"></a></span>
+<span id="cb18-115"><a href="#cb18-115"></a>    <span class="co">// and finally return this new alignment</span></span>
+<span id="cb18-116"><a href="#cb18-116"></a>    <span class="cf">return</span> this_alignment;</span>
+<span id="cb18-117"><a href="#cb18-117"></a>}</span></code></pre></div>
+<h2 id="section-1.4-putting-it-together">Section 1.4: Putting it together</h2>
+<p>Finally, so that you can test your program, you need to add your new classes to the main function. Change your main class to something like this.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb19-1"><a href="#cb19-1"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span><span class="pp">     </span><span class="co">// for std::cout</span></span>
+<span id="cb19-2"><a href="#cb19-2"></a></span>
+<span id="cb19-3"><a href="#cb19-3"></a><span class="pp">#include </span><span class="im">&quot;Alignment.h&quot;</span></span>
+<span id="cb19-4"><a href="#cb19-4"></a><span class="pp">#include </span><span class="im">&quot;AlignmentReader.h&quot;</span></span>
+<span id="cb19-5"><a href="#cb19-5"></a></span>
+<span id="cb19-6"><a href="#cb19-6"></a><span class="dt">int</span> main (<span class="dt">int</span> argc, <span class="dt">char</span>* argv[]) {</span>
+<span id="cb19-7"><a href="#cb19-7"></a></span>
+<span id="cb19-8"><a href="#cb19-8"></a>    <span class="co">// print header</span></span>
+<span id="cb19-9"><a href="#cb19-9"></a>    <span class="bu">std::</span>cout &lt;&lt; <span class="st">&quot;BabyBayes v1.0</span><span class="sc">\n</span><span class="st">&quot;</span>;</span>
+<span id="cb19-10"><a href="#cb19-10"></a>    <span class="bu">std::</span>cout &lt;&lt; <span class="st">&quot;Sebastian Höhna</span><span class="sc">\n</span><span class="st">&quot;</span>;</span>
+<span id="cb19-11"><a href="#cb19-11"></a>    <span class="bu">std::</span>cout &lt;&lt; <span class="st">&quot;Ludwig-Maximilians-Universität München</span><span class="sc">\n</span><span class="st">&quot;</span>;</span>
+<span id="cb19-12"><a href="#cb19-12"></a>    <span class="bu">std::</span>cout &lt;&lt; <span class="st">&quot;</span><span class="sc">\n\n</span><span class="st">&quot;</span>;</span>
+<span id="cb19-13"><a href="#cb19-13"></a></span>
+<span id="cb19-14"><a href="#cb19-14"></a></span>
+<span id="cb19-15"><a href="#cb19-15"></a>    <span class="co">// read the data</span></span>
+<span id="cb19-16"><a href="#cb19-16"></a>    AlignmentReader reader;</span>
+<span id="cb19-17"><a href="#cb19-17"></a>    Alignment my_alignment = reader.readPhylip( <span class="st">&quot;primates.phy&quot;</span> );</span>
+<span id="cb19-18"><a href="#cb19-18"></a>    my_alignment.print(<span class="bu">std::</span>cout);</span>
+<span id="cb19-19"><a href="#cb19-19"></a></span>
+<span id="cb19-20"><a href="#cb19-20"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb19-21"><a href="#cb19-21"></a>}</span></code></pre></div>
+<p>Make sure that your <em>Makefile</em> has the correct source and object files:</p>
+<pre><code>SRC       = main.cpp Alignment.cpp AlignmentReader.cpp
+OBJECTS   = main.o  Alignment.o AlignmentReader.o</code></pre>
+<p>Then you can compile BabyBayes using your Makefile and run it. See what it does!</p>
+<div>
+<h2 id="references">References</h2>
+</div>
+</body>
+</html>
