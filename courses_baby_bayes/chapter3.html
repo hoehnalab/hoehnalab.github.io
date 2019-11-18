@@ -1,0 +1,1164 @@
+---
+layout: chapter
+title: Trees
+output:
+  html_document:
+    toc: true
+    toc_float: true
+pdf: true
+---
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Trees</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style>
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Trees</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#chapter-3-trees">Chapter 3: Trees</a><ul>
+<li><a href="#section-3.1-background-information">Section 3.1: Background information</a><ul>
+<li><a href="#subsection-3.1.1-the-basic-idea-of-representing-phylogenetic-trees-in-computer-memory">Subsection 3.1.1: The basic idea of representing phylogenetic trees in computer memory</a></li>
+<li><a href="#subsection-3.1.2-the-newick-tree-format">Subsection 3.1.2: The <em>Newick tree format</em></a></li>
+<li><a href="#subsection-3.1.3-working-with-dynamically-allocated-memory">Subsection 3.1.3: Working with dynamically allocated memory</a></li>
+</ul></li>
+<li><a href="#section-3.2-the-treenode-class">Section 3.2: The <em>TreeNode</em> class</a><ul>
+<li><a href="#subsection-3.2.1-the-treenode.h-file">Subsection 3.2.1 The <em>TreeNode.h</em> file</a></li>
+<li><a href="#subsection-3.2.2-the-treenode.cpp-file">Subsection 3.2.2 The <em>TreeNode.cpp</em> file</a></li>
+</ul></li>
+<li><a href="#section-3.3-the-tree-class">Section 3.3: The <em>Tree</em> class</a><ul>
+<li><a href="#subsection-3.3.1-the-tree.h-file">Subsection 3.3.1: The <em>Tree.h</em> file</a></li>
+<li><a href="#subsection-3.3.2-the-tree.cpp-file">Subsection 3.3.2: The <em>Tree.cpp</em> file</a></li>
+</ul></li>
+<li><a href="#section-3.4-the-newicktreereader">Section 3.4: The <em>NewickTreeReader</em></a><ul>
+<li><a href="#subsection-3.4.1-the-newicktreereader.h-file">Subsection 3.4.1: The <em>NewickTreeReader.h</em> file</a></li>
+<li><a href="#subsection-3.4.2-the-newicktreereader.cpp-file">Subsection 3.4.2: The <em>NewickTreeReader.cpp</em> file</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<div>
+<p><a href="{{site.baseurl}}/pdf/chapter3.pdf">pdf version</a></p>
+</div>
+<h1 id="chapter-3-trees">Chapter 3: Trees</h1>
+<h2 id="section-3.1-background-information">Section 3.1: Background information</h2>
+<h3 id="subsection-3.1.1-the-basic-idea-of-representing-phylogenetic-trees-in-computer-memory">Subsection 3.1.1: The basic idea of representing phylogenetic trees in computer memory</h3>
+<figure>
+<img src="{{site.baseurl}}/images/treeIdea.png" alt="" /><figcaption>Figure 3.1. The nodes of a tree are objects, each of which contains information on its neighbors. The boxes represent the node object and the numbers next to each box, such as <em>0x01</em> represent the memory address of each object.</figcaption>
+</figure>
+<p>Figure 3.1a shows an example of a phylogenetic tree of three species. The species are named <em>Sp1</em>, <em>Sp2</em>, and <em>Sp3</em>. The branches of the tree have lengths in some unit, for example, in terms of expected number of substitutions per site or time. The branch lengths are also indicated on the tree. A tree is a complex thing consisting of nodes and branches. The nodes are represented by the circles on the tree of Figure 3.1a whereas the branches are the lines between the nodes. The tree of Figure 3.1a is rooted; there is a direction to tree with some nodes occurring before others. (The terminology we use to describe trees as consisting of <em>nodes</em> and <em>branches</em> is one that comes from the field of evolutionary biology. Mathematicians and computer scientists, however, see a tree as a type of graph, which has vertices and edges, which are equivalent to nodes and branches, respectively.) One of the nodes, the one furthest from the tips of the tree, is denoted the <em>root</em> node.</p>
+<p>How can we represent such a complicated object in computer memory? The idea is to represent a tree as a series of nodes, each of which has information on its neighbors. Figure 3.1b illustrates the basic idea. Each node on the tree is represented as a box in Figure 3.1b, but would be an object in C++. The address of each node is indicated next to each node in Figure 3.1b. You can see that the ancestor of the node with address <em>0x01</em>, which represents <em>Sp1</em>, is the node with address <em>0x04</em>, which happens to be the ancestor of <em>Sp1</em> and <em>Sp2</em>.</p>
+<p>Do you see why we need to use pointers here? It is because we need to point to the exact same variable multiple times. For example, both tip nodes <span class="math inline"><em>S</em><em>p</em>1</span> and <span class="math inline"><em>S</em><em>p</em>2</span> point to their ancestor/parent, the node at the memory address <em>0x04</em>. Furthermore, the root node has this node as its left child and thus points to the memory address <em>0x04</em> too.</p>
+<p>This connection between multiple object is best achieved with pointers. However, using pointers come with more burden. We need to allocated and deallocated the memory ourselves. We will explain more about allocation and deallocation below.</p>
+<p>The general strategy we will take in this chapter is to build up the machinery we need to represent and manipulate trees in computer memory. We will start with the implementation of a <em>TreeNode</em> class, which will represent the nodes of the tree (i.e., the boxes of Figure 3.1b). We will also implement a <em>Tree</em> class that will manage the nodes and allow us to manipulate the tree.</p>
+<h3 id="subsection-3.1.2-the-newick-tree-format">Subsection 3.1.2: The <em>Newick tree format</em></h3>
+<p>The <em>Newick tree format</em> was designed and adopted by several of the early developers of phylogeny software packages — J. Felsenstein, D. Swofford, F. J. Rohlf, C. Meacham, J. Archie, and W. Maddison — at Newick’s restaurant in Durhan, New Hampshire, on June 24, 1986. They wanted a standardized format describing trees so that any of their programs could read trees produced by another program. The meeting at the restaurant was motivated by conversations at the 1986 Evolution Meetings (the joint meetings of the Society of the Systematic Biologists, the American Society of Naturalists, and the Society for the Study of Evolution). They hunkered down to work at Newick’s restaurant while the meeting was underway. The Newick tree format was the result. According to D. Swofford, the meal at Newick’s restaurant was a good one.</p>
+<p>The Newick format represents trees using parentheses. For example, the tree of Figure 3.1a can be represented as <br /><span class="math display">((Sp1, Sp2), Sp3)</span><br /> This format has several advantages: a single tree can be written to a plain text file on a single line; trees can be directly created in computer memory by reading the Newick string from left to right; and it requires few character to represent a tree.</p>
+<p>We will use the <em>Newick tree format</em> here both for printing and reading trees from a file.</p>
+<h3 id="subsection-3.1.3-working-with-dynamically-allocated-memory">Subsection 3.1.3: Working with dynamically allocated memory</h3>
+<p>In C++, we dynamically allocate memory using the <em>new</em> operator. This will create a dynamically allocated memory space for the variable. Dynamically in this context means that it happens while the program runs and the actual size of the memory might not be known when you compile your software. You have to free dynamically allocated memory with the command <em>delete my_pointer</em>.</p>
+<p>Every class that has dynamically allocated memory as one of their member variables, must to implement these three functions:</p>
+<ul>
+<li><strong>A copy constructor</strong> The copy constructor creates a new copy of the variable with the same value. The copy constructor is called, for example, when you use statements such as <em>TreeNode b = a</em> where <em>a</em> was some other <em>TreeNode</em>. The copy constructor must create deep copies of all dynamically allocated member variables. Bu default, the C++ compiler creates a default copy constructor that simply creates a shallow copy of all member variables.</li>
+<li><strong>A destructor</strong> The destructor must free all dynamically allocated member variables.</li>
+<li><strong>An assignment operator</strong> The assignment operator is called when you use <em>b = a</em> and both <em>b</em> and <em>a</em> are variables that did exist before. You must ensure that the assignment operator creates proper deep assignments (the same as the copy constructor). Bu default, the C++ compiler creates a default assignment operator that simply creates a shallow assignment of all member variables.</li>
+</ul>
+<p>The reason why the deep copies are so important is that otherwise two objects point to exactly the same memory address. Which of the two is responsible for deleting the memory? If the memory is not properly deleted, then you will have memory leaks. What happens if the first deletes the memory while the second still needs it? If the memory is deleted too soon, you will have segmentation faults.</p>
+<p>In our <em>TreeNode</em> class we will assume that the parent <em>owns</em> the children. Therefore, the parent has to create deep copies for the children and need to make sure that the children are deleted when needed.</p>
+<h2 id="section-3.2-the-treenode-class">Section 3.2: The <em>TreeNode</em> class</h2>
+<h3 id="subsection-3.2.1-the-treenode.h-file">Subsection 3.2.1 The <em>TreeNode.h</em> file</h3>
+<p>We start with writing the definition of the <em>TreeNode</em> class. Create a new file called <em>TreeNode.h</em> and copy the code below into the file.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1"></a><span class="pp">#ifndef TreeNode_h</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="pp">#include </span><span class="im">&lt;string&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="co">/**</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="co"> * </span><span class="an">\class</span><span class="co"> </span><span class="cv">TreeNode</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="co"> *</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="co"> * </span><span class="an">\brief</span><span class="co"> The node class used in phylogenetic tree.</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="co"> *</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="co"> * This class represent a tree node of a phylogenetic tree.</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="co"> * Here we store the main structure of the trees and all necessary methods.</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="co"> *</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="co"> *</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="co"> * </span><span class="an">\author</span><span class="co"> Sebastian Höhna</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="co"> *</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="co"> */</span></span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="kw">class</span> TreeNode {</span>
+<span id="cb1-19"><a href="#cb1-19"></a></span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="kw">public</span>:</span>
+<span id="cb1-21"><a href="#cb1-21"></a>    TreeNode(<span class="dt">void</span>);</span>
+<span id="cb1-22"><a href="#cb1-22"></a>    TreeNode(<span class="at">const</span> TreeNode&amp; tn);</span>
+<span id="cb1-23"><a href="#cb1-23"></a>    ~TreeNode(<span class="dt">void</span>);</span>
+<span id="cb1-24"><a href="#cb1-24"></a></span>
+<span id="cb1-25"><a href="#cb1-25"></a>    TreeNode&amp;                           <span class="kw">operator</span>=(<span class="at">const</span> TreeNode&amp; tn);</span>
+<span id="cb1-26"><a href="#cb1-26"></a></span>
+<span id="cb1-27"><a href="#cb1-27"></a>    <span class="dt">double</span>                              getAge(<span class="dt">void</span>) <span class="at">const</span>;</span>
+<span id="cb1-28"><a href="#cb1-28"></a>    <span class="dt">double</span>                              getBranchLength(<span class="dt">void</span>) <span class="at">const</span>;</span>
+<span id="cb1-29"><a href="#cb1-29"></a>    <span class="dt">int</span>                                 getIndex(<span class="dt">void</span>) <span class="at">const</span>;</span>
+<span id="cb1-30"><a href="#cb1-30"></a>    <span class="at">const</span> TreeNode*                     getLeftChild(<span class="dt">void</span>) <span class="at">const</span>;</span>
+<span id="cb1-31"><a href="#cb1-31"></a>    TreeNode*                           getLeftChild(<span class="dt">void</span>);</span>
+<span id="cb1-32"><a href="#cb1-32"></a>    <span class="at">const</span> <span class="bu">std::</span>string&amp;                  getName(<span class="dt">void</span>) <span class="at">const</span>;</span>
+<span id="cb1-33"><a href="#cb1-33"></a>    <span class="at">const</span> TreeNode*                     getParent(<span class="dt">void</span>) <span class="at">const</span>;</span>
+<span id="cb1-34"><a href="#cb1-34"></a>    TreeNode*                           getParent(<span class="dt">void</span>);</span>
+<span id="cb1-35"><a href="#cb1-35"></a>    <span class="at">const</span> TreeNode*                     getRightChild(<span class="dt">void</span>) <span class="at">const</span>;</span>
+<span id="cb1-36"><a href="#cb1-36"></a>    TreeNode*                           getRightChild(<span class="dt">void</span>);</span>
+<span id="cb1-37"><a href="#cb1-37"></a>    <span class="dt">bool</span>                                isRoot(<span class="dt">void</span>) <span class="at">const</span>;</span>
+<span id="cb1-38"><a href="#cb1-38"></a>    <span class="dt">bool</span>                                isTip(<span class="dt">void</span>) <span class="at">const</span>;</span>
+<span id="cb1-39"><a href="#cb1-39"></a>    <span class="dt">void</span>                                setAge(<span class="dt">double</span> a);</span>
+<span id="cb1-40"><a href="#cb1-40"></a>    <span class="dt">void</span>                                setLeftChild(TreeNode *n);</span>
+<span id="cb1-41"><a href="#cb1-41"></a>    <span class="dt">void</span>                                setIndex(<span class="dt">int</span> i);</span>
+<span id="cb1-42"><a href="#cb1-42"></a>    <span class="dt">void</span>                                setName(<span class="at">const</span> <span class="bu">std::</span>string&amp; n);</span>
+<span id="cb1-43"><a href="#cb1-43"></a>    <span class="dt">void</span>                                setParent(TreeNode* n);</span>
+<span id="cb1-44"><a href="#cb1-44"></a>    <span class="dt">void</span>                                setRightChild(TreeNode* n);</span>
+<span id="cb1-45"><a href="#cb1-45"></a></span>
+<span id="cb1-46"><a href="#cb1-46"></a><span class="kw">private</span>:</span>
+<span id="cb1-47"><a href="#cb1-47"></a></span>
+<span id="cb1-48"><a href="#cb1-48"></a>    TreeNode*                           parent;</span>
+<span id="cb1-49"><a href="#cb1-49"></a>    TreeNode*                           left;</span>
+<span id="cb1-50"><a href="#cb1-50"></a>    TreeNode*                           right;</span>
+<span id="cb1-51"><a href="#cb1-51"></a></span>
+<span id="cb1-52"><a href="#cb1-52"></a>    <span class="dt">int</span>                                 index;</span>
+<span id="cb1-53"><a href="#cb1-53"></a>    <span class="dt">double</span>                              age;</span>
+<span id="cb1-54"><a href="#cb1-54"></a>    <span class="bu">std::</span>string                         name;</span>
+<span id="cb1-55"><a href="#cb1-55"></a>};</span>
+<span id="cb1-56"><a href="#cb1-56"></a></span>
+<span id="cb1-57"><a href="#cb1-57"></a><span class="pp">#endif </span><span class="co">/* TreeNode_h */</span></span></code></pre></div>
+<p>Let’s deconstruct this class definition. First, this class contains six member variable: we have three pointers of type <em>TreeNode*</em>, an <em>int</em>, a <em>double</em>, and a <em>std::string</em>. The idea is that the <em>TreeNode</em> pointers will hold the memory address of the neighbors to the node. The <em>index</em> variable will simply be a number that will help us distinguish nodes (this will be useful later). The <em>age</em> variable will hold the age of the node. You can compute the branch length leading to a node by computing the difference between the age of the parent node and the age of the node itself. Finally, the <em>string</em> variable will hold the name of the node, if it happens to be a tip node that represents a species. Because we are using the <em>std::string</em> type in this class, we have to include the <em>string</em> header file. You can see we do this before the class definition:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1"></a><span class="pp">#include </span><span class="im">&lt;string&gt;</span></span></code></pre></div>
+<p>We made all of the member variables for this class <em>protected</em>; other classes cannot directly access these variables. We allow other parts of the code to change the instance variables with <em>public</em> functions. Each of these functions starts with <em>set</em> (e.g., <em>setParent</em>, which sets the <em>parent</em> variable). Similarly, we provide functions that start with <em>get</em> that will return the current value of the member variables. The <em>set</em> and <em>get</em> functions are called <strong>setters</strong> and <strong>getters</strong> among computer scientists.</p>
+<p>The last unfamiliar element of the <em>TreeNode</em> class is <strong>~TreeNode(void)</strong> (although we have used in our <em>Alignment</em> class before too). This looks a lot like our default constructor, except for the addition of the tilde symbol. The addition of the tilde indicates that this is a destructor function. As mentioned earlier, constructor functions are called when an object is created. The destructor function, as the name implies, is called just before the object is destroyed. Constructors are useful places to carry out initialization. Destructors, by contrast, are an excellent place to carry out clean-up activities just before an object is destroyed.</p>
+<h3 id="subsection-3.2.2-the-treenode.cpp-file">Subsection 3.2.2 The <em>TreeNode.cpp</em> file</h3>
+<p>Now let’s write the file that implements the <em>TreeNode</em> class. Create a new file called <em>TreeNode.cpp</em>. Add the following code.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1"></a><span class="pp">#include </span><span class="im">&quot;TreeNode.h&quot;</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="co">/**</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="co"> * Constructor of the tree node class.</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="co"> *</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a><span class="co"> * We initialize all variables with default values.</span></span>
+<span id="cb3-11"><a href="#cb3-11"></a><span class="co"> *</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a><span class="co"> */</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a>TreeNode::TreeNode( <span class="dt">void</span> ) :</span>
+<span id="cb3-14"><a href="#cb3-14"></a>    parent( NULL ),</span>
+<span id="cb3-15"><a href="#cb3-15"></a>    left( NULL ),</span>
+<span id="cb3-16"><a href="#cb3-16"></a>    right( NULL ),</span>
+<span id="cb3-17"><a href="#cb3-17"></a>    index( <span class="dv">0</span> ),</span>
+<span id="cb3-18"><a href="#cb3-18"></a>    age( <span class="fl">0.0</span> ),</span>
+<span id="cb3-19"><a href="#cb3-19"></a>    name( <span class="st">&quot;&quot;</span> )</span>
+<span id="cb3-20"><a href="#cb3-20"></a>{</span>
+<span id="cb3-21"><a href="#cb3-21"></a></span>
+<span id="cb3-22"><a href="#cb3-22"></a>}</span>
+<span id="cb3-23"><a href="#cb3-23"></a></span>
+<span id="cb3-24"><a href="#cb3-24"></a></span>
+<span id="cb3-25"><a href="#cb3-25"></a><span class="co">/**</span></span>
+<span id="cb3-26"><a href="#cb3-26"></a><span class="co"> * Copy constructor of the tree node class.</span></span>
+<span id="cb3-27"><a href="#cb3-27"></a><span class="co"> *</span></span>
+<span id="cb3-28"><a href="#cb3-28"></a><span class="co"> * We need to make sure that we get a deep copy of the children.</span></span>
+<span id="cb3-29"><a href="#cb3-29"></a><span class="co"> *</span></span>
+<span id="cb3-30"><a href="#cb3-30"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">tn</span><span class="co">              The object that we want to copy.</span></span>
+<span id="cb3-31"><a href="#cb3-31"></a><span class="co"> */</span></span>
+<span id="cb3-32"><a href="#cb3-32"></a>TreeNode::TreeNode( <span class="at">const</span> TreeNode&amp; tn ) :</span>
+<span id="cb3-33"><a href="#cb3-33"></a>    parent( tn.parent ),</span>
+<span id="cb3-34"><a href="#cb3-34"></a>    left( NULL ),</span>
+<span id="cb3-35"><a href="#cb3-35"></a>    right( NULL ),</span>
+<span id="cb3-36"><a href="#cb3-36"></a>    index( tn.index ),</span>
+<span id="cb3-37"><a href="#cb3-37"></a>    age( tn.age ),</span>
+<span id="cb3-38"><a href="#cb3-38"></a>    name( tn.name )</span>
+<span id="cb3-39"><a href="#cb3-39"></a>{</span>
+<span id="cb3-40"><a href="#cb3-40"></a>    <span class="co">// only make a deep copy of the left child if it exists</span></span>
+<span id="cb3-41"><a href="#cb3-41"></a>    <span class="cf">if</span> ( tn.left != NULL )</span>
+<span id="cb3-42"><a href="#cb3-42"></a>    {</span>
+<span id="cb3-43"><a href="#cb3-43"></a>        left = <span class="kw">new</span> TreeNode( *tn.left );</span>
+<span id="cb3-44"><a href="#cb3-44"></a>        left-&gt;setParent( <span class="kw">this</span> );</span>
+<span id="cb3-45"><a href="#cb3-45"></a>    }</span>
+<span id="cb3-46"><a href="#cb3-46"></a>    <span class="co">// only make a deep copy of the right child if it exists</span></span>
+<span id="cb3-47"><a href="#cb3-47"></a>    <span class="cf">if</span> ( tn.right != NULL )</span>
+<span id="cb3-48"><a href="#cb3-48"></a>    {</span>
+<span id="cb3-49"><a href="#cb3-49"></a>        right = <span class="kw">new</span> TreeNode( *tn.right );</span>
+<span id="cb3-50"><a href="#cb3-50"></a>        right-&gt;setParent( <span class="kw">this</span> );</span>
+<span id="cb3-51"><a href="#cb3-51"></a>    }</span>
+<span id="cb3-52"><a href="#cb3-52"></a>}</span>
+<span id="cb3-53"><a href="#cb3-53"></a></span>
+<span id="cb3-54"><a href="#cb3-54"></a></span>
+<span id="cb3-55"><a href="#cb3-55"></a><span class="co">/**</span></span>
+<span id="cb3-56"><a href="#cb3-56"></a><span class="co"> * Destructor.</span></span>
+<span id="cb3-57"><a href="#cb3-57"></a><span class="co"> *</span></span>
+<span id="cb3-58"><a href="#cb3-58"></a><span class="co"> * We need to delete the children because the parent nodes own their children.</span></span>
+<span id="cb3-59"><a href="#cb3-59"></a><span class="co"> */</span></span>
+<span id="cb3-60"><a href="#cb3-60"></a>TreeNode::~TreeNode( <span class="dt">void</span> )</span>
+<span id="cb3-61"><a href="#cb3-61"></a>{</span>
+<span id="cb3-62"><a href="#cb3-62"></a>    <span class="co">// delete both the left and right child.</span></span>
+<span id="cb3-63"><a href="#cb3-63"></a>    <span class="co">// it&#39;s actually safe to delete a pointer even it point to NULL</span></span>
+<span id="cb3-64"><a href="#cb3-64"></a>    <span class="kw">delete</span> left;</span>
+<span id="cb3-65"><a href="#cb3-65"></a>    <span class="kw">delete</span> right;</span>
+<span id="cb3-66"><a href="#cb3-66"></a>}</span>
+<span id="cb3-67"><a href="#cb3-67"></a></span>
+<span id="cb3-68"><a href="#cb3-68"></a></span>
+<span id="cb3-69"><a href="#cb3-69"></a><span class="co">/**</span></span>
+<span id="cb3-70"><a href="#cb3-70"></a><span class="co"> * Overloaded assignment operator.</span></span>
+<span id="cb3-71"><a href="#cb3-71"></a><span class="co"> *</span></span>
+<span id="cb3-72"><a href="#cb3-72"></a><span class="co"> * We need to free the memorythe children and make a deep copy.</span></span>
+<span id="cb3-73"><a href="#cb3-73"></a><span class="co"> *</span></span>
+<span id="cb3-74"><a href="#cb3-74"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">tn</span><span class="co">              The object that we want to assign to us.</span></span>
+<span id="cb3-75"><a href="#cb3-75"></a><span class="co"> * </span><span class="an">@return</span><span class="co">          The newly assigned object.</span></span>
+<span id="cb3-76"><a href="#cb3-76"></a><span class="co"> */</span></span>
+<span id="cb3-77"><a href="#cb3-77"></a>TreeNode&amp; TreeNode::<span class="kw">operator</span>=(<span class="at">const</span> TreeNode&amp; tn)</span>
+<span id="cb3-78"><a href="#cb3-78"></a>{</span>
+<span id="cb3-79"><a href="#cb3-79"></a>    <span class="co">// first, we need to check and avoid self-assignment</span></span>
+<span id="cb3-80"><a href="#cb3-80"></a>    <span class="cf">if</span> ( <span class="kw">this</span> != &amp;tn )</span>
+<span id="cb3-81"><a href="#cb3-81"></a>    {</span>
+<span id="cb3-82"><a href="#cb3-82"></a>        <span class="co">// we are not assigning ourselves to us.</span></span>
+<span id="cb3-83"><a href="#cb3-83"></a>        <span class="co">// so let&#39;s free the memore first before we copy the new values</span></span>
+<span id="cb3-84"><a href="#cb3-84"></a>        <span class="kw">delete</span> left;</span>
+<span id="cb3-85"><a href="#cb3-85"></a>        <span class="kw">delete</span> right;</span>
+<span id="cb3-86"><a href="#cb3-86"></a></span>
+<span id="cb3-87"><a href="#cb3-87"></a>        <span class="co">// to be safe, set the pointer to NULL</span></span>
+<span id="cb3-88"><a href="#cb3-88"></a>        left  = NULL;</span>
+<span id="cb3-89"><a href="#cb3-89"></a>        right = NULL;</span>
+<span id="cb3-90"><a href="#cb3-90"></a></span>
+<span id="cb3-91"><a href="#cb3-91"></a>        <span class="co">// now we can copy over the values</span></span>
+<span id="cb3-92"><a href="#cb3-92"></a>        parent  = tn.parent;</span>
+<span id="cb3-93"><a href="#cb3-93"></a>        index   = tn.index;</span>
+<span id="cb3-94"><a href="#cb3-94"></a>        age     = tn.age;</span>
+<span id="cb3-95"><a href="#cb3-95"></a>        name    = tn.name;</span>
+<span id="cb3-96"><a href="#cb3-96"></a></span>
+<span id="cb3-97"><a href="#cb3-97"></a>        <span class="co">// only make a deep copy of the left child if it exists</span></span>
+<span id="cb3-98"><a href="#cb3-98"></a>        <span class="cf">if</span> ( tn.left != NULL )</span>
+<span id="cb3-99"><a href="#cb3-99"></a>        {</span>
+<span id="cb3-100"><a href="#cb3-100"></a>            left = <span class="kw">new</span> TreeNode( *tn.left );</span>
+<span id="cb3-101"><a href="#cb3-101"></a>            left-&gt;setParent( <span class="kw">this</span> );</span>
+<span id="cb3-102"><a href="#cb3-102"></a>        }</span>
+<span id="cb3-103"><a href="#cb3-103"></a>        <span class="co">// only make a deep copy of the right child if it exists</span></span>
+<span id="cb3-104"><a href="#cb3-104"></a>        <span class="cf">if</span> ( tn.right != NULL )</span>
+<span id="cb3-105"><a href="#cb3-105"></a>        {</span>
+<span id="cb3-106"><a href="#cb3-106"></a>            right = <span class="kw">new</span> TreeNode( *tn.right );</span>
+<span id="cb3-107"><a href="#cb3-107"></a>            right-&gt;setParent( <span class="kw">this</span> );</span>
+<span id="cb3-108"><a href="#cb3-108"></a>        }</span>
+<span id="cb3-109"><a href="#cb3-109"></a></span>
+<span id="cb3-110"><a href="#cb3-110"></a>        <span class="co">// we done now with our assignment</span></span>
+<span id="cb3-111"><a href="#cb3-111"></a>    }</span>
+<span id="cb3-112"><a href="#cb3-112"></a></span>
+<span id="cb3-113"><a href="#cb3-113"></a>    <span class="co">// we return this object now</span></span>
+<span id="cb3-114"><a href="#cb3-114"></a>    <span class="cf">return</span> *<span class="kw">this</span>;</span>
+<span id="cb3-115"><a href="#cb3-115"></a>}</span>
+<span id="cb3-116"><a href="#cb3-116"></a></span>
+<span id="cb3-117"><a href="#cb3-117"></a></span>
+<span id="cb3-118"><a href="#cb3-118"></a><span class="co">/**</span></span>
+<span id="cb3-119"><a href="#cb3-119"></a><span class="co"> * Get the age of this node.</span></span>
+<span id="cb3-120"><a href="#cb3-120"></a><span class="co"> *</span></span>
+<span id="cb3-121"><a href="#cb3-121"></a><span class="co"> * </span><span class="an">@return</span><span class="co">          Return the local variable that stores the age.</span></span>
+<span id="cb3-122"><a href="#cb3-122"></a><span class="co"> */</span></span>
+<span id="cb3-123"><a href="#cb3-123"></a><span class="dt">double</span> TreeNode::getAge( <span class="dt">void</span> ) <span class="at">const</span></span>
+<span id="cb3-124"><a href="#cb3-124"></a>{</span>
+<span id="cb3-125"><a href="#cb3-125"></a>    <span class="co">// simply return the local age variable</span></span>
+<span id="cb3-126"><a href="#cb3-126"></a>    <span class="cf">return</span> age;</span>
+<span id="cb3-127"><a href="#cb3-127"></a>}</span>
+<span id="cb3-128"><a href="#cb3-128"></a></span>
+<span id="cb3-129"><a href="#cb3-129"></a></span>
+<span id="cb3-130"><a href="#cb3-130"></a><span class="co">/**</span></span>
+<span id="cb3-131"><a href="#cb3-131"></a><span class="co"> * Get the branch length of this node.</span></span>
+<span id="cb3-132"><a href="#cb3-132"></a><span class="co"> *</span></span>
+<span id="cb3-133"><a href="#cb3-133"></a><span class="co"> * The branch length is computed by the age of the parent minus my own age.</span></span>
+<span id="cb3-134"><a href="#cb3-134"></a><span class="co"> * If this is the root node, then we don&#39;t have parent, so no parent age.</span></span>
+<span id="cb3-135"><a href="#cb3-135"></a><span class="co"> * By convention, we say that the root branch has a length of 0.0.</span></span>
+<span id="cb3-136"><a href="#cb3-136"></a><span class="co"> *</span></span>
+<span id="cb3-137"><a href="#cb3-137"></a><span class="co"> * </span><span class="an">@return</span><span class="co">          Return the branch length leading to this node.</span></span>
+<span id="cb3-138"><a href="#cb3-138"></a><span class="co"> */</span></span>
+<span id="cb3-139"><a href="#cb3-139"></a><span class="dt">double</span> TreeNode::getBranchLength( <span class="dt">void</span> ) <span class="at">const</span></span>
+<span id="cb3-140"><a href="#cb3-140"></a>{</span>
+<span id="cb3-141"><a href="#cb3-141"></a>    <span class="co">// check if this node has a parent, i.e., is not a root node.</span></span>
+<span id="cb3-142"><a href="#cb3-142"></a>    <span class="cf">if</span> ( parent != NULL )</span>
+<span id="cb3-143"><a href="#cb3-143"></a>    {</span>
+<span id="cb3-144"><a href="#cb3-144"></a>        <span class="co">// we do have a parent, so it&#39;s safe to compute the branch length</span></span>
+<span id="cb3-145"><a href="#cb3-145"></a>        <span class="co">// by the difference of my parent&#39;s age and my own age</span></span>
+<span id="cb3-146"><a href="#cb3-146"></a>        <span class="cf">return</span> parent-&gt;getAge() - age;</span>
+<span id="cb3-147"><a href="#cb3-147"></a>    }</span>
+<span id="cb3-148"><a href="#cb3-148"></a>    <span class="cf">else</span></span>
+<span id="cb3-149"><a href="#cb3-149"></a>    {</span>
+<span id="cb3-150"><a href="#cb3-150"></a>        <span class="co">// otherwise, we return 0.0 by convention.</span></span>
+<span id="cb3-151"><a href="#cb3-151"></a>        <span class="cf">return</span> <span class="fl">0.0</span>;</span>
+<span id="cb3-152"><a href="#cb3-152"></a>    }</span>
+<span id="cb3-153"><a href="#cb3-153"></a>}</span>
+<span id="cb3-154"><a href="#cb3-154"></a></span>
+<span id="cb3-155"><a href="#cb3-155"></a></span>
+<span id="cb3-156"><a href="#cb3-156"></a><span class="co">/**</span></span>
+<span id="cb3-157"><a href="#cb3-157"></a><span class="co"> * Get the index of this node.</span></span>
+<span id="cb3-158"><a href="#cb3-158"></a><span class="co"> *</span></span>
+<span id="cb3-159"><a href="#cb3-159"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              The index for this node.</span></span>
+<span id="cb3-160"><a href="#cb3-160"></a><span class="co"> */</span></span>
+<span id="cb3-161"><a href="#cb3-161"></a><span class="dt">size_t</span> TreeNode::getIndex( <span class="dt">void</span> ) <span class="at">const</span></span>
+<span id="cb3-162"><a href="#cb3-162"></a>{</span>
+<span id="cb3-163"><a href="#cb3-163"></a>    <span class="co">// return the local variable for the index</span></span>
+<span id="cb3-164"><a href="#cb3-164"></a>    <span class="cf">return</span> index;</span>
+<span id="cb3-165"><a href="#cb3-165"></a>}</span>
+<span id="cb3-166"><a href="#cb3-166"></a></span>
+<span id="cb3-167"><a href="#cb3-167"></a></span>
+<span id="cb3-168"><a href="#cb3-168"></a><span class="co">/**</span></span>
+<span id="cb3-169"><a href="#cb3-169"></a><span class="co"> * Get the left child of this node.</span></span>
+<span id="cb3-170"><a href="#cb3-170"></a><span class="co"> *</span></span>
+<span id="cb3-171"><a href="#cb3-171"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              The left child.</span></span>
+<span id="cb3-172"><a href="#cb3-172"></a><span class="co"> */</span></span>
+<span id="cb3-173"><a href="#cb3-173"></a><span class="at">const</span> TreeNode* TreeNode::getLeftChild( <span class="dt">void</span> ) <span class="at">const</span></span>
+<span id="cb3-174"><a href="#cb3-174"></a>{</span>
+<span id="cb3-175"><a href="#cb3-175"></a>    <span class="co">// return the local variable for the left child node</span></span>
+<span id="cb3-176"><a href="#cb3-176"></a>    <span class="cf">return</span> left;</span>
+<span id="cb3-177"><a href="#cb3-177"></a>}</span>
+<span id="cb3-178"><a href="#cb3-178"></a></span>
+<span id="cb3-179"><a href="#cb3-179"></a></span>
+<span id="cb3-180"><a href="#cb3-180"></a><span class="co">/**</span></span>
+<span id="cb3-181"><a href="#cb3-181"></a><span class="co"> * Get the left child of this node. (non-const)</span></span>
+<span id="cb3-182"><a href="#cb3-182"></a><span class="co"> *</span></span>
+<span id="cb3-183"><a href="#cb3-183"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              The left child.</span></span>
+<span id="cb3-184"><a href="#cb3-184"></a><span class="co"> */</span></span>
+<span id="cb3-185"><a href="#cb3-185"></a>TreeNode* TreeNode::getLeftChild( <span class="dt">void</span> )</span>
+<span id="cb3-186"><a href="#cb3-186"></a>{</span>
+<span id="cb3-187"><a href="#cb3-187"></a>    <span class="co">// return the local variable for the left child node</span></span>
+<span id="cb3-188"><a href="#cb3-188"></a>    <span class="cf">return</span> left;</span>
+<span id="cb3-189"><a href="#cb3-189"></a>}</span>
+<span id="cb3-190"><a href="#cb3-190"></a></span>
+<span id="cb3-191"><a href="#cb3-191"></a></span>
+<span id="cb3-192"><a href="#cb3-192"></a><span class="co">/**</span></span>
+<span id="cb3-193"><a href="#cb3-193"></a><span class="co"> * Get the taxon name of this node.</span></span>
+<span id="cb3-194"><a href="#cb3-194"></a><span class="co"> *</span></span>
+<span id="cb3-195"><a href="#cb3-195"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              The name of the node.</span></span>
+<span id="cb3-196"><a href="#cb3-196"></a><span class="co"> */</span></span>
+<span id="cb3-197"><a href="#cb3-197"></a><span class="at">const</span> <span class="bu">std::</span>string&amp; TreeNode::getName( <span class="dt">void</span> ) <span class="at">const</span></span>
+<span id="cb3-198"><a href="#cb3-198"></a>{</span>
+<span id="cb3-199"><a href="#cb3-199"></a>    <span class="co">// return the local variable for the name of this node</span></span>
+<span id="cb3-200"><a href="#cb3-200"></a>    <span class="co">// tip nodes will have the taxon name stored here.</span></span>
+<span id="cb3-201"><a href="#cb3-201"></a>    <span class="cf">return</span> name;</span>
+<span id="cb3-202"><a href="#cb3-202"></a>}</span>
+<span id="cb3-203"><a href="#cb3-203"></a></span>
+<span id="cb3-204"><a href="#cb3-204"></a></span>
+<span id="cb3-205"><a href="#cb3-205"></a><span class="co">/**</span></span>
+<span id="cb3-206"><a href="#cb3-206"></a><span class="co"> * Get the parent of this node.</span></span>
+<span id="cb3-207"><a href="#cb3-207"></a><span class="co"> *</span></span>
+<span id="cb3-208"><a href="#cb3-208"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              The parent node.</span></span>
+<span id="cb3-209"><a href="#cb3-209"></a><span class="co"> */</span></span>
+<span id="cb3-210"><a href="#cb3-210"></a><span class="at">const</span> TreeNode* TreeNode::getParent( <span class="dt">void</span> ) <span class="at">const</span></span>
+<span id="cb3-211"><a href="#cb3-211"></a>{</span>
+<span id="cb3-212"><a href="#cb3-212"></a>    <span class="co">// return the local variable for the parent node</span></span>
+<span id="cb3-213"><a href="#cb3-213"></a>    <span class="cf">return</span> parent;</span>
+<span id="cb3-214"><a href="#cb3-214"></a>}</span>
+<span id="cb3-215"><a href="#cb3-215"></a></span>
+<span id="cb3-216"><a href="#cb3-216"></a></span>
+<span id="cb3-217"><a href="#cb3-217"></a><span class="co">/**</span></span>
+<span id="cb3-218"><a href="#cb3-218"></a><span class="co"> * Get the parent of this node.  (non-const)</span></span>
+<span id="cb3-219"><a href="#cb3-219"></a><span class="co"> *</span></span>
+<span id="cb3-220"><a href="#cb3-220"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              The parent node.</span></span>
+<span id="cb3-221"><a href="#cb3-221"></a><span class="co"> */</span></span>
+<span id="cb3-222"><a href="#cb3-222"></a>TreeNode* TreeNode::getParent( <span class="dt">void</span> )</span>
+<span id="cb3-223"><a href="#cb3-223"></a>{</span>
+<span id="cb3-224"><a href="#cb3-224"></a>    <span class="co">// return the local variable for the parent node</span></span>
+<span id="cb3-225"><a href="#cb3-225"></a>    <span class="cf">return</span> parent;</span>
+<span id="cb3-226"><a href="#cb3-226"></a>}</span>
+<span id="cb3-227"><a href="#cb3-227"></a></span>
+<span id="cb3-228"><a href="#cb3-228"></a></span>
+<span id="cb3-229"><a href="#cb3-229"></a><span class="co">/**</span></span>
+<span id="cb3-230"><a href="#cb3-230"></a><span class="co"> * Get the right child of this node.</span></span>
+<span id="cb3-231"><a href="#cb3-231"></a><span class="co"> *</span></span>
+<span id="cb3-232"><a href="#cb3-232"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              The right child.</span></span>
+<span id="cb3-233"><a href="#cb3-233"></a><span class="co"> */</span></span>
+<span id="cb3-234"><a href="#cb3-234"></a><span class="at">const</span> TreeNode* TreeNode::getRightChild( <span class="dt">void</span> ) <span class="at">const</span></span>
+<span id="cb3-235"><a href="#cb3-235"></a>{</span>
+<span id="cb3-236"><a href="#cb3-236"></a>    <span class="co">// return the local variable for the right child</span></span>
+<span id="cb3-237"><a href="#cb3-237"></a>    <span class="cf">return</span> right;</span>
+<span id="cb3-238"><a href="#cb3-238"></a>}</span>
+<span id="cb3-239"><a href="#cb3-239"></a></span>
+<span id="cb3-240"><a href="#cb3-240"></a></span>
+<span id="cb3-241"><a href="#cb3-241"></a><span class="co">/**</span></span>
+<span id="cb3-242"><a href="#cb3-242"></a><span class="co"> * Get the right child of this node.  (non-const)</span></span>
+<span id="cb3-243"><a href="#cb3-243"></a><span class="co"> *</span></span>
+<span id="cb3-244"><a href="#cb3-244"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              The right child.</span></span>
+<span id="cb3-245"><a href="#cb3-245"></a><span class="co"> */</span></span>
+<span id="cb3-246"><a href="#cb3-246"></a>TreeNode* TreeNode::getRightChild( <span class="dt">void</span> )</span>
+<span id="cb3-247"><a href="#cb3-247"></a>{</span>
+<span id="cb3-248"><a href="#cb3-248"></a>    <span class="co">// return the local variable for the right child</span></span>
+<span id="cb3-249"><a href="#cb3-249"></a>    <span class="cf">return</span> right;</span>
+<span id="cb3-250"><a href="#cb3-250"></a>}</span>
+<span id="cb3-251"><a href="#cb3-251"></a></span>
+<span id="cb3-252"><a href="#cb3-252"></a></span>
+<span id="cb3-253"><a href="#cb3-253"></a><span class="co">/**</span></span>
+<span id="cb3-254"><a href="#cb3-254"></a><span class="co"> * Is this node a root node.</span></span>
+<span id="cb3-255"><a href="#cb3-255"></a><span class="co"> *</span></span>
+<span id="cb3-256"><a href="#cb3-256"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              True if this node is a root node, false otherwise.</span></span>
+<span id="cb3-257"><a href="#cb3-257"></a><span class="co"> */</span></span>
+<span id="cb3-258"><a href="#cb3-258"></a><span class="dt">bool</span> TreeNode::isRoot( <span class="dt">void</span> ) <span class="at">const</span></span>
+<span id="cb3-259"><a href="#cb3-259"></a>{</span>
+<span id="cb3-260"><a href="#cb3-260"></a>    <span class="co">// this node is a root node if the parent node does not exist, i.e., is NULL</span></span>
+<span id="cb3-261"><a href="#cb3-261"></a>    <span class="cf">return</span> parent == NULL;</span>
+<span id="cb3-262"><a href="#cb3-262"></a>}</span>
+<span id="cb3-263"><a href="#cb3-263"></a></span>
+<span id="cb3-264"><a href="#cb3-264"></a></span>
+<span id="cb3-265"><a href="#cb3-265"></a><span class="co">/**</span></span>
+<span id="cb3-266"><a href="#cb3-266"></a><span class="co"> * Is this node a tip node?</span></span>
+<span id="cb3-267"><a href="#cb3-267"></a><span class="co"> *</span></span>
+<span id="cb3-268"><a href="#cb3-268"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              True if both children don&#39;t exist, false otherwise.</span></span>
+<span id="cb3-269"><a href="#cb3-269"></a><span class="co"> */</span></span>
+<span id="cb3-270"><a href="#cb3-270"></a><span class="dt">bool</span> TreeNode::isTip( <span class="dt">void</span> ) <span class="at">const</span></span>
+<span id="cb3-271"><a href="#cb3-271"></a>{</span>
+<span id="cb3-272"><a href="#cb3-272"></a>    <span class="co">// check if either child node exists, i.e., is not NULL</span></span>
+<span id="cb3-273"><a href="#cb3-273"></a>    <span class="cf">return</span> left == NULL &amp;&amp; right == NULL;</span>
+<span id="cb3-274"><a href="#cb3-274"></a>}</span>
+<span id="cb3-275"><a href="#cb3-275"></a></span>
+<span id="cb3-276"><a href="#cb3-276"></a></span>
+<span id="cb3-277"><a href="#cb3-277"></a><span class="co">/**</span></span>
+<span id="cb3-278"><a href="#cb3-278"></a><span class="co"> * Set the age of this node.</span></span>
+<span id="cb3-279"><a href="#cb3-279"></a><span class="co"> *</span></span>
+<span id="cb3-280"><a href="#cb3-280"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">a</span><span class="co">               The new age of the node.</span></span>
+<span id="cb3-281"><a href="#cb3-281"></a><span class="co"> */</span></span>
+<span id="cb3-282"><a href="#cb3-282"></a><span class="dt">void</span> TreeNode::setAge(<span class="dt">double</span> a)</span>
+<span id="cb3-283"><a href="#cb3-283"></a>{</span>
+<span id="cb3-284"><a href="#cb3-284"></a>    <span class="co">// set the internal variable with the new age</span></span>
+<span id="cb3-285"><a href="#cb3-285"></a>    age = a;</span>
+<span id="cb3-286"><a href="#cb3-286"></a>}</span>
+<span id="cb3-287"><a href="#cb3-287"></a></span>
+<span id="cb3-288"><a href="#cb3-288"></a></span>
+<span id="cb3-289"><a href="#cb3-289"></a><span class="co">/**</span></span>
+<span id="cb3-290"><a href="#cb3-290"></a><span class="co"> * Set the left child of this node.</span></span>
+<span id="cb3-291"><a href="#cb3-291"></a><span class="co"> *</span></span>
+<span id="cb3-292"><a href="#cb3-292"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">n</span><span class="co">               The new left child of the node.</span></span>
+<span id="cb3-293"><a href="#cb3-293"></a><span class="co"> */</span></span>
+<span id="cb3-294"><a href="#cb3-294"></a><span class="dt">void</span> TreeNode::setLeftChild(TreeNode* n)</span>
+<span id="cb3-295"><a href="#cb3-295"></a>{</span>
+<span id="cb3-296"><a href="#cb3-296"></a>    <span class="co">// first, we need to free the memory</span></span>
+<span id="cb3-297"><a href="#cb3-297"></a>    <span class="kw">delete</span> left;</span>
+<span id="cb3-298"><a href="#cb3-298"></a></span>
+<span id="cb3-299"><a href="#cb3-299"></a>    <span class="co">// set the internal variable with the new left child</span></span>
+<span id="cb3-300"><a href="#cb3-300"></a>    left = n;</span>
+<span id="cb3-301"><a href="#cb3-301"></a>}</span>
+<span id="cb3-302"><a href="#cb3-302"></a></span>
+<span id="cb3-303"><a href="#cb3-303"></a></span>
+<span id="cb3-304"><a href="#cb3-304"></a><span class="co">/**</span></span>
+<span id="cb3-305"><a href="#cb3-305"></a><span class="co"> * Set the index of this node.</span></span>
+<span id="cb3-306"><a href="#cb3-306"></a><span class="co"> *</span></span>
+<span id="cb3-307"><a href="#cb3-307"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">i</span><span class="co">               The new index of the node.</span></span>
+<span id="cb3-308"><a href="#cb3-308"></a><span class="co"> */</span></span>
+<span id="cb3-309"><a href="#cb3-309"></a><span class="dt">void</span> TreeNode::setIndex(<span class="dt">size_t</span> i)</span>
+<span id="cb3-310"><a href="#cb3-310"></a>{</span>
+<span id="cb3-311"><a href="#cb3-311"></a>    <span class="co">// set the internal variable with the new index</span></span>
+<span id="cb3-312"><a href="#cb3-312"></a>    index = i;</span>
+<span id="cb3-313"><a href="#cb3-313"></a>}</span>
+<span id="cb3-314"><a href="#cb3-314"></a></span>
+<span id="cb3-315"><a href="#cb3-315"></a></span>
+<span id="cb3-316"><a href="#cb3-316"></a><span class="co">/**</span></span>
+<span id="cb3-317"><a href="#cb3-317"></a><span class="co"> * Set the name of this node.</span></span>
+<span id="cb3-318"><a href="#cb3-318"></a><span class="co"> *</span></span>
+<span id="cb3-319"><a href="#cb3-319"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">n</span><span class="co">               The new name of the node.</span></span>
+<span id="cb3-320"><a href="#cb3-320"></a><span class="co"> */</span></span>
+<span id="cb3-321"><a href="#cb3-321"></a><span class="dt">void</span> TreeNode::setName(<span class="at">const</span> <span class="bu">std::</span>string&amp; n)</span>
+<span id="cb3-322"><a href="#cb3-322"></a>{</span>
+<span id="cb3-323"><a href="#cb3-323"></a>    <span class="co">// set the internal variable with the new name</span></span>
+<span id="cb3-324"><a href="#cb3-324"></a>    name = n;</span>
+<span id="cb3-325"><a href="#cb3-325"></a>}</span>
+<span id="cb3-326"><a href="#cb3-326"></a></span>
+<span id="cb3-327"><a href="#cb3-327"></a></span>
+<span id="cb3-328"><a href="#cb3-328"></a><span class="co">/**</span></span>
+<span id="cb3-329"><a href="#cb3-329"></a><span class="co"> * Set the parent of this node.</span></span>
+<span id="cb3-330"><a href="#cb3-330"></a><span class="co"> *</span></span>
+<span id="cb3-331"><a href="#cb3-331"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">n</span><span class="co">               The new parent of the node.</span></span>
+<span id="cb3-332"><a href="#cb3-332"></a><span class="co"> */</span></span>
+<span id="cb3-333"><a href="#cb3-333"></a><span class="dt">void</span> TreeNode::setParent(TreeNode* n)</span>
+<span id="cb3-334"><a href="#cb3-334"></a>{</span>
+<span id="cb3-335"><a href="#cb3-335"></a>    <span class="co">// set the internal variable with the new parent</span></span>
+<span id="cb3-336"><a href="#cb3-336"></a>    parent = n;</span>
+<span id="cb3-337"><a href="#cb3-337"></a>}</span>
+<span id="cb3-338"><a href="#cb3-338"></a></span>
+<span id="cb3-339"><a href="#cb3-339"></a></span>
+<span id="cb3-340"><a href="#cb3-340"></a><span class="co">/**</span></span>
+<span id="cb3-341"><a href="#cb3-341"></a><span class="co"> * Set the right child of this node.</span></span>
+<span id="cb3-342"><a href="#cb3-342"></a><span class="co"> *</span></span>
+<span id="cb3-343"><a href="#cb3-343"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">n</span><span class="co">               The new right child of the node.</span></span>
+<span id="cb3-344"><a href="#cb3-344"></a><span class="co"> */</span></span>
+<span id="cb3-345"><a href="#cb3-345"></a><span class="dt">void</span> TreeNode::setRightChild(TreeNode* n)</span>
+<span id="cb3-346"><a href="#cb3-346"></a>{</span>
+<span id="cb3-347"><a href="#cb3-347"></a>    <span class="co">// first, we need to free the memory</span></span>
+<span id="cb3-348"><a href="#cb3-348"></a>    <span class="kw">delete</span> right;</span>
+<span id="cb3-349"><a href="#cb3-349"></a></span>
+<span id="cb3-350"><a href="#cb3-350"></a>    <span class="co">// set the internal variable with the new right child</span></span>
+<span id="cb3-351"><a href="#cb3-351"></a>    right = n;</span>
+<span id="cb3-352"><a href="#cb3-352"></a>}</span></code></pre></div>
+<h2 id="section-3.3-the-tree-class">Section 3.3: The <em>Tree</em> class</h2>
+<h3 id="subsection-3.3.1-the-tree.h-file">Subsection 3.3.1: The <em>Tree.h</em> file</h3>
+<p>Now create a new file called <em>Tree.h</em> for the definition of our <em>Tree</em> class. Copy the code below into the file.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1"></a><span class="pp">#ifndef Tree_h</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="pp">#define Tree_h</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="pp">#include </span><span class="im">&lt;vector&gt;</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="pp">#include </span><span class="im">&lt;string&gt;</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="co">// forward declaration of the class TreeNode</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="kw">class</span> TreeNode;</span>
+<span id="cb4-9"><a href="#cb4-9"></a></span>
+<span id="cb4-10"><a href="#cb4-10"></a><span class="co">/**</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a><span class="co"> * </span><span class="an">\class</span><span class="co"> </span><span class="cv">Tree</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a><span class="co"> *</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a><span class="co"> * </span><span class="an">\brief</span><span class="co"> The phylogenetic tree class.</span></span>
+<span id="cb4-14"><a href="#cb4-14"></a><span class="co"> *</span></span>
+<span id="cb4-15"><a href="#cb4-15"></a><span class="co"> * This class represent the phylogenetic tree.</span></span>
+<span id="cb4-16"><a href="#cb4-16"></a><span class="co"> * The main structure is actually stored in the TreeNode itself.</span></span>
+<span id="cb4-17"><a href="#cb4-17"></a><span class="co"> * Here we store the root node and for convenience also a vector of all nodes.</span></span>
+<span id="cb4-18"><a href="#cb4-18"></a><span class="co"> *</span></span>
+<span id="cb4-19"><a href="#cb4-19"></a><span class="co"> *</span></span>
+<span id="cb4-20"><a href="#cb4-20"></a><span class="co"> * </span><span class="an">\author</span><span class="co"> Sebastian Höhna</span></span>
+<span id="cb4-21"><a href="#cb4-21"></a><span class="co"> *</span></span>
+<span id="cb4-22"><a href="#cb4-22"></a><span class="co"> */</span></span>
+<span id="cb4-23"><a href="#cb4-23"></a><span class="kw">class</span> Tree {</span>
+<span id="cb4-24"><a href="#cb4-24"></a></span>
+<span id="cb4-25"><a href="#cb4-25"></a><span class="kw">public</span>:</span>
+<span id="cb4-26"><a href="#cb4-26"></a>    Tree(TreeNode* r);</span>
+<span id="cb4-27"><a href="#cb4-27"></a>    Tree(<span class="at">const</span> Tree&amp; t);</span>
+<span id="cb4-28"><a href="#cb4-28"></a>    ~Tree(<span class="dt">void</span>);</span>
+<span id="cb4-29"><a href="#cb4-29"></a></span>
+<span id="cb4-30"><a href="#cb4-30"></a>    Tree&amp;                               <span class="kw">operator</span>=(<span class="at">const</span> Tree&amp; t);</span>
+<span id="cb4-31"><a href="#cb4-31"></a></span>
+<span id="cb4-32"><a href="#cb4-32"></a>    <span class="bu">std::</span>string                         getNewickRepresentation(<span class="dt">void</span>) <span class="at">const</span>;</span>
+<span id="cb4-33"><a href="#cb4-33"></a>    <span class="at">const</span> <span class="bu">std::</span>vector&lt;TreeNode*&gt;        getNodes(<span class="dt">void</span>) <span class="at">const</span>;</span>
+<span id="cb4-34"><a href="#cb4-34"></a>    <span class="dt">size_t</span>                              getNumberOfNodes(<span class="dt">void</span>) <span class="at">const</span>;</span>
+<span id="cb4-35"><a href="#cb4-35"></a>    <span class="at">const</span> TreeNode*                     getRootNode(<span class="dt">void</span>) <span class="at">const</span>;</span>
+<span id="cb4-36"><a href="#cb4-36"></a></span>
+<span id="cb4-37"><a href="#cb4-37"></a><span class="kw">private</span>:</span>
+<span id="cb4-38"><a href="#cb4-38"></a>    <span class="bu">std::</span>string                         computeNewickRecursively(<span class="at">const</span> TreeNode&amp; n) <span class="at">const</span>;</span>
+<span id="cb4-39"><a href="#cb4-39"></a>    <span class="dt">void</span>                                fillNodesByPhylogeneticTraversal(TreeNode* node);</span>
+<span id="cb4-40"><a href="#cb4-40"></a></span>
+<span id="cb4-41"><a href="#cb4-41"></a>    TreeNode*                           root;</span>
+<span id="cb4-42"><a href="#cb4-42"></a>    <span class="bu">std::</span>vector&lt;TreeNode*&gt;              nodes;</span>
+<span id="cb4-43"><a href="#cb4-43"></a></span>
+<span id="cb4-44"><a href="#cb4-44"></a>};</span>
+<span id="cb4-45"><a href="#cb4-45"></a></span>
+<span id="cb4-46"><a href="#cb4-46"></a><span class="pp">#endif </span><span class="co">/* Tree_h */</span></span></code></pre></div>
+<p>In many respects, this class should look familiar to you. As you scan though the class definition, you should be comfortable with the idea that the class is defined as:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">class</span> Tree {</span>
+<span id="cb5-2"><a href="#cb5-2"></a></span>
+<span id="cb5-3"><a href="#cb5-3"></a>   };</span></code></pre></div>
+<p>Seeing variables that are <em>public</em> and <em>protected</em> shouldn’t freak you out. The idea of a instance variable that is a pointer, such as <em>TreeNode* root</em>, should make you feel warm and fuzzy. That said, there are a few aspects of this class definition that are new. We will go through those one at a time.</p>
+<p>One of the unfamiliar instance variables is:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1"></a><span class="bu">std::</span>vector&lt;TreeNode*&gt;  nodes;</span></code></pre></div>
+<p>This declares a vector of <em>TreeNode</em> pointers called <em>nodes</em>. This is the first time you have brushed shoulders with the Standard Template Library (STL) in C++. The STL is a collection of tools available to the C++ programmer that include containers, algorithms, and iterators. The <em>vector</em> we use in the <em>Tree</em> class is an example of a container. As objects, STL containers have functions associated with them. For example, the <em>vector</em> container has two functions that we will take advantage of: <em>push_back</em> and <em>size</em>. The <em>push_back</em> function adds a new thing-to-be-contained to the end of the vector object. The <em>size</em> function returns the number of elements in the vector. In the <em>Tree</em> class, the <em>elements</em> in the vector are <em>TreeNode</em> pointers. When we declare the <em>vector</em> object, we also indicate what type of thing will be contained in it. We do this with the <span class="math inline">&lt;</span> and <span class="math inline">&gt;</span> signs: <em>vector&lt;Node*&gt;</em>. Note that we need to include the file <em>vector</em> if we are to use a <em>vector</em> in our code. This explains the compiler directive, <em>#include <vector></em>.</p>
+<p>You will also note that before the class definition, we added the line:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">class</span> TreeNode;</span></code></pre></div>
+<p>This is called ‘forward declaration.’ We forward declare <em>TreeNode</em> because we use a <em>Node</em> pointer in the class definition. (In fact, we do this three times, once when we declare the return type of the method <em>getRootNode</em>, once when we declare the <em>root</em> variable, and again when we declare the <em>nodes</em> variable.) We could also have simply included the <em>TreeNode.h</em> file, right before or after we include the <em>vector</em> header,</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb8-1"><a href="#cb8-1"></a><span class="pp">#include </span><span class="im">&lt;vector&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="pp">#include </span><span class="im">&quot;TreeNode.h&quot;</span></span></code></pre></div>
+<p>in which case we could forgo the statement <em>class TreeNode</em>. Both are equivalent in as much as the code will compile and run. However, in keeping with the principle of including the least amount of information necessary, the method employed here is preferable. In the class definition, we only declare <em>TreeNode</em> pointers (<strong>TreeNode*</strong>}). All pointers take up the same amount of memory. Essentially, all the compiler has to do when examining this file is trust that we have implemented the <strong>TreeNode</strong> class elsewhere.</p>
+<p>I made the <em>getNewickRepresentation</em> function public but the <em>computeNewickRecursively</em> function protected. Why do you think that is? It is through the <em>getNewickRepresentation</em> function that other parts of the program can obtain a string with the Newick representation of the tree. This function returns a <em>string</em>.</p>
+<h3 id="subsection-3.3.2-the-tree.cpp-file">Subsection 3.3.2: The <em>Tree.cpp</em> file</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb9-1"><a href="#cb9-1"></a><span class="pp">#include </span><span class="im">&quot;Tree.h&quot;</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="pp">#include </span><span class="im">&quot;TreeNode.h&quot;</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
+<span id="cb9-6"><a href="#cb9-6"></a></span>
+<span id="cb9-7"><a href="#cb9-7"></a><span class="co">/**</span></span>
+<span id="cb9-8"><a href="#cb9-8"></a><span class="co"> * Constructor of the tree class.</span></span>
+<span id="cb9-9"><a href="#cb9-9"></a><span class="co"> *</span></span>
+<span id="cb9-10"><a href="#cb9-10"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">r</span><span class="co">           The root node of the tree.</span></span>
+<span id="cb9-11"><a href="#cb9-11"></a><span class="co"> */</span></span>
+<span id="cb9-12"><a href="#cb9-12"></a>Tree::Tree( TreeNode* r ) :</span>
+<span id="cb9-13"><a href="#cb9-13"></a>    root( r )</span>
+<span id="cb9-14"><a href="#cb9-14"></a>{</span>
+<span id="cb9-15"><a href="#cb9-15"></a></span>
+<span id="cb9-16"><a href="#cb9-16"></a>    <span class="co">// fill our nodes by phylogenetic traversal</span></span>
+<span id="cb9-17"><a href="#cb9-17"></a>    fillNodesByPhylogeneticTraversal( root );</span>
+<span id="cb9-18"><a href="#cb9-18"></a>}</span>
+<span id="cb9-19"><a href="#cb9-19"></a></span>
+<span id="cb9-20"><a href="#cb9-20"></a></span>
+<span id="cb9-21"><a href="#cb9-21"></a><span class="co">/**</span></span>
+<span id="cb9-22"><a href="#cb9-22"></a><span class="co"> * Copy constructor of the tree class.</span></span>
+<span id="cb9-23"><a href="#cb9-23"></a><span class="co"> *</span></span>
+<span id="cb9-24"><a href="#cb9-24"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">t</span><span class="co">           The tree that we want to copy.</span></span>
+<span id="cb9-25"><a href="#cb9-25"></a><span class="co"> */</span></span>
+<span id="cb9-26"><a href="#cb9-26"></a>Tree::Tree( <span class="at">const</span> Tree&amp; t ) :</span>
+<span id="cb9-27"><a href="#cb9-27"></a>    root( NULL )</span>
+<span id="cb9-28"><a href="#cb9-28"></a>{</span>
+<span id="cb9-29"><a href="#cb9-29"></a>    <span class="co">// only create a deep copy if the root exists</span></span>
+<span id="cb9-30"><a href="#cb9-30"></a>    <span class="cf">if</span> ( t.root != NULL )</span>
+<span id="cb9-31"><a href="#cb9-31"></a>    {</span>
+<span id="cb9-32"><a href="#cb9-32"></a>        <span class="co">// create a deep copy</span></span>
+<span id="cb9-33"><a href="#cb9-33"></a>        root = <span class="kw">new</span> TreeNode( *t.root );</span>
+<span id="cb9-34"><a href="#cb9-34"></a></span>
+<span id="cb9-35"><a href="#cb9-35"></a>        <span class="co">// fill our nodes by phylogenetic traversal</span></span>
+<span id="cb9-36"><a href="#cb9-36"></a>        fillNodesByPhylogeneticTraversal( root );</span>
+<span id="cb9-37"><a href="#cb9-37"></a>    }</span>
+<span id="cb9-38"><a href="#cb9-38"></a></span>
+<span id="cb9-39"><a href="#cb9-39"></a>}</span>
+<span id="cb9-40"><a href="#cb9-40"></a></span>
+<span id="cb9-41"><a href="#cb9-41"></a></span>
+<span id="cb9-42"><a href="#cb9-42"></a><span class="co">/**</span></span>
+<span id="cb9-43"><a href="#cb9-43"></a><span class="co"> * Destructor of the tree class.</span></span>
+<span id="cb9-44"><a href="#cb9-44"></a><span class="co"> *</span></span>
+<span id="cb9-45"><a href="#cb9-45"></a><span class="co"> * Since we own the root node, we need to free it.</span></span>
+<span id="cb9-46"><a href="#cb9-46"></a><span class="co"> * This will also make sure that all nodes will be freed.</span></span>
+<span id="cb9-47"><a href="#cb9-47"></a><span class="co"> *</span></span>
+<span id="cb9-48"><a href="#cb9-48"></a><span class="co"> */</span></span>
+<span id="cb9-49"><a href="#cb9-49"></a>Tree::~Tree( <span class="dt">void</span> )</span>
+<span id="cb9-50"><a href="#cb9-50"></a>{</span>
+<span id="cb9-51"><a href="#cb9-51"></a>    <span class="co">// free the memory of the root node which will free the memory of all nodes recursively.</span></span>
+<span id="cb9-52"><a href="#cb9-52"></a>    <span class="kw">delete</span> root;</span>
+<span id="cb9-53"><a href="#cb9-53"></a>}</span>
+<span id="cb9-54"><a href="#cb9-54"></a></span>
+<span id="cb9-55"><a href="#cb9-55"></a></span>
+<span id="cb9-56"><a href="#cb9-56"></a><span class="co">/**</span></span>
+<span id="cb9-57"><a href="#cb9-57"></a><span class="co"> * Overloaded assignment operator.</span></span>
+<span id="cb9-58"><a href="#cb9-58"></a><span class="co"> *</span></span>
+<span id="cb9-59"><a href="#cb9-59"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">t</span><span class="co">               The tree that we want to copy.</span></span>
+<span id="cb9-60"><a href="#cb9-60"></a><span class="co"> * </span><span class="an">@return</span><span class="co">          The newly assigned object.</span></span>
+<span id="cb9-61"><a href="#cb9-61"></a><span class="co"> */</span></span>
+<span id="cb9-62"><a href="#cb9-62"></a>Tree&amp; Tree::<span class="kw">operator</span>=(<span class="at">const</span> Tree &amp;t)</span>
+<span id="cb9-63"><a href="#cb9-63"></a>{</span>
+<span id="cb9-64"><a href="#cb9-64"></a>    <span class="co">// first, we need to check and avoid self-assignment</span></span>
+<span id="cb9-65"><a href="#cb9-65"></a>    <span class="cf">if</span> ( <span class="kw">this</span> != &amp;t )</span>
+<span id="cb9-66"><a href="#cb9-66"></a>    {</span>
+<span id="cb9-67"><a href="#cb9-67"></a></span>
+<span id="cb9-68"><a href="#cb9-68"></a>        <span class="co">// free the memory of the root node which will free the memory of all nodes recursively.</span></span>
+<span id="cb9-69"><a href="#cb9-69"></a>        <span class="kw">delete</span> root;</span>
+<span id="cb9-70"><a href="#cb9-70"></a></span>
+<span id="cb9-71"><a href="#cb9-71"></a>        <span class="co">// for safety, set the root to NULL</span></span>
+<span id="cb9-72"><a href="#cb9-72"></a>        root = NULL;</span>
+<span id="cb9-73"><a href="#cb9-73"></a></span>
+<span id="cb9-74"><a href="#cb9-74"></a>        nodes.clear();</span>
+<span id="cb9-75"><a href="#cb9-75"></a></span>
+<span id="cb9-76"><a href="#cb9-76"></a>        <span class="co">// only create a deep copy if the root exists</span></span>
+<span id="cb9-77"><a href="#cb9-77"></a>        <span class="cf">if</span> ( t.root != NULL )</span>
+<span id="cb9-78"><a href="#cb9-78"></a>        {</span>
+<span id="cb9-79"><a href="#cb9-79"></a>            <span class="co">// create a deep copy</span></span>
+<span id="cb9-80"><a href="#cb9-80"></a>            root = <span class="kw">new</span> TreeNode( *t.root );</span>
+<span id="cb9-81"><a href="#cb9-81"></a></span>
+<span id="cb9-82"><a href="#cb9-82"></a>            <span class="co">// fill our nodes by phylogenetic traversal</span></span>
+<span id="cb9-83"><a href="#cb9-83"></a>            fillNodesByPhylogeneticTraversal( root );</span>
+<span id="cb9-84"><a href="#cb9-84"></a>        }</span>
+<span id="cb9-85"><a href="#cb9-85"></a></span>
+<span id="cb9-86"><a href="#cb9-86"></a>        <span class="co">// we done now with our assignment</span></span>
+<span id="cb9-87"><a href="#cb9-87"></a>    }</span>
+<span id="cb9-88"><a href="#cb9-88"></a></span>
+<span id="cb9-89"><a href="#cb9-89"></a>    <span class="co">// we return this object now</span></span>
+<span id="cb9-90"><a href="#cb9-90"></a>    <span class="cf">return</span> *<span class="kw">this</span>;</span>
+<span id="cb9-91"><a href="#cb9-91"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb10-1"><a href="#cb10-1"></a><span class="co">/**</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="co"> * Compute the newick string for this tree.</span></span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="co"> *</span></span>
+<span id="cb10-4"><a href="#cb10-4"></a><span class="co"> * This function is a recursive function, i.e., it calls itself again.</span></span>
+<span id="cb10-5"><a href="#cb10-5"></a><span class="co"> * You should always start with the root node when calling this function and then it terminates ones reaching the tips.</span></span>
+<span id="cb10-6"><a href="#cb10-6"></a><span class="co"> * The newick string should be something like</span></span>
+<span id="cb10-7"><a href="#cb10-7"></a><span class="co"> *      (((A:1.0,B:1.0):0.5,C:1.5):1.0,(D:2.0,E:2.0):2.5);</span></span>
+<span id="cb10-8"><a href="#cb10-8"></a><span class="co"> *</span></span>
+<span id="cb10-9"><a href="#cb10-9"></a><span class="co"> * </span><span class="an">@return</span><span class="co">          The newick string for the clade starting at this node.</span></span>
+<span id="cb10-10"><a href="#cb10-10"></a><span class="co"> */</span></span>
+<span id="cb10-11"><a href="#cb10-11"></a><span class="bu">std::</span>string Tree::computeNewickRecursively(<span class="at">const</span> TreeNode &amp;node) <span class="at">const</span></span>
+<span id="cb10-12"><a href="#cb10-12"></a>{</span>
+<span id="cb10-13"><a href="#cb10-13"></a>    <span class="co">// initialize the newick string as an empty string</span></span>
+<span id="cb10-14"><a href="#cb10-14"></a>    <span class="bu">std::</span>string newick = <span class="st">&quot;&quot;</span>;</span>
+<span id="cb10-15"><a href="#cb10-15"></a></span>
+<span id="cb10-16"><a href="#cb10-16"></a>    <span class="co">// check if this is a tip node</span></span>
+<span id="cb10-17"><a href="#cb10-17"></a>    <span class="cf">if</span> ( node.isTip() == <span class="kw">true</span> )</span>
+<span id="cb10-18"><a href="#cb10-18"></a>    {</span>
+<span id="cb10-19"><a href="#cb10-19"></a>        <span class="co">// this is a tip node</span></span>
+<span id="cb10-20"><a href="#cb10-20"></a>        <span class="co">// so we can terminate the recursion</span></span>
+<span id="cb10-21"><a href="#cb10-21"></a>        <span class="co">// we simply have to use the name of this node for the newick string</span></span>
+<span id="cb10-22"><a href="#cb10-22"></a>        newick = node.getName();</span>
+<span id="cb10-23"><a href="#cb10-23"></a>    }</span>
+<span id="cb10-24"><a href="#cb10-24"></a>    <span class="cf">else</span></span>
+<span id="cb10-25"><a href="#cb10-25"></a>    {</span>
+<span id="cb10-26"><a href="#cb10-26"></a>        <span class="co">// since it is not a tip node it must be an interior node with two children.</span></span>
+<span id="cb10-27"><a href="#cb10-27"></a>        <span class="co">// we therefore compute the newick string for both children</span></span>
+<span id="cb10-28"><a href="#cb10-28"></a>        <span class="co">// this is done with a recursive call to this function with the left and right child as an argument</span></span>
+<span id="cb10-29"><a href="#cb10-29"></a>        <span class="bu">std::</span>string left    = computeNewickRecursively( *node.getLeftChild() );</span>
+<span id="cb10-30"><a href="#cb10-30"></a>        <span class="bu">std::</span>string right   = computeNewickRecursively( *node.getRightChild() );</span>
+<span id="cb10-31"><a href="#cb10-31"></a></span>
+<span id="cb10-32"><a href="#cb10-32"></a>        <span class="co">// we want to print the newick trees in a unique format, so we order it alphabetically</span></span>
+<span id="cb10-33"><a href="#cb10-33"></a>        <span class="co">// hence, check if the newick string of the left child is alphabetically before the newick string of the right child.</span></span>
+<span id="cb10-34"><a href="#cb10-34"></a>        <span class="co">// we then put together the newick strings of the two children</span></span>
+<span id="cb10-35"><a href="#cb10-35"></a>        <span class="cf">if</span> ( left &lt; right )</span>
+<span id="cb10-36"><a href="#cb10-36"></a>        {</span>
+<span id="cb10-37"><a href="#cb10-37"></a>            newick = <span class="st">&quot;(&quot;</span> + left + <span class="st">&quot;,&quot;</span> + right + <span class="st">&quot;)&quot;</span>;</span>
+<span id="cb10-38"><a href="#cb10-38"></a>        }</span>
+<span id="cb10-39"><a href="#cb10-39"></a>        <span class="cf">else</span></span>
+<span id="cb10-40"><a href="#cb10-40"></a>        {</span>
+<span id="cb10-41"><a href="#cb10-41"></a>            newick = <span class="st">&quot;(&quot;</span> + right + <span class="st">&quot;,&quot;</span> + left + <span class="st">&quot;)&quot;</span>;</span>
+<span id="cb10-42"><a href="#cb10-42"></a>        }</span>
+<span id="cb10-43"><a href="#cb10-43"></a>    }</span>
+<span id="cb10-44"><a href="#cb10-44"></a>    <span class="co">// finally, we need to add the branch length to this newick string</span></span>
+<span id="cb10-45"><a href="#cb10-45"></a>    newick += <span class="st">&quot;:&quot;</span> + <span class="bu">std::</span>to_string(node.getBranchLength());</span>
+<span id="cb10-46"><a href="#cb10-46"></a></span>
+<span id="cb10-47"><a href="#cb10-47"></a>    <span class="co">// and then we return this newick string</span></span>
+<span id="cb10-48"><a href="#cb10-48"></a>    <span class="cf">return</span> newick;</span>
+<span id="cb10-49"><a href="#cb10-49"></a>}</span>
+<span id="cb10-50"><a href="#cb10-50"></a></span>
+<span id="cb10-51"><a href="#cb10-51"></a></span>
+<span id="cb10-52"><a href="#cb10-52"></a><span class="co">/**</span></span>
+<span id="cb10-53"><a href="#cb10-53"></a><span class="co"> * Fill the nodes vector in phylogenetic ordering.</span></span>
+<span id="cb10-54"><a href="#cb10-54"></a><span class="co"> *</span></span>
+<span id="cb10-55"><a href="#cb10-55"></a><span class="co"> * Fill the nodes vector by a phylogenetic traversal recursively starting with this node.</span></span>
+<span id="cb10-56"><a href="#cb10-56"></a><span class="co"> * The tips fill the slots 0,...,n-1 followed by the internal nodes and then the root.</span></span>
+<span id="cb10-57"><a href="#cb10-57"></a><span class="co"> */</span></span>
+<span id="cb10-58"><a href="#cb10-58"></a><span class="dt">void</span> Tree::fillNodesByPhylogeneticTraversal(TreeNode* node)</span>
+<span id="cb10-59"><a href="#cb10-59"></a>{</span>
+<span id="cb10-60"><a href="#cb10-60"></a></span>
+<span id="cb10-61"><a href="#cb10-61"></a>    <span class="cf">if</span> ( node-&gt;isTip() )</span>
+<span id="cb10-62"><a href="#cb10-62"></a>    {</span>
+<span id="cb10-63"><a href="#cb10-63"></a>        <span class="co">// all the tips go to the beginning</span></span>
+<span id="cb10-64"><a href="#cb10-64"></a>        nodes.insert(nodes.begin(), node);</span>
+<span id="cb10-65"><a href="#cb10-65"></a>    }</span>
+<span id="cb10-66"><a href="#cb10-66"></a>    <span class="cf">else</span></span>
+<span id="cb10-67"><a href="#cb10-67"></a>    {</span>
+<span id="cb10-68"><a href="#cb10-68"></a>        <span class="co">// now call this function recursively for all your children</span></span>
+<span id="cb10-69"><a href="#cb10-69"></a>        fillNodesByPhylogeneticTraversal( node-&gt;getLeftChild() );</span>
+<span id="cb10-70"><a href="#cb10-70"></a>        fillNodesByPhylogeneticTraversal( node-&gt;getRightChild() );</span>
+<span id="cb10-71"><a href="#cb10-71"></a></span>
+<span id="cb10-72"><a href="#cb10-72"></a>        <span class="co">// this is phylogenetic ordering so the internal nodes come last</span></span>
+<span id="cb10-73"><a href="#cb10-73"></a>        nodes.push_back(node);</span>
+<span id="cb10-74"><a href="#cb10-74"></a>    }</span>
+<span id="cb10-75"><a href="#cb10-75"></a>}</span>
+<span id="cb10-76"><a href="#cb10-76"></a></span>
+<span id="cb10-77"><a href="#cb10-77"></a></span>
+<span id="cb10-78"><a href="#cb10-78"></a><span class="co">/**</span></span>
+<span id="cb10-79"><a href="#cb10-79"></a><span class="co"> * Compute the newick string for this tree.</span></span>
+<span id="cb10-80"><a href="#cb10-80"></a><span class="co"> *</span></span>
+<span id="cb10-81"><a href="#cb10-81"></a><span class="co"> * This method simply starts by traversing the tree recursively from the root.</span></span>
+<span id="cb10-82"><a href="#cb10-82"></a><span class="co"> * See the method computeNewickRecursively for more information.</span></span>
+<span id="cb10-83"><a href="#cb10-83"></a><span class="co"> *</span></span>
+<span id="cb10-84"><a href="#cb10-84"></a><span class="co"> * </span><span class="an">@return</span><span class="co">          The newick string for the entire tree.</span></span>
+<span id="cb10-85"><a href="#cb10-85"></a><span class="co"> */</span></span>
+<span id="cb10-86"><a href="#cb10-86"></a><span class="bu">std::</span>string Tree::getNewick( <span class="dt">void</span> ) <span class="at">const</span></span>
+<span id="cb10-87"><a href="#cb10-87"></a>{</span>
+<span id="cb10-88"><a href="#cb10-88"></a></span>
+<span id="cb10-89"><a href="#cb10-89"></a>    <span class="cf">return</span> computeNewickRecursively( *root );</span>
+<span id="cb10-90"><a href="#cb10-90"></a>}</span>
+<span id="cb10-91"><a href="#cb10-91"></a></span>
+<span id="cb10-92"><a href="#cb10-92"></a></span>
+<span id="cb10-93"><a href="#cb10-93"></a><span class="co">/**</span></span>
+<span id="cb10-94"><a href="#cb10-94"></a><span class="co"> * Get the vector with all the nodes in the tree.</span></span>
+<span id="cb10-95"><a href="#cb10-95"></a><span class="co"> *</span></span>
+<span id="cb10-96"><a href="#cb10-96"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              The vector of nodes,</span></span>
+<span id="cb10-97"><a href="#cb10-97"></a><span class="co"> */</span></span>
+<span id="cb10-98"><a href="#cb10-98"></a><span class="at">const</span> <span class="bu">std::</span>vector&lt;TreeNode*&gt; Tree::getNodes( <span class="dt">void</span> ) <span class="at">const</span></span>
+<span id="cb10-99"><a href="#cb10-99"></a>{</span>
+<span id="cb10-100"><a href="#cb10-100"></a>    <span class="cf">return</span> nodes;</span>
+<span id="cb10-101"><a href="#cb10-101"></a>}</span>
+<span id="cb10-102"><a href="#cb10-102"></a></span>
+<span id="cb10-103"><a href="#cb10-103"></a></span>
+<span id="cb10-104"><a href="#cb10-104"></a><span class="co">/**</span></span>
+<span id="cb10-105"><a href="#cb10-105"></a><span class="co"> * Get the number of nodes contained in the tree.</span></span>
+<span id="cb10-106"><a href="#cb10-106"></a><span class="co"> *</span></span>
+<span id="cb10-107"><a href="#cb10-107"></a><span class="co"> * This number should be 2*N-1 for rooted trees where N is the number of tips.</span></span>
+<span id="cb10-108"><a href="#cb10-108"></a><span class="co"> *</span></span>
+<span id="cb10-109"><a href="#cb10-109"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              The number of nodes in the tree,</span></span>
+<span id="cb10-110"><a href="#cb10-110"></a><span class="co"> */</span></span>
+<span id="cb10-111"><a href="#cb10-111"></a><span class="dt">size_t</span> Tree::getNumberOfNodes( <span class="dt">void</span> ) <span class="at">const</span></span>
+<span id="cb10-112"><a href="#cb10-112"></a>{</span>
+<span id="cb10-113"><a href="#cb10-113"></a></span>
+<span id="cb10-114"><a href="#cb10-114"></a>    <span class="cf">return</span> nodes.size();</span>
+<span id="cb10-115"><a href="#cb10-115"></a>}</span>
+<span id="cb10-116"><a href="#cb10-116"></a></span>
+<span id="cb10-117"><a href="#cb10-117"></a></span>
+<span id="cb10-118"><a href="#cb10-118"></a><span class="co">/**</span></span>
+<span id="cb10-119"><a href="#cb10-119"></a><span class="co"> * Get the root node of the tree.</span></span>
+<span id="cb10-120"><a href="#cb10-120"></a><span class="co"> *</span></span>
+<span id="cb10-121"><a href="#cb10-121"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              The root node.</span></span>
+<span id="cb10-122"><a href="#cb10-122"></a><span class="co"> */</span></span>
+<span id="cb10-123"><a href="#cb10-123"></a><span class="at">const</span> TreeNode* Tree::getRootNode( <span class="dt">void</span> ) <span class="at">const</span></span>
+<span id="cb10-124"><a href="#cb10-124"></a>{</span>
+<span id="cb10-125"><a href="#cb10-125"></a></span>
+<span id="cb10-126"><a href="#cb10-126"></a>    <span class="cf">return</span> root;</span>
+<span id="cb10-127"><a href="#cb10-127"></a>}</span></code></pre></div>
+<h2 id="section-3.4-the-newicktreereader">Section 3.4: The <em>NewickTreeReader</em></h2>
+<h3 id="subsection-3.4.1-the-newicktreereader.h-file">Subsection 3.4.1: The <em>NewickTreeReader.h</em> file</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb11-1"><a href="#cb11-1"></a><span class="pp">#ifndef NewickTreeReader_H</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="pp">#define NewickTreeReader_H</span></span>
+<span id="cb11-3"><a href="#cb11-3"></a></span>
+<span id="cb11-4"><a href="#cb11-4"></a><span class="pp">#include </span><span class="im">&lt;string&gt;</span></span>
+<span id="cb11-5"><a href="#cb11-5"></a><span class="pp">#include </span><span class="im">&lt;vector&gt;</span></span>
+<span id="cb11-6"><a href="#cb11-6"></a></span>
+<span id="cb11-7"><a href="#cb11-7"></a><span class="kw">class</span> Tree;</span>
+<span id="cb11-8"><a href="#cb11-8"></a><span class="kw">class</span> TreeNode;</span>
+<span id="cb11-9"><a href="#cb11-9"></a></span>
+<span id="cb11-10"><a href="#cb11-10"></a><span class="co">/**</span></span>
+<span id="cb11-11"><a href="#cb11-11"></a><span class="co"> * Newick tree reader.</span></span>
+<span id="cb11-12"><a href="#cb11-12"></a><span class="co"> *</span></span>
+<span id="cb11-13"><a href="#cb11-13"></a><span class="co"> * The newick tree reader provides convenience methods for reading trees in Newick format.</span></span>
+<span id="cb11-14"><a href="#cb11-14"></a><span class="co"> *</span></span>
+<span id="cb11-15"><a href="#cb11-15"></a><span class="co"> *</span></span>
+<span id="cb11-16"><a href="#cb11-16"></a><span class="co"> *</span></span>
+<span id="cb11-17"><a href="#cb11-17"></a><span class="co"> */</span></span>
+<span id="cb11-18"><a href="#cb11-18"></a><span class="kw">class</span> NewickTreeReader {</span>
+<span id="cb11-19"><a href="#cb11-19"></a></span>
+<span id="cb11-20"><a href="#cb11-20"></a><span class="kw">public</span>:</span>
+<span id="cb11-21"><a href="#cb11-21"></a>    NewickTreeReader();</span>
+<span id="cb11-22"><a href="#cb11-22"></a></span>
+<span id="cb11-23"><a href="#cb11-23"></a>    <span class="bu">std::</span>vector&lt;Tree&gt;                   readTrees(<span class="at">const</span> <span class="bu">std::</span>string &amp;fn);</span>
+<span id="cb11-24"><a href="#cb11-24"></a></span>
+<span id="cb11-25"><a href="#cb11-25"></a><span class="kw">private</span>:</span>
+<span id="cb11-26"><a href="#cb11-26"></a>    TreeNode*                           createTreeFromNewick(<span class="at">const</span> <span class="bu">std::</span>string&amp; newick);</span>
+<span id="cb11-27"><a href="#cb11-27"></a>    <span class="bu">std::</span>vector&lt;<span class="bu">std::</span>string&gt;            parseNewickString(<span class="at">const</span> <span class="bu">std::</span>string&amp; ns);</span>
+<span id="cb11-28"><a href="#cb11-28"></a></span>
+<span id="cb11-29"><a href="#cb11-29"></a>};</span>
+<span id="cb11-30"><a href="#cb11-30"></a></span>
+<span id="cb11-31"><a href="#cb11-31"></a></span>
+<span id="cb11-32"><a href="#cb11-32"></a><span class="pp">#endif</span></span></code></pre></div>
+<h3 id="subsection-3.4.2-the-newicktreereader.cpp-file">Subsection 3.4.2: The <em>NewickTreeReader.cpp</em> file</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb12-1"><a href="#cb12-1"></a><span class="pp">#include </span><span class="im">&lt;fstream&gt;</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a><span class="pp">#include </span><span class="im">&lt;string&gt;</span></span>
+<span id="cb12-3"><a href="#cb12-3"></a><span class="pp">#include </span><span class="im">&lt;vector&gt;</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb12-5"><a href="#cb12-5"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
+<span id="cb12-6"><a href="#cb12-6"></a><span class="pp">#include </span><span class="im">&lt;sstream&gt;</span></span>
+<span id="cb12-7"><a href="#cb12-7"></a></span>
+<span id="cb12-8"><a href="#cb12-8"></a><span class="pp">#include </span><span class="im">&quot;NewickTreeReader.h&quot;</span></span>
+<span id="cb12-9"><a href="#cb12-9"></a><span class="pp">#include </span><span class="im">&quot;Tree.h&quot;</span></span>
+<span id="cb12-10"><a href="#cb12-10"></a><span class="pp">#include </span><span class="im">&quot;TreeNode.h&quot;</span></span>
+<span id="cb12-11"><a href="#cb12-11"></a></span>
+<span id="cb12-12"><a href="#cb12-12"></a></span>
+<span id="cb12-13"><a href="#cb12-13"></a></span>
+<span id="cb12-14"><a href="#cb12-14"></a><span class="co">/**</span></span>
+<span id="cb12-15"><a href="#cb12-15"></a><span class="co"> * Default constructor.</span></span>
+<span id="cb12-16"><a href="#cb12-16"></a><span class="co"> *</span></span>
+<span id="cb12-17"><a href="#cb12-17"></a><span class="co"> * The default constructor does nothing except allocating the object.</span></span>
+<span id="cb12-18"><a href="#cb12-18"></a><span class="co"> */</span></span>
+<span id="cb12-19"><a href="#cb12-19"></a>NewickTreeReader::NewickTreeReader()</span>
+<span id="cb12-20"><a href="#cb12-20"></a>{</span>
+<span id="cb12-21"><a href="#cb12-21"></a></span>
+<span id="cb12-22"><a href="#cb12-22"></a>}</span>
+<span id="cb12-23"><a href="#cb12-23"></a></span>
+<span id="cb12-24"><a href="#cb12-24"></a></span>
+<span id="cb12-25"><a href="#cb12-25"></a></span>
+<span id="cb12-26"><a href="#cb12-26"></a><span class="co">/**</span></span>
+<span id="cb12-27"><a href="#cb12-27"></a><span class="co"> * Read all trees in the file which should be in Newick tree format.</span></span>
+<span id="cb12-28"><a href="#cb12-28"></a><span class="co"> *</span></span>
+<span id="cb12-29"><a href="#cb12-29"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">fn</span><span class="co">          The filename.</span></span>
+<span id="cb12-30"><a href="#cb12-30"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              A vector with all the trees read from the fil.</span></span>
+<span id="cb12-31"><a href="#cb12-31"></a><span class="co"> */</span></span>
+<span id="cb12-32"><a href="#cb12-32"></a><span class="bu">std::</span>vector&lt;Tree&gt; NewickTreeReader::readTrees(<span class="at">const</span> <span class="bu">std::</span>string&amp; fn)</span>
+<span id="cb12-33"><a href="#cb12-33"></a>{</span>
+<span id="cb12-34"><a href="#cb12-34"></a></span>
+<span id="cb12-35"><a href="#cb12-35"></a>    <span class="co">// open the file and create a file input stream</span></span>
+<span id="cb12-36"><a href="#cb12-36"></a>    <span class="bu">std::</span>ifstream inFile( fn );</span>
+<span id="cb12-37"><a href="#cb12-37"></a></span>
+<span id="cb12-38"><a href="#cb12-38"></a>    <span class="co">// check if we were successful in opening the file</span></span>
+<span id="cb12-39"><a href="#cb12-39"></a>    <span class="cf">if</span> ( !inFile )</span>
+<span id="cb12-40"><a href="#cb12-40"></a>    {</span>
+<span id="cb12-41"><a href="#cb12-41"></a>        <span class="co">// the file could not be opened</span></span>
+<span id="cb12-42"><a href="#cb12-42"></a>        <span class="bu">std::</span>cerr &lt;&lt; <span class="st">&quot;Could not open file </span><span class="sc">\&quot;</span><span class="st">&quot;</span> &lt;&lt; fn &lt;&lt; <span class="st">&quot;</span><span class="sc">\&quot;</span><span class="st">&quot;</span> &lt;&lt; <span class="bu">std::</span>endl;</span>
+<span id="cb12-43"><a href="#cb12-43"></a>    }</span>
+<span id="cb12-44"><a href="#cb12-44"></a></span>
+<span id="cb12-45"><a href="#cb12-45"></a>    <span class="co">// initialize the vector of trees</span></span>
+<span id="cb12-46"><a href="#cb12-46"></a>    <span class="co">// we will fill these later</span></span>
+<span id="cb12-47"><a href="#cb12-47"></a>    <span class="bu">std::</span>vector&lt;Tree&gt; trees = <span class="bu">std::</span>vector&lt;Tree&gt;();</span>
+<span id="cb12-48"><a href="#cb12-48"></a></span>
+<span id="cb12-49"><a href="#cb12-49"></a>    <span class="co">// now loop over each line in the file</span></span>
+<span id="cb12-50"><a href="#cb12-50"></a>    <span class="cf">while</span> ( inFile.good() )</span>
+<span id="cb12-51"><a href="#cb12-51"></a>    {</span>
+<span id="cb12-52"><a href="#cb12-52"></a>        <span class="co">// create a string variable that will hold the line</span></span>
+<span id="cb12-53"><a href="#cb12-53"></a>        <span class="bu">std::</span>string line;</span>
+<span id="cb12-54"><a href="#cb12-54"></a></span>
+<span id="cb12-55"><a href="#cb12-55"></a>        <span class="co">// read a line</span></span>
+<span id="cb12-56"><a href="#cb12-56"></a>        getline(inFile, line);</span>
+<span id="cb12-57"><a href="#cb12-57"></a></span>
+<span id="cb12-58"><a href="#cb12-58"></a>        <span class="co">// skip empty lines</span></span>
+<span id="cb12-59"><a href="#cb12-59"></a>        <span class="cf">if</span> (line.length() == <span class="dv">0</span>)</span>
+<span id="cb12-60"><a href="#cb12-60"></a>        {</span>
+<span id="cb12-61"><a href="#cb12-61"></a>            <span class="cf">continue</span>;</span>
+<span id="cb12-62"><a href="#cb12-62"></a>        }</span>
+<span id="cb12-63"><a href="#cb12-63"></a>        <span class="co">// note that we assume here for simplicity that our Newick trees don&#39;t contain spaces.</span></span>
+<span id="cb12-64"><a href="#cb12-64"></a>        <span class="co">// you may want to remove all spaces ...</span></span>
+<span id="cb12-65"><a href="#cb12-65"></a></span>
+<span id="cb12-66"><a href="#cb12-66"></a>        <span class="co">// construct the tree by calling the create tree from Newick string function</span></span>
+<span id="cb12-67"><a href="#cb12-67"></a>        TreeNode *root = createTreeFromNewick( trimmed );</span>
+<span id="cb12-68"><a href="#cb12-68"></a></span>
+<span id="cb12-69"><a href="#cb12-69"></a>        <span class="co">// create and allocate the tree object</span></span>
+<span id="cb12-70"><a href="#cb12-70"></a>        Tree t =  Tree( root );</span>
+<span id="cb12-71"><a href="#cb12-71"></a></span>
+<span id="cb12-72"><a href="#cb12-72"></a>        <span class="co">// add the tree to our vector</span></span>
+<span id="cb12-73"><a href="#cb12-73"></a>        trees.push_back( t );</span>
+<span id="cb12-74"><a href="#cb12-74"></a>    }</span>
+<span id="cb12-75"><a href="#cb12-75"></a></span>
+<span id="cb12-76"><a href="#cb12-76"></a>    <span class="co">// finally, return the vector of trees</span></span>
+<span id="cb12-77"><a href="#cb12-77"></a>    <span class="cf">return</span> trees;</span>
+<span id="cb12-78"><a href="#cb12-78"></a>}</span></code></pre></div>
+<p>Parsing is a real pain in the neck.</p>
+<p>The parser introduces a few new ideas. First of all, you can see in the conditional <em>if</em> statement that we use two parallel lines. This is read <em>or</em>. You can check for several conditions in a <em>if</em> statement:</p>
+<ul>
+<li><strong>==</strong> : is the thing on the left equal to the thing on the right (equal to)</li>
+<li><strong>!=</strong> : is the thing on the left not equal to the thing on the right (not equal to)</li>
+<li><strong>||</strong> : the statement on the left or the statement on the right is true (logical OR)</li>
+<li><strong>&amp;&amp;</strong> : the statements to the left and to the right are both true (logical AND)</li>
+</ul>
+<p>Walk through this code line-by-line.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb13-1"><a href="#cb13-1"></a><span class="co">/**</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a><span class="co"> * Create a tree from a Newick string.</span></span>
+<span id="cb13-3"><a href="#cb13-3"></a><span class="co"> *</span></span>
+<span id="cb13-4"><a href="#cb13-4"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">newick</span><span class="co">      The tree as a Newick string.</span></span>
+<span id="cb13-5"><a href="#cb13-5"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              The root node of the create tree.</span></span>
+<span id="cb13-6"><a href="#cb13-6"></a><span class="co"> */</span></span>
+<span id="cb13-7"><a href="#cb13-7"></a>TreeNode* NewickTreeReader::createTreeFromNewick(<span class="at">const</span> <span class="bu">std::</span>string&amp; newick)</span>
+<span id="cb13-8"><a href="#cb13-8"></a>{</span>
+<span id="cb13-9"><a href="#cb13-9"></a>    <span class="co">// break the string into its component parts</span></span>
+<span id="cb13-10"><a href="#cb13-10"></a>    <span class="bu">std::</span>vector&lt;<span class="bu">std::</span>string&gt; tokens = parseNewickString(newick);</span>
+<span id="cb13-11"><a href="#cb13-11"></a></span>
+<span id="cb13-12"><a href="#cb13-12"></a>    <span class="co">// we need some variables</span></span>
+<span id="cb13-13"><a href="#cb13-13"></a>    <span class="co">// first, if the last token was a &#39;:&#39; so that we next read in the branch length</span></span>
+<span id="cb13-14"><a href="#cb13-14"></a>    <span class="dt">bool</span> reading_branch_length = <span class="kw">false</span>;</span>
+<span id="cb13-15"><a href="#cb13-15"></a>    <span class="co">// we also need a pointer to the ancestor</span></span>
+<span id="cb13-16"><a href="#cb13-16"></a>    TreeNode* ancestor  = NULL;</span>
+<span id="cb13-17"><a href="#cb13-17"></a>    <span class="co">// and also a pointer to the root for checking that the algorithm worked correctly</span></span>
+<span id="cb13-18"><a href="#cb13-18"></a>    TreeNode* root      = NULL;</span>
+<span id="cb13-19"><a href="#cb13-19"></a></span>
+<span id="cb13-20"><a href="#cb13-20"></a>    <span class="co">// build up the tree from the parsed Newick string</span></span>
+<span id="cb13-21"><a href="#cb13-21"></a>    <span class="cf">for</span> (<span class="dt">int</span> i=<span class="dv">0</span>; i&lt;tokens.size(); i++)</span>
+<span id="cb13-22"><a href="#cb13-22"></a>    {</span>
+<span id="cb13-23"><a href="#cb13-23"></a>        <span class="co">// get the current token</span></span>
+<span id="cb13-24"><a href="#cb13-24"></a>        <span class="at">const</span> <span class="bu">std::</span>string&amp; token = tokens[i];</span>
+<span id="cb13-25"><a href="#cb13-25"></a></span>
+<span id="cb13-26"><a href="#cb13-26"></a>        <span class="co">// check what the token corresponds to</span></span>
+<span id="cb13-27"><a href="#cb13-27"></a>        <span class="cf">if</span> (token == <span class="st">&quot;(&quot;</span>)</span>
+<span id="cb13-28"><a href="#cb13-28"></a>        {</span>
+<span id="cb13-29"><a href="#cb13-29"></a>            <span class="co">// we go one level deeper into the tree with a &#39;(&#39;</span></span>
+<span id="cb13-30"><a href="#cb13-30"></a>            <span class="co">// create new node</span></span>
+<span id="cb13-31"><a href="#cb13-31"></a>            TreeNode* next_node = <span class="kw">new</span> TreeNode();</span>
+<span id="cb13-32"><a href="#cb13-32"></a>            <span class="co">// if this was the first &#39;(&#39;, then we need to initialize the root</span></span>
+<span id="cb13-33"><a href="#cb13-33"></a>            <span class="cf">if</span> (ancestor == NULL)</span>
+<span id="cb13-34"><a href="#cb13-34"></a>            {</span>
+<span id="cb13-35"><a href="#cb13-35"></a>                root = next_node;</span>
+<span id="cb13-36"><a href="#cb13-36"></a>            }</span>
+<span id="cb13-37"><a href="#cb13-37"></a>            <span class="cf">else</span></span>
+<span id="cb13-38"><a href="#cb13-38"></a>            {</span>
+<span id="cb13-39"><a href="#cb13-39"></a>                <span class="co">// we have an ancestral node for this new node</span></span>
+<span id="cb13-40"><a href="#cb13-40"></a>                <span class="co">// so we set the it as the parent</span></span>
+<span id="cb13-41"><a href="#cb13-41"></a>                next_node-&gt;setParent(ancestor);</span>
+<span id="cb13-42"><a href="#cb13-42"></a>                <span class="co">// and the new node will be either the left or right child</span></span>
+<span id="cb13-43"><a href="#cb13-43"></a>                <span class="cf">if</span> (ancestor-&gt;getLeftChild() == NULL)</span>
+<span id="cb13-44"><a href="#cb13-44"></a>                {</span>
+<span id="cb13-45"><a href="#cb13-45"></a>                    ancestor-&gt;setLeftChild(next_node);</span>
+<span id="cb13-46"><a href="#cb13-46"></a>                }</span>
+<span id="cb13-47"><a href="#cb13-47"></a>                <span class="cf">else</span></span>
+<span id="cb13-48"><a href="#cb13-48"></a>                {</span>
+<span id="cb13-49"><a href="#cb13-49"></a>                    ancestor-&gt;setRightChild(next_node);</span>
+<span id="cb13-50"><a href="#cb13-50"></a>                }</span>
+<span id="cb13-51"><a href="#cb13-51"></a>            }</span>
+<span id="cb13-52"><a href="#cb13-52"></a>            <span class="co">// now we set the new node as the next ancestor</span></span>
+<span id="cb13-53"><a href="#cb13-53"></a>            ancestor = next_node;</span>
+<span id="cb13-54"><a href="#cb13-54"></a>        }</span>
+<span id="cb13-55"><a href="#cb13-55"></a>        <span class="cf">else</span> <span class="cf">if</span> (token == <span class="st">&quot;)&quot;</span> || token == <span class="st">&quot;,&quot;</span>)</span>
+<span id="cb13-56"><a href="#cb13-56"></a>        {</span>
+<span id="cb13-57"><a href="#cb13-57"></a>            <span class="co">// we finished with the previous node</span></span>
+<span id="cb13-58"><a href="#cb13-58"></a>            <span class="co">// move one level back</span></span>
+<span id="cb13-59"><a href="#cb13-59"></a>            <span class="co">// for safety, check that we can do so</span></span>
+<span id="cb13-60"><a href="#cb13-60"></a>            <span class="cf">if</span> (ancestor-&gt;getParent() == NULL)</span>
+<span id="cb13-61"><a href="#cb13-61"></a>            {</span>
+<span id="cb13-62"><a href="#cb13-62"></a>                <span class="bu">std::</span>cout &lt;&lt; <span class="st">&quot;Error: We cannot find an expected ancestor&quot;</span> &lt;&lt; <span class="bu">std::</span>endl;</span>
+<span id="cb13-63"><a href="#cb13-63"></a>                exit(<span class="dv">1</span>);</span>
+<span id="cb13-64"><a href="#cb13-64"></a>            }</span>
+<span id="cb13-65"><a href="#cb13-65"></a>            <span class="co">// we will reset the ancestor as the ancestor&#39;s parent</span></span>
+<span id="cb13-66"><a href="#cb13-66"></a>            ancestor = ancestor-&gt;getParent();</span>
+<span id="cb13-67"><a href="#cb13-67"></a>        }</span>
+<span id="cb13-68"><a href="#cb13-68"></a>        <span class="cf">else</span> <span class="cf">if</span> (token == <span class="st">&quot;:&quot;</span>)</span>
+<span id="cb13-69"><a href="#cb13-69"></a>        {</span>
+<span id="cb13-70"><a href="#cb13-70"></a>            <span class="co">// begin reading a branch length</span></span>
+<span id="cb13-71"><a href="#cb13-71"></a>            reading_branch_length = <span class="kw">true</span>;</span>
+<span id="cb13-72"><a href="#cb13-72"></a>        }</span>
+<span id="cb13-73"><a href="#cb13-73"></a>        <span class="cf">else</span> <span class="cf">if</span> (token == <span class="st">&quot;;&quot;</span>)</span>
+<span id="cb13-74"><a href="#cb13-74"></a>        {</span>
+<span id="cb13-75"><a href="#cb13-75"></a>            <span class="co">// finished!</span></span>
+<span id="cb13-76"><a href="#cb13-76"></a>            <span class="co">// just make sure that we also terminated at the root</span></span>
+<span id="cb13-77"><a href="#cb13-77"></a>            <span class="cf">if</span> (ancestor != root)</span>
+<span id="cb13-78"><a href="#cb13-78"></a>            {</span>
+<span id="cb13-79"><a href="#cb13-79"></a>                <span class="bu">std::</span>cout &lt;&lt; <span class="st">&quot;Error: We expect to finish at the root node&quot;</span> &lt;&lt; <span class="bu">std::</span>endl;</span>
+<span id="cb13-80"><a href="#cb13-80"></a>                exit(<span class="dv">1</span>);</span>
+<span id="cb13-81"><a href="#cb13-81"></a>            }</span>
+<span id="cb13-82"><a href="#cb13-82"></a>        }</span>
+<span id="cb13-83"><a href="#cb13-83"></a>        <span class="cf">else</span></span>
+<span id="cb13-84"><a href="#cb13-84"></a>        {</span>
+<span id="cb13-85"><a href="#cb13-85"></a>            <span class="co">// we have a taxon name or a branch length</span></span>
+<span id="cb13-86"><a href="#cb13-86"></a>            <span class="cf">if</span> (reading_branch_length == <span class="kw">true</span>)</span>
+<span id="cb13-87"><a href="#cb13-87"></a>            {</span>
+<span id="cb13-88"><a href="#cb13-88"></a>                <span class="co">// convert the token into a double</span></span>
+<span id="cb13-89"><a href="#cb13-89"></a>                <span class="dt">double</span> x = <span class="bu">std::</span>stod(token);</span>
+<span id="cb13-90"><a href="#cb13-90"></a>                <span class="co">// since we are actually storing ages, we compute the age as</span></span>
+<span id="cb13-91"><a href="#cb13-91"></a>                <span class="co">// the child&#39;s age plus the branch length.</span></span>
+<span id="cb13-92"><a href="#cb13-92"></a>                <span class="co">// thus, we set the age of the parent/ancestor and need to make sure that we have one</span></span>
+<span id="cb13-93"><a href="#cb13-93"></a>                <span class="cf">if</span> ( ancestor-&gt;getParent() != NULL )</span>
+<span id="cb13-94"><a href="#cb13-94"></a>                {</span>
+<span id="cb13-95"><a href="#cb13-95"></a>                    ancestor-&gt;getParent()-&gt;setAge( ancestor-&gt;getAge() + x );</span>
+<span id="cb13-96"><a href="#cb13-96"></a>                }</span>
+<span id="cb13-97"><a href="#cb13-97"></a>                <span class="co">// now flip back the bool that we are not expecting a branch length anymore</span></span>
+<span id="cb13-98"><a href="#cb13-98"></a>                reading_branch_length = <span class="kw">false</span>;</span>
+<span id="cb13-99"><a href="#cb13-99"></a>            }</span>
+<span id="cb13-100"><a href="#cb13-100"></a>            <span class="cf">else</span></span>
+<span id="cb13-101"><a href="#cb13-101"></a>            {</span>
+<span id="cb13-102"><a href="#cb13-102"></a>                <span class="co">// we got a new tip node</span></span>
+<span id="cb13-103"><a href="#cb13-103"></a>                <span class="co">// create this tip</span></span>
+<span id="cb13-104"><a href="#cb13-104"></a>                TreeNode* next_node = <span class="kw">new</span> TreeNode();</span>
+<span id="cb13-105"><a href="#cb13-105"></a>                <span class="co">// and tell it who its parent was</span></span>
+<span id="cb13-106"><a href="#cb13-106"></a>                next_node-&gt;setParent(ancestor);</span>
+<span id="cb13-107"><a href="#cb13-107"></a>                <span class="co">// also tell the ancestor that this was a left/right child</span></span>
+<span id="cb13-108"><a href="#cb13-108"></a>                <span class="cf">if</span> (p-&gt;getLeftChild() == NULL)</span>
+<span id="cb13-109"><a href="#cb13-109"></a>                {</span>
+<span id="cb13-110"><a href="#cb13-110"></a>                    p-&gt;setLeftChild(next_node);</span>
+<span id="cb13-111"><a href="#cb13-111"></a>                }</span>
+<span id="cb13-112"><a href="#cb13-112"></a>                <span class="cf">else</span></span>
+<span id="cb13-113"><a href="#cb13-113"></a>                {</span>
+<span id="cb13-114"><a href="#cb13-114"></a>                    p-&gt;setRightChild(next_node);</span>
+<span id="cb13-115"><a href="#cb13-115"></a>                }</span>
+<span id="cb13-116"><a href="#cb13-116"></a>                <span class="co">// also set the name of the tip</span></span>
+<span id="cb13-117"><a href="#cb13-117"></a>                next_node-&gt;setName(token);</span>
+<span id="cb13-118"><a href="#cb13-118"></a>                <span class="co">// and reset, as usual, reset the ancestor to be the current node</span></span>
+<span id="cb13-119"><a href="#cb13-119"></a>                ancestor = next_node;</span>
+<span id="cb13-120"><a href="#cb13-120"></a>            } <span class="co">// finished the if-else for the taxon name vs branch length</span></span>
+<span id="cb13-121"><a href="#cb13-121"></a></span>
+<span id="cb13-122"><a href="#cb13-122"></a>        } <span class="co">// finished the if-else for what type of token it was</span></span>
+<span id="cb13-123"><a href="#cb13-123"></a></span>
+<span id="cb13-124"><a href="#cb13-124"></a>    } <span class="co">// finished the foor loop over all tokens</span></span>
+<span id="cb13-125"><a href="#cb13-125"></a></span>
+<span id="cb13-126"><a href="#cb13-126"></a>    <span class="co">// return the root node for this tree</span></span>
+<span id="cb13-127"><a href="#cb13-127"></a>    <span class="cf">return</span> root;</span>
+<span id="cb13-128"><a href="#cb13-128"></a>}</span></code></pre></div>
+<p>You will see that we have a loop over the parsed elements in the Newick string. I call these parsed elements <em>token</em>. We do different things depending on the identity of the <em>token</em>:</p>
+<ul>
+<li><strong>token == “(”</strong> — The token is a left parentheses, in which case we add a new node. We also set up the pointers for this new node and the ancestor of this node, if there is one. The first time we create a node, three are no other nodes that can be neighbors (to the left, right, or ancestrally). This first node is the <em>root</em> node.</li>
+<li><strong>token == “)” || token == “,”</strong> — The token is either a right parentheses or a comma. In either case, we move to the ancestor of the current point in the tree.</li>
+<li><strong>token == “:”</strong> — The token is a colon, which means the next token is a branch length. We set a <em>bool</em> variable named <em>reading_branch_length</em> to be true.</li>
+<li><strong>token == “;”</strong> — The token is a semicolon, in which case we should be finished reading all of the Newick string elements. The algorithm works such that we should end at the root. We check that this is true. If it isn’t, we exit the program abruptly. Something is very wrong with the Newick string that was passed to the constructor.</li>
+<li>If none of the above are true, then the token must be either a taxon name or a branch length. If it is a taxon name, we add a new node, just as we did when we encountered a left parentheses, but this time we also add the taxon name information. If the token is a branch length, we simply set the branch length for the node we are currently pointed at.</li>
+</ul>
+<p>The <em>parseNewickString</em> first declares a <em>vector</em> of strings. It then enters a loop, incremented by a variable <em>i</em>, that reads the Newick string one character at a time. If the character is one of the special ones — ‘(’, ‘)’, ‘,’, ‘:’ and ‘;’ — it immediately adds the character to the vector of strings. Otherwise, the character is part of a taxon name or a branch length. In this case, the parser races ahead to the next special symbol using a new type of loop (<em>while</em>), incrementing a new counter (<em>j</em>), adding the entire string (taxon name or branch length) to the vector.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb14-1"><a href="#cb14-1"></a><span class="co">/**</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a><span class="co"> * Parse the Newick string into separate tokens.</span></span>
+<span id="cb14-3"><a href="#cb14-3"></a><span class="co"> *</span></span>
+<span id="cb14-4"><a href="#cb14-4"></a><span class="co"> * A token is separated by a &#39;(&#39;, &#39;)&#39;, &#39;,&#39;, &#39;:&#39; or &#39;,&#39;</span></span>
+<span id="cb14-5"><a href="#cb14-5"></a><span class="co"> *</span></span>
+<span id="cb14-6"><a href="#cb14-6"></a><span class="co"> * </span><span class="an">@param</span><span class="co">   </span><span class="cv">ns</span><span class="co">          The newick string that we want to parse.</span></span>
+<span id="cb14-7"><a href="#cb14-7"></a><span class="co"> * </span><span class="an">@return</span><span class="co">              A vector of strings containing all the tokens and separators.</span></span>
+<span id="cb14-8"><a href="#cb14-8"></a><span class="co"> */</span></span>
+<span id="cb14-9"><a href="#cb14-9"></a><span class="bu">std::</span>vector&lt;<span class="bu">std::</span>string&gt; NewickTreeReader::parseNewickString(<span class="at">const</span> <span class="bu">std::</span>string&amp; ns)</span>
+<span id="cb14-10"><a href="#cb14-10"></a>{</span>
+<span id="cb14-11"><a href="#cb14-11"></a>    <span class="co">// create an empty vector of strings for the tokens</span></span>
+<span id="cb14-12"><a href="#cb14-12"></a>    <span class="bu">std::</span>vector&lt;<span class="bu">std::</span>string&gt; tks;</span>
+<span id="cb14-13"><a href="#cb14-13"></a></span>
+<span id="cb14-14"><a href="#cb14-14"></a>    <span class="co">// now we iterate over each character in the string</span></span>
+<span id="cb14-15"><a href="#cb14-15"></a>    <span class="cf">for</span> (<span class="dt">int</span> i=<span class="dv">0</span>; i&lt;ns.size(); i++)</span>
+<span id="cb14-16"><a href="#cb14-16"></a>    {</span>
+<span id="cb14-17"><a href="#cb14-17"></a>        <span class="co">// get the current character of the string</span></span>
+<span id="cb14-18"><a href="#cb14-18"></a>        <span class="dt">char</span> c = ns[i];</span>
+<span id="cb14-19"><a href="#cb14-19"></a></span>
+<span id="cb14-20"><a href="#cb14-20"></a>        <span class="co">// check if it was on of the separators</span></span>
+<span id="cb14-21"><a href="#cb14-21"></a>        <span class="cf">if</span> (c == <span class="ch">&#39;(&#39;</span> || c == <span class="ch">&#39;)&#39;</span> || c == <span class="ch">&#39;,&#39;</span> || c == <span class="ch">&#39;:&#39;</span> || c == <span class="ch">&#39;;&#39;</span>)</span>
+<span id="cb14-22"><a href="#cb14-22"></a>        {</span>
+<span id="cb14-23"><a href="#cb14-23"></a>            <span class="co">// add the separator-token to our vector</span></span>
+<span id="cb14-24"><a href="#cb14-24"></a>            tks.push_back( <span class="bu">std::</span>string(c) );</span>
+<span id="cb14-25"><a href="#cb14-25"></a>        }</span>
+<span id="cb14-26"><a href="#cb14-26"></a>        <span class="cf">else</span></span>
+<span id="cb14-27"><a href="#cb14-27"></a>        {</span>
+<span id="cb14-28"><a href="#cb14-28"></a>            <span class="co">// it was not a separator, so it was actually some token</span></span>
+<span id="cb14-29"><a href="#cb14-29"></a>            <span class="co">// we need to extract it until the next separator</span></span>
+<span id="cb14-30"><a href="#cb14-30"></a>            <span class="co">// we move over the string until we hit the next separator</span></span>
+<span id="cb14-31"><a href="#cb14-31"></a>            <span class="dt">int</span> j = i;</span>
+<span id="cb14-32"><a href="#cb14-32"></a>            <span class="co">// create</span></span>
+<span id="cb14-33"><a href="#cb14-33"></a>            <span class="bu">std::</span>string temp_token = <span class="st">&quot;&quot;</span>;</span>
+<span id="cb14-34"><a href="#cb14-34"></a>            <span class="cf">while</span> ( !(c == <span class="ch">&#39;(&#39;</span> || c == <span class="ch">&#39;)&#39;</span> || c == <span class="ch">&#39;,&#39;</span> || c == <span class="ch">&#39;:&#39;</span> || c == <span class="ch">&#39;;&#39;</span>) )</span>
+<span id="cb14-35"><a href="#cb14-35"></a>            {</span>
+<span id="cb14-36"><a href="#cb14-36"></a>                <span class="co">// add the current character to our token string</span></span>
+<span id="cb14-37"><a href="#cb14-37"></a>                temp_token += c;</span>
+<span id="cb14-38"><a href="#cb14-38"></a>                <span class="co">// move the index forward</span></span>
+<span id="cb14-39"><a href="#cb14-39"></a>                j++;</span>
+<span id="cb14-40"><a href="#cb14-40"></a>                <span class="co">// get the next character</span></span>
+<span id="cb14-41"><a href="#cb14-41"></a>                c = ns[j];</span>
+<span id="cb14-42"><a href="#cb14-42"></a>            }</span>
+<span id="cb14-43"><a href="#cb14-43"></a>            <span class="co">// fast forward the index of the newick string</span></span>
+<span id="cb14-44"><a href="#cb14-44"></a>            i = j-<span class="dv">1</span>;</span>
+<span id="cb14-45"><a href="#cb14-45"></a>            <span class="co">// add the token to our vector</span></span>
+<span id="cb14-46"><a href="#cb14-46"></a>            tks.push_back(temp_token);</span>
+<span id="cb14-47"><a href="#cb14-47"></a>        }</span>
+<span id="cb14-48"><a href="#cb14-48"></a></span>
+<span id="cb14-49"><a href="#cb14-49"></a>    } <span class="co">// end for loop over all characters in the string</span></span>
+<span id="cb14-50"><a href="#cb14-50"></a></span>
+<span id="cb14-51"><a href="#cb14-51"></a>    <span class="co">// return the vector of tokens</span></span>
+<span id="cb14-52"><a href="#cb14-52"></a>    <span class="cf">return</span> tks;</span>
+<span id="cb14-53"><a href="#cb14-53"></a>}</span></code></pre></div>
+<div>
+<h2 id="references">References</h2>
+</div>
+</body>
+</html>
