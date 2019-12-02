@@ -413,27 +413,27 @@ OBJECTS   = Alignment.o AlignmentReader.o TreeNode.o Tree.o NewickTreeReader.o R
 <p>Now, we are ready to simulate data on the tree of Figure . We will go over two different methods for simulating data, each of which takes advantage of our knowledge of continuous-time Markov chains.</p>
 <p>The first simulation method takes advantage of our knowledge of the stationary distribution and of our ability to calculate transition probabilities. There are only three different lengths of branches on our model tree (0.1, 0.2, and 0.3). The transition probabilities are <span class="math display">\[
 \begin{array}{cc}
-{{\mathbf P}(0.10) = \left( \begin{array}{rrrr}
+{\mathbf P}(0.10) = \left( \begin{array}{rrrr}
 0.919 &amp; 0.018 &amp; 0.056 &amp; 0.006 \\
 0.024 &amp; 0.934 &amp; 0.012 &amp; 0.029 \\
 0.113 &amp; 0.018 &amp; 0.863 &amp; 0.006 \\
 0.025 &amp; 0.086 &amp; 0.012 &amp; 0.877 \\
-\end{array} \right)}
+\end{array} \right)
  &amp;
-{{\mathbf P}(0.20) = \left( \begin{array}{rrrr}
+{\mathbf P}(0.20) = \left( \begin{array}{rrrr}
 0.851 &amp; 0.035 &amp; 0.100 &amp; 0.011  \\
 0.047 &amp; 0.876 &amp; 0.023 &amp; 0.052  \\
 0.201&amp;  0.035 &amp; 0.750 &amp; 0.011 \\
 0.047 &amp; 0.156 &amp; 0.023 &amp; 0.771  \\
-\end{array} \right)}
+\end{array} \right)
 \end{array}
 \]</span> <span class="math display">\[
-{{\mathbf P}(0.30) = \left( \begin{array}{rrrr}
+{\mathbf P}(0.30) = \left( \begin{array}{rrrr}
 0.795 &amp; 0.051 &amp; 0.135 &amp; 0.017  \\
 0.069 &amp; 0.824 &amp; 0.034 &amp; 0.071  \\
 0.270 &amp; 0.051 &amp; 0.659 &amp; 0.017  \\
 0.069 &amp; 0.214 &amp; 0.034 &amp; 0.681  \\
-\end{array} \right)}
+\end{array} \right)
 \]</span> Instead of drawing exponential random variables, and generating the process continuously across the entire tree (see the exercise section), our simulation jumps from node to node on the tree. First, we generate the nucleotide at the root of the tree (the first split leading to all four taxa) by drawing from the stationary distribution. Then, we use the transition probabilities to simulate from one end to the other of each branch on the tree. We start from the root of the tree, and simulate up the tree to progressively higher branches until we have simulated a nucleotide at each tip of the tree.</p>
 <h2 id="section-5.5.1-definition-of-the-phyloctmc-class">Section 5.5.1: Definition of the PhyloCTMC class</h2>
 <p>Create a new file called <strong>PhyloCTMC.h</strong> and write the following class definition.</p>
@@ -746,12 +746,12 @@ P_{AT}(\nu,\kappa,\pi)  =  &amp; \pi_T\left(1.0 - e^{-\beta\nu}\right)
 <p>One puzzling aspect of this simulation is why we always start the process in nucleotide A, and why we even bothered to add the tail to the root of the tree. We did this because for this method, we assume ignorance of the stationary distribution of the rate matrix. If this is the case, we can use our understanding of the rate matrix as specifying waiting times between substitutions to complete our simulation.<br />
 Hence, we always start our simulations in a particular nucleotide (in this case we chose to start in the nucleotide A), and then simulate the process for a long time along the root (tail) branch of the tree. The hope is that if we make the length of the tail branch long enough, that the process is at stationarity by the time it reaches the first split in the tree (the speciation event that eventually produces the four species at the tips of the tree).</p>
 <p>This method relies on the idea that we can come pretty near to stationarity with a moderately long branch. We know that the stationary distribution of the HKY85 process of nucleotide substitution with the specific parameters we chose is <span class="math inline">\(\pi_A = 0.4\)</span>, <span class="math inline">\(\pi_C = 0.3\)</span>, <span class="math inline">\(\pi_G = 0.2\)</span>, <span class="math inline">\(\pi_T = 0.1\)</span>. We also know that the transition probability for a branch of <span class="math inline">\(v = 10.0\)</span> is <span class="math display">\[
-{{\mathbf P}(10.0) = \left( \begin{array}{rrrr}
+{\mathbf P}(10.0) = \left( \begin{array}{rrrr}
 0.401 &amp; 0.299 &amp; 0.200 &amp; 0.099 \\
 0.399 &amp; 0.301 &amp; 0.199 &amp; 0.100 \\
 0.401 &amp; 0.299 &amp; 0.200 &amp; 0.099 \\
 0.399 &amp; 0.301 &amp; 0.199 &amp; 0.100 \\
-\end{array} \right)}
+\end{array} \right)
 \]</span> The transition probability matrix tells us that if we start in nucleotide A, then we end up in state A, C, G, and T with probabilities 0.401, 0.299, 0.200, and 0.099, respectively. These numbers are very close to the actual stationary probabilities, so perhaps this method is not such a bad one.</p>
 <div>
 <h2 id="references">References</h2>
