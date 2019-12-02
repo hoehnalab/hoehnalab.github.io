@@ -10,3 +10,4 @@ permalink: /courses/
 * [Chapter 2](/courses_baby_bayes/chapter2/) and [primates.phy](/courses_baby_bayes/primates.phy) and [primates.fas](/courses_baby_bayes/primates.fas)
 * [Chapter 3](/courses_baby_bayes/chapter3/) and [primates.trees](/courses_baby_bayes/primates.trees)
 * [Chapter 4](/courses_baby_bayes/chapter4/)
+* [Chapter 5](/courses_baby_bayes/chapter5/)
