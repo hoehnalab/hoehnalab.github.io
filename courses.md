@@ -11,4 +11,4 @@ permalink: /courses/
 * [Chapter 3](/courses_baby_bayes/chapter3/) and [primates.trees](/courses_baby_bayes/primates.trees)
 * [Chapter 4](/courses_baby_bayes/chapter4/)
 * [Chapter 5](/courses_baby_bayes/chapter5/)
-* [Chapter 6](/courses_baby_bayes/chapter6/) and [primates.phy](/courses_baby_bayes/primates.phy), [primates.tre](/courses_baby_bayes/primates.tre), [Math.cpp](/courses_baby_bayes/Math.cpp), [Math.h](/courses_baby_bayes/Math.h), [Statistics.cpp](/courses_baby_bayes/Statistics.cpp), [Statistics.h](/courses_baby_bayes/Statistics.h)
+* [Chapter 6](/courses_baby_bayes/chapter6/) and [primates.phy](/courses_baby_bayes/primates.phy), [primates.tre](/courses_baby_bayes/primates.tre), [Math.cpp](/courses_baby_bayes/Math.cpp), [Math.h](/courses_baby_bayes/Math.h), [Statistics.cpp](/courses_baby_bayes/Statistics.cpp), [Statistics.h](/courses_baby_bayes/Statistics.h), [MathConstants.h](/courses_baby_bayes/MathConstants.h)
