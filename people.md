@@ -60,4 +60,20 @@ permalink: /people/
     </div>
 </div>
 
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/ronja.jpg">
+    <h5><div class="tooltip"><p class="ttext">Ronja Billenstein</p>
+        <span class="tooltiptext">
+            I’m a biologist working on statistical methods for inferring the evolutionary history of closely related populations. These methods are based on coalescent theory and a mutation process. I am using simulated as well as empirical data to test and to validate these methods, hoping to provide an accurate, powerful and computationally feasible approach.
+        </span>
+    </div></h5>
+        <p class="title"><em>Graduate Student</em></p>
+        <a href="mailto:r.billenstein@lrz.uni-muenchen.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+        I’m a biologist working on statistical methods for inferring the evolutionary history of closely related populations. These methods are based on coalescent theory and a mutation process. I am using simulated as well as empirical data to test and to validate these methods, hoping to provide an accurate, powerful and computationally feasible approach.
+    </div>
+</div>
+
 </div>
