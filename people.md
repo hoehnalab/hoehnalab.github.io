@@ -102,4 +102,24 @@ assembly, and machine learning.
     </div>
 </div>
 
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/bjorn.jpg">
+    <h5><div class="tooltip"><p class="ttext">Bjørn T. Kopperud</p>
+        <span class="tooltiptext">
+I am an evolutionary biologist who is interested in estimating speciation- and extinction rates from phylogenetic trees. Previously, it has been common to test the support of competing hypotheses by testing one or a few factors at a time. In my research I will develop a more general framework for estimating diversification dynamics, such that setting up joint or combined models becomes more feasible. My other interests include data mining using natural language processing, brain size evolution and phylogenetic comparative models of adaptation. My favorite organisms are bryozoans and ruminants!
+
+        </span>
+    </div></h5>
+        <p class="title"><em>Graduate Student</em></p>
+        <a href="https://github.com/kopperud" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
+        <a href="mailto:b.kopperud@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+I am an evolutionary biologist who is interested in estimating speciation- and extinction rates from phylogenetic trees. Previously, it has been common to test the support of competing hypotheses by testing one or a few factors at a time. In my research I will develop a more general framework for estimating diversification dynamics, such that setting up joint or combined models becomes more feasible. My other interests include data mining using natural language processing, brain size evolution and phylogenetic comparative models of adaptation. My favorite organisms are bryozoans and ruminants!
+
+    </div>
+</div>
+
+
 </div>
