@@ -27,25 +27,6 @@ permalink: /people/
 </div>
 
 <div class="item">
-    <img class="rcornersimage" src="/assets/images/allison.jpg">
-    <h5><div class="tooltip"><p class="ttext">Allison Hsiang</p>
-        <span class="tooltiptext">
-            My research uses statistical modeling, Bayesian inference, Big Data, and machine learning to understand morphological evolution and macroevolutionary patterns and processes. I am particularly interested in bringing a ‘next-generation’ approach (e.g., high-throughput automated data generation) to studying fossils and morphology in a phylogenetic context. I am also interested in the interplay between morphology and genetics, including methodological considerations during phylogenetic inference.
-        </span>
-    </div></h5>
-        <p class="title"><em>Postdoctoral Researcher</em></p>
-        <a href="https://github.com/ahsiang" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
-        <a href="https://ahsiang.github.io/" target="_blank"><img src="/assets/icons/globe.svg" width="25px"></a>
-        <a href="mailto:allison.hsiang@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
-
-    <!-- Show tooltip text when on mobile -->
-    <div class="blurb">
-        My research uses statistical modeling, Bayesian inference, Big Data, and machine learning to understand morphological evolution and macroevolutionary patterns and processes. I am particularly interested in bringing a ‘next-generation’ approach (e.g., high-throughput automated data generation) to studying fossils and morphology in a phylogenetic context. I am also interested in the interplay between morphology and genetics, including methodological considerations during phylogenetic inference.
-    </div>
-
-</div>
-
-<div class="item">
     <img class="rcornersimage" src="/assets/images/luiza.jpg">
     <h5><div class="tooltip"><p class="ttext">Luiza Fabreti</p>
         <span class="tooltiptext">
