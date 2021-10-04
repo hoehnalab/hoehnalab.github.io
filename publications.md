@@ -6,7 +6,7 @@ permalink: /publications/
 
 <h3>2021</h3>
 - <strong>Fabreti L</strong>, <strong>Höhna S</strong>: Convergence assessment for bayesian phylogenetic analysis using mcmc simulation, Methods in Evolution and Ecology, [link](https://doi.org/10.1111/2041-210X.13727)
-- Orsi WD, Magritsch T, Vargas S, Coskun ÖK, Vuillemin A, <strong>Höhna S</strong>, W{\"o}rheide G, D'Hondt S, Shapiro BJ, Carini P: Genome evolution in bacteria isolated from million-year-old subseafloor sediment, mBio, 2021, 12:e01150--21, [link](https://doi.org/10.1128/mBio.01150-21).
+- Orsi WD, Magritsch T, Vargas S, Coskun ÖK, Vuillemin A, <strong>Höhna S</strong>, Wörheide G, D'Hondt S, Shapiro BJ, Carini P: Genome evolution in bacteria isolated from million-year-old subseafloor sediment, mBio, 2021, 12:e01150--21, [link](https://doi.org/10.1128/mBio.01150-21).
 
 <h3>2020</h3>
 - Magee AF, <strong>Höhna S</strong>, Vasylyeva TI, Leaché AD, and Minin VN: Locally adaptive Bayesian birth-death model successfully detects slow and rapid rate shifts, PLoS Comp. Biol., 2020, 16(10): e1007999, [link](https://doi.org/10.1371/journal.pcbi.1007999)
