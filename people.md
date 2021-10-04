@@ -124,7 +124,7 @@ I am an evolutionary biologist who is interested in estimating speciation- and e
         <p class="title"><em>Independent Researcher (VR Grant) at Stockholm University</em></p>
         <a href="https://github.com/ahsiang" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
         <a href="https://ahsiang.github.io/" target="_blank"><img src="/assets/icons/globe.svg" width="25px"></a>
-        <a href="mailto:allison.hsiang@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+        <a href="mailto:allison.hsiang@gmail.com"><img src="/assets/icons/mail.svg" width="25px"></a>
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
