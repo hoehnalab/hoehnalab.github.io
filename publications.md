@@ -4,6 +4,14 @@ title: Publications
 permalink: /publications/
 ---
 
+<h3>2021</h3>
+- <strong>Fabreti L</strong>, <strong>Höhna S</strong>: Convergence assessment for bayesian phylogenetic analysis using mcmc simulation, Methods in Evolution and Ecology, [link](https://doi.org/10.1111/2041-210X.13727)
+- Orsi WD, Magritsch T, Vargas S, Coskun ÖK, Vuillemin A, <strong>Höhna S</strong>, W{\"o}rheide G, D'Hondt S, Shapiro BJ, Carini P: Genome evolution in bacteria isolated from million-year-old subseafloor sediment, mBio, 2021, 12:e01150--21, [link](https://doi.org/10.1128/mBio.01150-21).
+
+<h3>2020</h3>
+- Magee AF, <strong>Höhna S</strong>, Vasylyeva TI, Leaché AD, and Minin VN: Locally adaptive Bayesian birth-death model successfully detects slow and rapid rate shifts, PLoS Comp. Biol., 2020, 16(10): e1007999, [link](https://doi.org/10.1371/journal.pcbi.1007999)
+
+
 <h3>2019</h3>
 - Catalán A, Briscoe AD and <strong>Höhna S</strong>: Drift and Directional Selection Are the Evolutionary Forces Driving Gene Expression Divergence in Eye and Brain Tissue of Heliconius Butterflies, Genetics, 2019, vol. 213 no. 2 581--594, [link](https://doi.org/10.1534/genetics.119.302493)
 - Freyman WA and <strong>Höhna S</strong>: Stochastic Character Mapping of State-Dependent Diversification Reveals the Tempo of Evolutionary Decline in Self-Compatible Onagraceae Lineages, Systematic Biology, 2019, 68 (3), 505--519, [link](https://academic.oup.com/sysbio/article-abstract/68/3/505/5200730)
