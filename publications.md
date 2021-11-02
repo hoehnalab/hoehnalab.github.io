@@ -5,6 +5,8 @@ permalink: /publications/
 ---
 
 <h3>2021</h3>
+- Tribble CM, Freyman WA, Landis MJ, Lim JY, Barido-Sottani J, <strong>Kopperud BT</strong>, <strong>Höhna S</strong> and May MR: RevGadgets: an R Package for visualizing Bayesian phylogenetic analyses from RevBayes, Methods in Evolution and Ecology, [link](https://doi.org/10.1111/2041-210X.13750)
+- <strong>Höhna S</strong>, Landis MJ and Huelsenbeck JP: Parallel power posterior analyses for fast computation of marginal likelihoods in phylogenetics, PeerJ, [link](https://doi.org/10.7717/peerj.12438)
 - Szollosi GJ, <strong>Höhna S</strong>, Williams TA, Schrempf D, Daubin V and Boussau B: Relative time constraints improve molecular dating, Systematic Biology, [link](https://doi.org/10.1093/sysbio/syab084)
 - <strong>Fabreti L</strong>, <strong>Höhna S</strong>: Convergence assessment for bayesian phylogenetic analysis using mcmc simulation, Methods in Evolution and Ecology, [link](https://doi.org/10.1111/2041-210X.13727)
 - Orsi WD, Magritsch T, Vargas S, Coskun ÖK, Vuillemin A, <strong>Höhna S</strong>, Wörheide G, D'Hondt S, Shapiro BJ, Carini P: Genome evolution in bacteria isolated from million-year-old subseafloor sediment, mBio, 2021, 12:e01150--21, [link](https://doi.org/10.1128/mBio.01150-21).
