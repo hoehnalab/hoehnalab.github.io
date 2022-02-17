@@ -16,7 +16,7 @@ permalink: /people/
         </span>
     </div></h5>
         <p class="title"><em>Group Leader</em></p>
-        <a href="/CVs/CV-Sebastian.pdf" target="_blank"><img src="/assets/icons/cv.jpg" width="25px"></a>
+        <a href="https://github.com/hoehnalab/hoehnalab.github.io/raw/master/CVs/CV_Sebastian.pdf" target="_blank"><img src="/assets/icons/cv.png" width="25px"></a>
         <a href="https://github.com/hoehna" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
         <a href="https://twitter.com/sebastianhoehna?lang=en" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
         <a href="mailto:hoehna@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
