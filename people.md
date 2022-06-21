@@ -26,6 +26,40 @@ permalink: /people/
         I’m a computational biologist with focus on Bayesian phylogenetic inference. Natural selection by means of adaptation and genetic inheritance are key principles in evolutionary biology. Evolutionary relationships are commonly depicted by phylogenetic trees. Using phylogenetic methods we can learn about the evolutionary history of species and the processes that have contributed to present diversity. I’m developing statistical and computational methods to infer phylogenies from molecular sequence data. These methods additionally identify periods of adaptive genetic evolution at lineage or genes. Furthermore, I develop mathematical models to study macroevolutionary patterns, such as, diversification rate variation over time and among lineages and episodes of global mass extinctions.
     </div>
 </div>
+    
+    
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/John_Clarke.jpg">
+    <h5><div class="tooltip"><p class="ttext">John Clarke</p>
+        <span class="tooltiptext">
+Coming soon.
+        </span>
+    </div></h5>
+        <p class="title"><em>Postdoc (Humboldt fellow)</em></p>
+        <a href="mailto:j.clarke.paleo@gmail.com"><img src="/assets/icons/mail.svg" width="25px"></a>
+
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+Coming soon.
+    </div>
+</div>
+    
+    
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/Alessio_Capobianco.jpg">
+    <h5><div class="tooltip"><p class="ttext">Alessio Capobianco</p>
+        <span class="tooltiptext">
+Coming soon.
+        </span>
+    </div></h5>
+        <p class="title"><em>Postdoc</em></p>
+        <a href="mailto:acapo@umich.edu"><img src="/assets/icons/mail.svg" width="25px"></a>
+
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+Coming soon.
+    </div>
+</div>
 
 <div class="item">
     <img class="rcornersimage" src="/assets/images/luiza.jpg">
