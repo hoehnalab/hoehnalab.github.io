@@ -32,7 +32,7 @@ permalink: /people/
     <img class="rcornersimage" src="/assets/images/John_Clarke.jpg">
     <h5><div class="tooltip"><p class="ttext">John Clarke</p>
         <span class="tooltiptext">
-Coming soon.
+I'm an evolutionary biologist and palaeontologist interested in testing drivers of phenotypic and species diversity using phylogenetic comparative methods. Having first applied these methods to Mesozoic fishes, I now apply them to large datasets of extant fishes, plants and insects.
         </span>
     </div></h5>
         <p class="title"><em>Postdoc (Humboldt fellow)</em></p>
@@ -40,7 +40,7 @@ Coming soon.
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
-Coming soon.
+I'm an evolutionary biologist and palaeontologist interested in testing drivers of phenotypic and species diversity using phylogenetic comparative methods. Having first applied these methods to Mesozoic fishes, I now apply them to large datasets of extant fishes, plants and insects.
     </div>
 </div>
     
