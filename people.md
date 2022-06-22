@@ -36,7 +36,8 @@ I'm an evolutionary biologist and palaeontologist interested in testing drivers 
         </span>
     </div></h5>
         <p class="title"><em>Postdoc (Humboldt fellow)</em></p>
-        <a href="mailto:j.clarke.paleo@gmail.com"><img src="/assets/icons/mail.svg" width="25px"></a>
+        <a href="mailto:j.clarke.paleo@gmail.com"><img src="/assets/icons/mail.svg" width="25px"></a>    
+        <a href="https://twitter.com/jclarkepaleo?lang=en" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
