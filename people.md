@@ -50,7 +50,7 @@ I'm an evolutionary biologist and palaeontologist interested in testing drivers 
     <img class="rcornersimage" src="/assets/images/Alessio_Capobianco.jpg">
     <h5><div class="tooltip"><p class="ttext">Alessio Capobianco</p>
         <span class="tooltiptext">
-Coming soon.
+I am a paleontologist and evolutionary biologist investigating how biological diversity evolves in concert with changes in the Earth system, mainly focusing on fishes. My research explores how fossils reveal fundamental and entirely unexpected aspects of the evolutionary history of living organisms, and examines diversity and biogeographic patterns through the lens of paleontological data. I am also interested in how sampling and coding of morphological data impacts phylogenetic inference and the estimation of evolutionary timescales.
         </span>
     </div></h5>
         <p class="title"><em>Postdoc</em></p>
@@ -58,7 +58,7 @@ Coming soon.
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
-Coming soon.
+I am a paleontologist and evolutionary biologist investigating how biological diversity evolves in concert with changes in the Earth system, mainly focusing on fishes. My research explores how fossils reveal fundamental and entirely unexpected aspects of the evolutionary history of living organisms, and examines diversity and biogeographic patterns through the lens of paleontological data. I am also interested in how sampling and coding of morphological data impacts phylogenetic inference and the estimation of evolutionary timescales.
     </div>
 </div>
 
