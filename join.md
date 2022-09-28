@@ -6,9 +6,6 @@ permalink: /join/
 
 New positions in the lab will be advertised here.
 Please contact [Sebastian Höhna](mailto:hoehna@lmu.de) for inquiries.
- * [2 Postdoc/PhD positions to work on estimating vertebrate phylogenies with fossil and extant taxa](/job_adverts/ERC_TipDating_Phylogenies.pdf): Deadline 31st July 2022.
- * [1 PhD position to work on methods for phylogenetic inference using morphological data](/job_adverts/ERC_TipDating_Methods.pdf): Deadline 31st July 2022.
- * [1 PhD position to work on gene expression evolution in fireflies](/job_adverts/GEvol_PhD_Position.pdf): Deadline 12th August 2022.
 
 If you are interested in joining the lab and applying for your own funding, then you can find some information here:
 * [Overview of funding in Germany](https://www.research-in-germany.org/en)
