@@ -6,6 +6,7 @@ permalink: /join/
 
 New positions in the lab will be advertised here.
 Please contact [Sebastian Höhna](mailto:hoehna@lmu.de) for inquiries.
+  * [1 PhD position to work on gene expression evolution in fireflies](/job_adverts/GEvol_PhD_Position.pdf): Deadline 31th March 2023.
 
 If you are interested in joining the lab and applying for your own funding, then you can find some information here:
 * [Overview of funding in Germany](https://www.research-in-germany.org/en)
