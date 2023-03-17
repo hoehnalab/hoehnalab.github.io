@@ -61,7 +61,26 @@ I am a paleontologist and evolutionary biologist investigating how biological di
 I am a paleontologist and evolutionary biologist investigating how biological diversity evolves in concert with changes in the Earth system, mainly focusing on fishes. My research explores how fossils reveal fundamental and entirely unexpected aspects of the evolutionary history of living organisms, and examines diversity and biogeographic patterns through the lens of paleontological data. I am also interested in how sampling and coding of morphological data impacts phylogenetic inference and the estimation of evolutionary timescales.
     </div>
 </div>
+    
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/Nicola.jpg">
+    <h5><div class="tooltip"><p class="ttext">Nicola Heckeberg</p>
+        <span class="tooltiptext">
+As an evolutionary palaeobiologist I am interested in morphological character changes of vertebrates, especially mammals through time.
+Functional trait evolution in ruminants and other artiodactyls are the focus of my research, integrating fossil and extant taxa and molecular and phenotypic data in comprehensive time calibrated analyses.
+        </span>
+    </div></h5>
+        <p class="title"><em>Postdoc</em></p>
+        <a href="mailto:n.heckeberg@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
 
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+As an evolutionary palaeobiologist I am interested in morphological character changes of vertebrates, especially mammals through time.
+Functional trait evolution in ruminants and other artiodactyls are the focus of my research, integrating fossil and extant taxa and molecular and phenotypic data in comprehensive time calibrated analyses.
+    </div>
+</div>
+
+    
 <div class="item">
     <img class="rcornersimage" src="/assets/images/luiza.jpg">
     <h5><div class="tooltip"><p class="ttext">Luiza Fabreti</p>
