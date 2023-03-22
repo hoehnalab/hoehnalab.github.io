@@ -66,16 +66,18 @@ I am a paleontologist and evolutionary biologist investigating how biological di
     <img class="rcornersimage" src="/assets/images/Nicola.jpg">
     <h5><div class="tooltip"><p class="ttext">Nicola Heckeberg</p>
         <span class="tooltiptext">
-As an evolutionary palaeobiologist I am interested in morphological character changes of vertebrates, especially mammals through time.
+As an evolutionary palaeobiologist, I am interested in morphological character changes of vertebrates, especially mammals, through time.
 Functional trait evolution in ruminants and other artiodactyls are the focus of my research, integrating fossil and extant taxa and molecular and phenotypic data in comprehensive time calibrated analyses.
         </span>
     </div></h5>
         <p class="title"><em>Postdoc</em></p>
         <a href="mailto:n.heckeberg@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+        <a href="https://twitter.com/heckeberg" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
+
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
-As an evolutionary palaeobiologist I am interested in morphological character changes of vertebrates, especially mammals through time.
+As an evolutionary palaeobiologist, I am interested in morphological character changes of vertebrates, especially mammals, through time.
 Functional trait evolution in ruminants and other artiodactyls are the focus of my research, integrating fossil and extant taxa and molecular and phenotypic data in comprehensive time calibrated analyses.
     </div>
 </div>
