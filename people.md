@@ -159,7 +159,22 @@ I am an evolutionary biologist who is interested in estimating speciation- and e
     </div>
 </div>
 
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/wenjie.jpg">
+    <h5><div class="tooltip"><p class="ttext">Wenjie Zhu 祝雯洁</p>
+        <span class="tooltiptext">
+I am a master's student in Evolutionary Biology. My research passion lies in computational and statistical phylogenetics, especially species tree inference from molecular data. I am currently working on evaluating the performance and properties of coalescent-based species tree inference methods using simulations. To offset my screen time, I enjoy exploring nature through hiking and botanizing.
+        </span>
+    </div></h5>
+        <p class="title"><em>Graduate Student</em></p>
+        <a href="mailto:Wenjie.Zhu@campus.lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
 
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+I am a master's student in Evolutionary Biology. My research passion lies in computational and statistical phylogenetics, especially species tree inference from molecular data. I am currently working on evaluating the performance and properties of coalescent-based species tree inference methods using simulations. To offset my screen time, I enjoy exploring nature through hiking and botanizing.
+    </div>
+</div>
+    
 </div>
 
 
