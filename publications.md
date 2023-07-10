@@ -4,9 +4,13 @@ title: Publications
 permalink: /publications/
 ---
 <h3>2023</h3>
+- <strong>Fabreti L</strong> and <strong>H&ouml;hna S</strong>: Bayesian inference of phylogeny is robust to substitution model over-parameterization, *Systematic Biology*, 2023, in press. [link](https://doi.org/10.1093/sysbio/syad041)
+- Grabowski M, Pienaar J, Voje KJ, Andersson S, Fuentes-González J, <strong>Kopperud BT</strong>, Moen DS, Tsuboi M, Uyeda J and Hansen TF (2022). A Cautionary Note on “A Cautionary Note on the Use of Ornstein Uhlenbeck Models in Macroevolutionary Studies”. *Systematic Biology*, in press, [link](https://doi.org/10.1093/sysbio/syad012)
+- Grabowski M, <strong>Kopperud BT</strong>, Tsuboi M and Hansen TF (2022). Both diet and sociality affect primate brain-size evolution. *Systematic Biology*, 2023, 72(2), 404--418, [link](https://doi.org/10.1093/sysbio/syac075)
+- Juravel K, Porras L, <strong>H&ouml;hna S</strong>, Pisani D and Wörheide G: Improved resolution of recalcitrant nodes in the animal phylogeny through the analysis of genome gene content and morphology, *PLoS one*, 18 (3): e0282444. [link](https://doi.org/10.1371/journal.pone.0282444)
 - <strong>Kopperud BT</strong>, Magee AF, <strong>H&ouml;hna S</strong> (2023). Rapidly changing speciation and extinction rates can be inferred in spite of nonidentifiability. *Proceedings of the National Academy of Sciences*, 120(7), e2208851120. [link](https://www.pnas.org/doi/abs/10.1073/pnas.2208851120)
+
 <h3>2022</h3>
-- Grabowski M, <strong>Kopperud BT</strong>, Tsuboi M, Hansen TF (2022). Both diet and sociality affect primate brain-size evolution. *Systematic Biology*, in press, [link](https://doi.org/10.1093/sysbio/syac075)
 - <strong>H&ouml;hna S</strong>, <strong>Kopperud BT</strong>, Magee AF: CRABS: Congruent Rate Analyses in Birth-death Scenarios, *Methods in Ecology and Evolution*, 13, 2709–2718, [link](https://doi.org/10.1111/2041-210X.13997)
 - Catalán A, <strong>H&ouml;hna S</strong>, Lower SE, Duchen P: Inferring the demographic history of the North American firefly *Photinus pyralis*, *Journal of Evolutionary Biology*, in press, [link](https://doi.org/10.1111/jeb.14094)
 - Borges R, Boussau B, <strong>H&ouml;hna S</strong>, Pereira RJ, Kosiol C: Polymorphism-aware estimation of species trees and evolutionary forces from genomic sequences with RevBayes, *Methods in Ecology and Evolution*, in press, [link](https://doi.org/10.1111/2041-210X.13980)
