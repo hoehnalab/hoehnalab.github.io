@@ -185,6 +185,7 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
     </div></h5>
         <p class="title"><em>Graduate Student</em></p>
         <a href="https://github.com/basanta33" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
+        <a href="https://basanta33.github.io/" target="_blank"><img src="/assets/icons/globe.svg" width="25px"></a>
         <a href="https://twitter.com/basantakhakurel" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
         <a href="mailto:b.khakurel@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
 
