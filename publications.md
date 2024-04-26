@@ -4,8 +4,9 @@ title: Publications
 permalink: /publications/
 ---
 <h3>2024</h3>
+- <strong>Capobianco A</strong>, Zouhri S, Friedman M (2024): A long-snouted marine bonytongue (Teleostei: Osteoglossidae) from the early Eocene of Morocco and the phylogenetic affinities of marine osteoglossids. *Zoological Journal of the Linnean Society*, in press. [link](https://academic.oup.com/zoolinnean/advance-article/doi/10.1093/zoolinnean/zlae015/7648739)
 - Tsuboi, M, <strong>Kopperud, BT</strong>, Matschiner, M, Grabowski M, Syrowatka C, Pélabon C, Hansen TF (2024): Antler Allometry, the Irish Elk and Gould Revisited. *Evolutionary Biology*, 51, 149--165. [link](https://link.springer.com/article/10.1007/s11692-023-09624-1)
-- Martínez-Gómez J, Song MJ, Tribble CM, <strong>Kopperud BT</strong>, Freyman WA, <strong>Höhna S</strong>, Specht CD, Rothfels, CJ (2024). Commonly used Bayesian diversification methods lead to biologically meaningful differences in branch-specific rates on empirical phylogenies. Evolution Letters, 8(2), 189-199. [link](https://academic.oup.com/evlett/article/8/2/189/7334365)
+- Martínez-Gómez J, Song MJ, Tribble CM, <strong>Kopperud BT</strong>, Freyman WA, <strong>Höhna S</strong>, Specht CD, Rothfels, CJ (2024). Commonly used Bayesian diversification methods lead to biologically meaningful differences in branch-specific rates on empirical phylogenies. *Evolution Letters*, 8(2), 189-199. [link](https://academic.oup.com/evlett/article/8/2/189/7334365)
 
 <h3>2023</h3>
 - <strong>Fabreti L</strong> and <strong>H&ouml;hna S</strong>: Bayesian inference of phylogeny is robust to substitution model over-parameterization, *Systematic Biology*, 2023, in press. [link](https://doi.org/10.1093/sysbio/syad041)
