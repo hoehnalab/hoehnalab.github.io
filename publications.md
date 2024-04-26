@@ -3,9 +3,13 @@ layout: page
 title: Publications
 permalink: /publications/
 ---
+<h3>2024</h3>
+- Tsuboi, M, <strong>Kopperud, BT</strong>, Matschiner, M, Grabowski M, Syrowatka C, Pélabon C, Hansen TF (2024): Antler Allometry, the Irish Elk and Gould Revisited. *Evolutionary Biology*, 51, 149--165. [link](https://link.springer.com/article/10.1007/s11692-023-09624-1)
+- Martínez-Gómez J, Song MJ, Tribble CM, <strong>Kopperud BT</strong>, Freyman WA, <strong>Höhna S</strong>, Specht CD, Rothfels, CJ (2024). Commonly used Bayesian diversification methods lead to biologically meaningful differences in branch-specific rates on empirical phylogenies. Evolution Letters, 8(2), 189-199. [link](https://academic.oup.com/evlett/article/8/2/189/7334365)
+
 <h3>2023</h3>
 - <strong>Fabreti L</strong> and <strong>H&ouml;hna S</strong>: Bayesian inference of phylogeny is robust to substitution model over-parameterization, *Systematic Biology*, 2023, in press. [link](https://doi.org/10.1093/sysbio/syad041)
-- Grabowski M, Pienaar J, Voje KJ, Andersson S, Fuentes-González J, <strong>Kopperud BT</strong>, Moen DS, Tsuboi M, Uyeda J and Hansen TF (2022). A Cautionary Note on “A Cautionary Note on the Use of Ornstein Uhlenbeck Models in Macroevolutionary Studies”. *Systematic Biology*, in press, [link](https://doi.org/10.1093/sysbio/syad012)
+- Grabowski M, Pienaar J, Voje KJ, Andersson S, Fuentes-González J, <strong>Kopperud BT</strong>, Moen DS, Tsuboi M, Uyeda J and Hansen TF (2022). A Cautionary Note on “A Cautionary Note on the Use of Ornstein Uhlenbeck Models in Macroevolutionary Studies”. *Systematic Biology*, 72(4), 955--963, [link](https://doi.org/10.1093/sysbio/syad012)
 - Grabowski M, <strong>Kopperud BT</strong>, Tsuboi M and Hansen TF (2022). Both diet and sociality affect primate brain-size evolution. *Systematic Biology*, 2023, 72(2), 404--418, [link](https://doi.org/10.1093/sysbio/syac075)
 - Juravel K, Porras L, <strong>H&ouml;hna S</strong>, Pisani D and Wörheide G: Improved resolution of recalcitrant nodes in the animal phylogeny through the analysis of genome gene content and morphology, *PLoS one*, 18 (3): e0282444. [link](https://doi.org/10.1371/journal.pone.0282444)
 - <strong>Kopperud BT</strong>, Magee AF, <strong>H&ouml;hna S</strong> (2023). Rapidly changing speciation and extinction rates can be inferred in spite of nonidentifiability. *Proceedings of the National Academy of Sciences*, 120(7), e2208851120. [link](https://www.pnas.org/doi/abs/10.1073/pnas.2208851120)
