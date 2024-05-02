@@ -174,6 +174,26 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
 I am a master's student in Evolutionary Biology. My research passion lies in computational and statistical phylogenetics, especially species tree inference from molecular data. I am currently working on evaluating the performance and properties of coalescent-based species tree inference methods using simulations. To offset my screen time, I enjoy exploring nature through hiking and botanizing.
     </div>
 </div>
+
+
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/Basanta.jpg">
+    <h5><div class="tooltip"><p class="ttext">Basanta Khakurel</p>
+        <span class="tooltiptext">
+            I am a computational biologist working mostly in morphological character evolution models. My research involves estimating phylogenetic trees in a more robust manner using more adequate models of evolution. In the past, I have worked on species delimitation studies on Mexican livebearer fishes and Eastern Pine snakes. My work also involved assessing the impact of morphological state space on phylogenetic inferences and trying to allow for different stationary frequencies in morphological character evolution. I will be exploring more on the use of various models for morphological character evolution.
+        </span>
+    </div></h5>
+        <p class="title"><em>Graduate Student</em></p>
+        <a href="https://github.com/basanta33" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
+        <a href="https://basanta33.github.io/" target="_blank"><img src="/assets/icons/globe.svg" width="25px"></a>
+        <a href="https://twitter.com/basantakhakurel" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
+        <a href="mailto:b.khakurel@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+            I am a computational biologist working mostly in morphological character evolution models. My research involves estimating phylogenetic trees in a more robust manner using more adequate models of evolution. In the past, I have worked on species delimitation studies on Mexican livebearer fishes and Eastern Pine snakes. My work also involved assessing the impact of morphological state space on phylogenetic inferences and trying to allow for different stationary frequencies in morphological character evolution. I will be exploring more on the use of various models for morphological character evolution.
+    </div>
+</div>
     
 </div>
 
