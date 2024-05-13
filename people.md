@@ -194,9 +194,25 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
             I am a computational biologist working mostly in morphological character evolution models. My research involves estimating phylogenetic trees in a more robust manner using more adequate models of evolution. In the past, I have worked on species delimitation studies on Mexican livebearer fishes and Eastern Pine snakes. My work also involved assessing the impact of morphological state space on phylogenetic inferences and trying to allow for different stationary frequencies in morphological character evolution. I will be exploring more on the use of various models for morphological character evolution.
     </div>
 </div>
+
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/priscilla.jpg">
+    <h5><div class="tooltip"><p class="ttext">Priscilla Lau</p>
+        <span class="tooltiptext">
+            I am a computational evolutionary biologist interested in macroevolution and trait evolution. I am currently working with Sebastian, Bjørn and John in developing a state-dependent Ornstein-Uhlenbeck model for continuous character evolution in RevBayes. During my undergrad, I studied the phylogenetics of Hawaiian </i>Doryopteris</i> (Pteridaceae) using target enrichment probe set GoFlag. Besides research, I also enjoy curating herbarium specimens, observing linguistics behaviors (sound production and perception), watching baseball games, and playing classic, abstract games (currently minesweeper). 
+        </span>
+    </div></h5>
+        <p class="title"><em>Graduate Student</em></p>
+        <a href="https://github.com/prilau" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
+        <a href="mailto:pri.lau@campus.lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+            I am a computational evolutionary biologist interested in macroevolution and trait evolution. I am currently working with Sebastian, Bjørn and John in developing a state-dependent Ornstein-Uhlenbeck model for continuous character evolution in RevBayes. During my undergrad, I studied the phylogenetics of Hawaiian </i>Doryopteris</i> (Pteridaceae) using target enrichment probe set GoFlag. Besides research, I also enjoy curating herbarium specimens, observing linguistics behaviors (sound production and perception), watching baseball games, and playing classic, abstract games (currently minesweeper). 
+    </div>
+</div>
     
 </div>
-
 
 
 # Past Members
