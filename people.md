@@ -211,6 +211,22 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
             I am a computational evolutionary biologist interested in macroevolution and trait evolution. I am currently working with Sebastian, Bjørn and John in developing a state-dependent Ornstein-Uhlenbeck model for continuous character evolution in RevBayes. During my undergrad, I studied the phylogenetics of Hawaiian Doryopteris (Pteridaceae) using target enrichment probe set GoFlag. Besides research, I also enjoy curating herbarium specimens, observing linguistics behaviors (sound production and perception), watching baseball games, and playing classic, abstract games (currently minesweeper). 
     </div>
 </div>
+
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/Gustavo_Darlim.JPEG">
+    <h5><div class="tooltip"><p class="ttext">Gustavo Darlim</p>
+        <span class="tooltiptext">
+I’m a vertebrate paleontologist working on macroevolution of crocodylomorphs (group that also includes living crocodilians). My research is dedicated to a critical reassessment of paleontological and neontological data to be subsequently incorporated into analyses that combine morphological, molecular and stratigraphic (fossil age) data simultaneously into total-evidence tip dating analyses. The focus of my studies is to provide more rigorous time-scaled phylogenies in order to better understanding macroevolutionary processes underlying crocodylomorph evolutionary history.
+        </span>
+    </div></h5>
+        <p class="title"><em>Postdoc</em></p>  
+        <a href="https://twitter.com/GDarlim" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
+
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+I’m a vertebrate paleontologist working on macroevolution of crocodylomorphs (group that also includes living crocodilians). My research is dedicated to a critical reassessment of paleontological and neontological data to be subsequently incorporated into analyses that combine morphological, molecular and stratigraphic (fossil age) data simultaneously into total-evidence tip dating analyses. The focus of my studies is to provide more rigorous time-scaled phylogenies in order to better understanding macroevolutionary processes underlying crocodylomorph evolutionary history.
+    </div>
+</div>
     
 </div>
 
