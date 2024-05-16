@@ -216,7 +216,7 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
     <img class="rcornersimage" src="/assets/images/Gustavo_Darlim.JPEG">
     <h5><div class="tooltip"><p class="ttext">Gustavo Darlim</p>
         <span class="tooltiptext">
-I’m a vertebrate paleontologist working on macroevolution of crocodylomorphs (group that also includes living crocodilians). My research is dedicated to a critical reassessment of paleontological and neontological data to be subsequently incorporated into analyses that combine morphological, molecular and stratigraphic (fossil age) data simultaneously into total-evidence tip dating analyses. The focus of my studies is to provide more rigorous time-scaled phylogenies in order to better understanding macroevolutionary processes underlying crocodylomorph evolutionary history.
+I’m a vertebrate paleontologist working on macroevolution of crocodylomorphs (group that also includes living crocodilians). My research is dedicated to a critical reassessment of paleontological and neontological data to be subsequently incorporated into analyses that combine morphological, molecular and stratigraphic (fossil age) data simultaneously (total-evidence tip dating). The focus of my studies is to provide more rigorous time-scaled phylogenies in order to better understanding macroevolutionary processes underlying crocodylomorph evolutionary history.
         </span>
     </div></h5>
         <p class="title"><em>Postdoc</em></p>  
@@ -224,7 +224,7 @@ I’m a vertebrate paleontologist working on macroevolution of crocodylomorphs (
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
-I’m a vertebrate paleontologist working on macroevolution of crocodylomorphs (group that also includes living crocodilians). My research is dedicated to a critical reassessment of paleontological and neontological data to be subsequently incorporated into analyses that combine morphological, molecular and stratigraphic (fossil age) data simultaneously into total-evidence tip dating analyses. The focus of my studies is to provide more rigorous time-scaled phylogenies in order to better understanding macroevolutionary processes underlying crocodylomorph evolutionary history.
+I’m a vertebrate paleontologist working on macroevolution of crocodylomorphs (group that also includes living crocodilians). My research is dedicated to a critical reassessment of paleontological and neontological data to be subsequently incorporated into analyses that combine morphological, molecular and stratigraphic (fossil age) data simultaneously (total-evidence tip dating). The focus of my studies is to provide more rigorous time-scaled phylogenies in order to better understanding macroevolutionary processes underlying crocodylomorph evolutionary history.
     </div>
 </div>
     
