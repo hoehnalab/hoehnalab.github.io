@@ -213,7 +213,7 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
 </div>
 
 <div class="item">
-    <img class="rcornersimage" src="/assets/images/Gustavo.Darlim.JPEG">
+    <img class="rcornersimage" src="/assets/images/Gustavo.JPEG">
     <h5><div class="tooltip"><p class="ttext">Gustavo Darlim</p>
         <span class="tooltiptext">
 I’m a vertebrate paleontologist working on macroevolution of crocodylomorphs (group that also includes living crocodilians). My research is dedicated to a critical reassessment of paleontological and neontological data to be subsequently incorporated into analyses that combine morphological, molecular and stratigraphic (fossil age) data simultaneously (total-evidence tip dating). The focus of my studies is to provide more rigorous time-scaled phylogenies in order to better understanding macroevolutionary processes underlying crocodylomorph evolutionary history.
