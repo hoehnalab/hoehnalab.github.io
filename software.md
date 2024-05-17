@@ -29,3 +29,13 @@ Development in RevBayes is ongoing and extremely active. Specifically, we use Re
 </div>
 
 <br>
+<br>
+
+<div class="container-small">
+<p class="text">
+<img class="floatleft-small" src="/assets/images/PESTO_logo.png">
+<a href="https://github.com/kopperud/Pesto.jl" target="_blank">Pesto.jl</a> - A <a href="https://julialang.org/" target="_blank">Julia</a> module for <span style="background-color: #CECECE">Phylogenetic Estimation of Shifts in the Tempo of Origination</span>. Under the birth-death-shift process (Höhna et al. 2019, biorxiv), the diversification rate is allowed to shift across the phylogeny, where branch-specific diversification rates, as well as the number of rate shifts can be inferred. Pesto is implemented using an efficient estimation algorithm, allowing for fast inferences even for large phylogenies with thousands of species.
+</p>
+</div>
+
+<br>
