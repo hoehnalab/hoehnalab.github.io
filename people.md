@@ -227,6 +227,25 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
             I am a computational evolutionary biologist interested in macroevolution and trait evolution. I am currently working with Sebastian, Bjørn and John in developing a state-dependent Ornstein-Uhlenbeck model for continuous character evolution in RevBayes. During my undergrad, I studied the phylogenetics of Hawaiian Doryopteris (Pteridaceae) using target enrichment probe set GoFlag. Besides research, I also enjoy curating herbarium specimens, observing linguistics behaviors (sound production and perception), watching baseball games, and playing classic, abstract games (currently minesweeper). 
     </div>
 </div>
+
+
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/walker_profile.jpg">
+    <h5><div class="tooltip"><p class="ttext">Walker Sexton</p>
+        <span class="tooltiptext">
+            I am a Master's student in the Paleobiology and Geobiology program. My undergraduate research at Washington University in St. Louis focused on developing an empirical hominin phylogeny and investigating the problems that entailed. I am currently working to understand lineage diversification models and developing models to infer phylogeny from morphological data. Outside of the lab, I enjoy traveling, juggling, and exploring the many cultural opportunities Munich has to offer!
+            
+        </span>
+    </div></h5>
+        <p class="title"><em>Graduate Student</em></p>
+        <a href="https://twitter.com/walkerleesexton" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
+        <a href="mailto:Walker.Sexton@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+            I am a Master's student in the Paleobiology and Geobiology program. My undergraduate research at Washington University in St. Louis focused on developing an empirical hominin phylogeny and investigating the problems that entailed. I am currently working to understand lineage diversification models and developing models to infer phylogeny from morphological data. Outside of the lab, I enjoy traveling, juggling, and exploring the many cultural opportunities Munich has to offer!
+    </div>
+</div>
     
 </div>
 
