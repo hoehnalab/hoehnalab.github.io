@@ -230,7 +230,7 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
 
 
 <div class="item">
-    <img class="rcornersimage" src="/assets/images/walker_profile.jpg">
+    <img class="rcornersimage" src="/assets/images/walker_profile.jpeg">
     <h5><div class="tooltip"><p class="ttext">Walker Sexton</p>
         <span class="tooltiptext">
             I am a Master's student in the Paleobiology and Geobiology program. My undergraduate research at Washington University in St. Louis focused on developing an empirical hominin phylogeny and investigating the problems that entailed. I am currently working to understand lineage diversification models and developing models to infer phylogeny from morphological data. Outside of the lab, I enjoy traveling, juggling, and exploring the many cultural opportunities Munich has to offer!
