@@ -246,6 +246,23 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
             I am a Master's student in the Paleobiology and Geobiology program. My undergraduate research at Washington University in St. Louis focused on developing an empirical hominin phylogeny and investigating the problems that entailed. I am currently working to understand lineage diversification models and developing models to infer phylogeny from morphological data. Outside of the lab, I enjoy traveling, juggling, and exploring the many cultural opportunities Munich has to offer!
     </div>
 </div>
+
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/HaoqingDu.jpg">
+    <h5><div class="tooltip"><p class="ttext">Haoqing Du 杜昊清</p>
+        <span class="tooltiptext">
+            I am an evolutionary biologist with a backgournd in genomics and phylogenetics, specializing in evolution models of gene families and gene expression. My current project is to investigate the sexual dimorphism in fireflies (Family: Lampyridae) within a phylogenetic framework, and I am developing methods to study gene expression of multiple species and individuals across a phylogeny. Besides, I am also interested in speciation and hybridization events, having worked on avian hybridization during my Master thesis. In my free time, I enjoy playing basketball and mountain hiking.
+        </span>
+    </div></h5>
+        <p class="title"><em>Graduate Student</em></p>
+        <a href="https://github.com/HaoqingDu" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
+        <a href="mailto:Haoqing.Du@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+           I am an evolutionary biologist with a backgournd in genomics and phylogenetics, specializing in evolution models of gene families and gene expression. My current project is to investigate the sexual dimorphism in fireflies (Family: Lampyridae) within a phylogenetic framework, and I am developing methods to study gene expression of multiple species and individuals across a phylogeny. Besides, I am also interested in speciation and hybridization events, having worked on avian hybridization during my Master thesis. In my free time, I enjoy playing basketball and mountain hiking.
+    </div>
+</div>
     
 </div>
 
