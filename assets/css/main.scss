@@ -54,8 +54,9 @@ img.floatright {
 img.rcornersimage {
     border-radius: 15px;
     vertical-align: top;
-    height: auto;
-    width: 80%
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
 }
 
 .caption {
