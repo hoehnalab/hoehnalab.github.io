@@ -71,4 +71,62 @@ Phylogenetic inferences from genomic data consist of many loci. Each locus is as
 </div>
 </div>
 
+<br>
+<br>
+
+<!-- Section 4 (Trait Evolution) -->
+<div class="container-small">
+<img class="floatright" src="/assets/images/MacDrive.png">
+<div id="rcornersbox2">
+    <h2> State Dependent OU process </h2>
+
+    <p class="text">
+        State Dependent Speciation and Extinction Model using Ornstein-Uhlenbeck process.  
+    </p>
+
+</div>
+</div>
+
+<br>
+<br>
+
+<!-- Section 5 (Fireflies) -->
+<div class="container-small">
+<img class="floatleft" src="/assets/images/MacDrive.png">
+<div id="rcornersbox1">
+    <h2> Gene Family Evolution in Fireflies </h2>
+
+    <p class="text">
+        Using Firefly as a model organism to study Gene Family Evolution. 
+    </p>
+
+</div>
+</div>
+
+<br>
+<br>
+
+<!-- Section 6 (MacDrive) -->
+<div class="container-small">
+<img class="floatright" src="/assets/images/MacDrive.png">
+<div id="rcornersbox2">
+    <h2> MacDrive </h2>
+
+    <p class="text">
+        Biodiversity is modeled by the process of speciation and extinction.
+        There is clear evidence from both living and extinct species that biodiversity is extremely variable through time and among species. 
+        However, we still do not know what factors drive speciation and extinction rates on a macroevolutionary level (that is, beyond species boundaries). 
+        The goal of this project is to combine statistical, computational, neontological – i.e. relating to species living today – and paleobiological approaches to study macroevolutionary dynamics. 
+        We plan to develop new statistical models to estimate time varying and lineage-specific speciation and extinction rates. 
+        To test the new methods, we will analyze the evolution of four large systematic groups and investigate whether diversification and extinction rates are correlated with environmental factors or species-specific traits. 
+        Ultimately, we will test if specific traits are correlated with mass extinction survival probabilities, as for example the Lilliput Effect predicts smaller species to have higher survival probabilities. 
+        With this project,the major goal is to contribute to a better understanding of the effects of the current biodiversity crisis.
+    </p>
+
+</div>
+</div>
+
+<br>
+<br>
+
 </div>

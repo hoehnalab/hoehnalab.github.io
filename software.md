@@ -6,7 +6,7 @@ permalink: /software/
 
 
 <div class="container-small">
-<img class="floatleft-small" src="/assets/images/aquabayes-desaturated.png">
+<img class="floatleft-small" src="/assets/images/RevBayes_logo.png">
 <p class="text">
 <a href="https://revbayes.github.io/" target="_blank">RevBayes</a> - <span style="background-color: #CECECE">Bayesian phylogenetic inference using probabilistic graphical models and an interpreted language.</span> RevBayes provides a flexible framework for performing Bayesian statistical analysis of phylogeny and related topics, such as divergence time estimation, diversification rate estimation, continuous and discrete trait evolution and historical biogeography.
 </p>

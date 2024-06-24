@@ -15,9 +15,10 @@
   background: #44BAAA;
   padding: 20px;
   height: auto;
-  width: 50%;
-  display: inline-block;
+  width: 100%; /* Adjusted for full width */
+  display: block;
   min-width: 300px;
+  max-width: 100%; /* Adjusted for full width */
 }
 
 img.floatleft {
@@ -55,7 +56,6 @@ img.rcornersimage {
     vertical-align: top;
     height: auto;
     width: 80%
-
 }
 
 .caption {
@@ -120,25 +120,26 @@ img.rcornersimage {
 // Research page formatting
 #rcornersbox1 {
   border-radius: 15px;
-  background: #44BAAA;
+  background: #44BAAA; /* or #73BC78 for rcornersbox2 */
   padding: 20px;
-  display: inline-block;
+  display: block;
   height: auto;
-  width: 50%;
+  width: 100%; /* Adjusted for full width */
   min-width: 300px;
-  max-width: 400px;
+  max-width: 100%; /* Adjusted for full width */
 }
 
-#rcornersbox2 {
+#rcornersbox2 {  
   border-radius: 15px;
-  background: #73BC78;
+  background: #73BC78; 
   padding: 20px;
-  display: inline-block;
+  display: block;
   height: auto;
-  width: 50%;
+  width: 100%; /* Adjusted for full width */
   min-width: 300px;
-  max-width: 400px;
+  max-width: 100%; /* Adjusted for full width */
 }
+
 
 
 // Software page formatting
@@ -149,4 +150,17 @@ img.floatleft-small {
     min-width: 50px;
     margin-right: 2%;
     margin-bottom: 2%;
+}
+
+/* Adjust the container class to span the full width */
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Optional: Add some padding to the content for better readability */
+.page-content {
+  padding: 20px;
 }
