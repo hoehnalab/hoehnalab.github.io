@@ -4,6 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 <h3>2024</h3>
+- <strong>Khakurel B</strong>, Grigsby C, Tran TD, Zariwala J, <strong>Höhna S</strong>, Wright AM (2024): The fundamental role of character coding in Bayesian morphological phylogenetics. Systematic Biology, syae033. [link](https://doi.org/10.1093/sysbio/syae033)
 - <strong>Billenstein RJ</strong>, <strong>Höhna S</strong> (2024): Comparison of Bayesian Coalescent Skyline Plot Models for Inferring Demographic Histories. Molecular Biology and Evolution, 41(5), msae073. [link](https://academic.oup.com/mbe/article/41/5/msae073/7648822)
 - <strong>Höhna S</strong>, <strong>Hsiang AY</strong> (2024): Sequential Bayesian phylogenetic inference. Systematic Biology, syae020. [link](https://doi.org/10.1093/sysbio/syae020)
 - <strong>Smith K</strong>, Ayres D, Neumaier R, Wörheide G, <strong>Höhna S</strong> (2024): Bayesian Phylogenetic Analysis on multi-core Compute Architectures: Implementation and evaluation of BEAGLE in RevBayes with MPI. Systematic Biology, syae005. [link](https://academic.oup.com/sysbio/advance-article-abstract/doi/10.1093/sysbio/syae005/7591007)
