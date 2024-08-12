@@ -1,10 +1,12 @@
---- # Only the main Sass file needs front matter (the dashes are enough) --- @charset "utf-8";
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
 @import "main";
 
 
 .center {
-  text-align: center;
-  text-size-adjust: auto;
+    text-align: center;
 }
 
 // Main page formatting
@@ -13,67 +15,65 @@
   background: #44BAAA;
   padding: 20px;
   height: auto;
-  width: 90%;
-  /* Adjusted for full width */
+  width: 100%; /* Adjusted for full width */
   display: block;
   min-width: 300px;
-  max-width: 90%;
-  /* Adjusted for full width */
+  max-width: 100%; /* Adjusted for full width */
 }
 
 img.floatleft {
-  float: right;
-  width: 50%;
-  max-width: 400px;
-  min-width: 300px;
-  margin-bottom: 20px;
-  padding-right: 20px;
+    float: left;
+    width: 50%;
+    max-width: 400px;
+    min-width: 300px;
+    margin-bottom: 20px;
+    padding-right: 20px;
 }
 
 img.floatright {
-  float: right;
-  width: 50%;
-  max-width: 400px;
-  min-width: 300px;
-  margin-bottom: 20px;
-  padding-left: 20px;
+    float: right;
+    width: 50%;
+    max-width: 400px;
+    min-width: 300px;
+    margin-bottom: 20px;
+    padding-left: 20px;
 }
 
 
 // People page formatting
 .item {
-  vertical-align: top;
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-  max-width: 250px;
-  margin-right: 30px;
-  margin-bottom: 50px;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin-right: 30px;
+    margin-bottom: 50px;
 }
 
 img.rcornersimage {
-  border-radius: 15px;
-  vertical-align: top;
-  height: 350px;
-  width: 250px;
-  object-fit: cover;
+    border-radius: 15px;
+    vertical-align: top;
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
 }
 
 .caption {
-  display: block;
+    display: block;
 }
 
 
 // Showing the tooltip text on mobile
 .blurb {
-  display: none;
+    display: none;
 }
 
 @media only screen and (max-width: 768px) {
-  .blurb {
-    display: block;
-    font-size: calc(12px + 0.5vw);
-  }
+    .blurb {
+        display: block;
+        font-size: calc(12px + 0.5vw);
+    }
 }
 
 
@@ -109,8 +109,7 @@ img.rcornersimage {
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
-  bottom: 100%;
-  /* At the top of the tooltip */
+  bottom: 100%;  /* At the top of the tooltip */
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
@@ -122,41 +121,36 @@ img.rcornersimage {
 // Research page formatting
 #rcornersbox1 {
   border-radius: 15px;
-  background: #44BAAA;
-  /* or #73BC78 for rcornersbox2 */
+  background: #44BAAA; /* or #73BC78 for rcornersbox2 */
   padding: 20px;
   display: block;
   height: auto;
-  width: 100%;
-  /* Adjusted for full width */
+  width: 100%; /* Adjusted for full width */
   min-width: 300px;
-  max-width: 100%;
-  /* Adjusted for full width */
+  max-width: 100%; /* Adjusted for full width */
 }
 
-#rcornersbox2 {
+#rcornersbox2 {  
   border-radius: 15px;
-  background: #73BC78;
+  background: #73BC78; 
   padding: 20px;
   display: block;
   height: auto;
-  width: 100%;
-  /* Adjusted for full width */
+  width: 100%; /* Adjusted for full width */
   min-width: 300px;
-  max-width: 100%;
-  /* Adjusted for full width */
+  max-width: 100%; /* Adjusted for full width */
 }
 
 
 
 // Software page formatting
 img.floatleft-small {
-  float: left;
-  width: 40%;
-  max-width: 150px;
-  min-width: 50px;
-  margin-right: 2%;
-  margin-bottom: 2%;
+    float: left;
+    width: 40%;
+    max-width: 150px;
+    min-width: 50px;
+    margin-right: 2%;
+    margin-bottom: 2%;
 }
 
 /* Adjust the container class to span the full width */
