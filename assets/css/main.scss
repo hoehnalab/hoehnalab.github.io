@@ -4,9 +4,15 @@
 @charset "utf-8";
 @import "main";
 
+body {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 // Main page formatting
@@ -15,65 +21,89 @@
   background: #44BAAA;
   padding: 20px;
   height: auto;
-  width: 100%; /* Adjusted for full width */
-  display: block;
+  width: auto;
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   min-width: 300px;
-  max-width: 100%; /* Adjusted for full width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
 }
 
+
 img.floatleft {
-    float: left;
-    width: 50%;
-    max-width: 400px;
-    min-width: 300px;
-    margin-bottom: 20px;
-    padding-right: 20px;
+  float: left;
+  width: 48%; /* Adjusted width for both images */
+  max-width: 400px;
+  min-width: 200px; /* More flexible on smaller screens */
+  margin: 10px; /* Add some space around the images */
+  transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
 img.floatright {
-    float: right;
-    width: 50%;
-    max-width: 400px;
-    min-width: 300px;
-    margin-bottom: 20px;
-    padding-left: 20px;
+  float: right;
+  width: 50%;
+  max-width: 400px;
+  min-width: 300px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+
+img.floatleft:hover, img.floatright:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  img.floatleft, img.floatright {
+    width: 100%; /* Full width on smaller screens */
+    margin: 10px 0;
+  }
+
+  #rcornersbox {
+    width: calc(100% - 30px);
+    padding: 15px;
+  }
 }
 
 
 // People page formatting
 .item {
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    max-width: 250px;
-    margin-right: 30px;
-    margin-bottom: 50px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  max-width: 250px;
+  margin-right: 30px;
+  margin-bottom: 50px;
 }
 
 img.rcornersimage {
-    border-radius: 15px;
-    vertical-align: top;
-    height: 350px;
-    width: 250px;
-    object-fit: cover;
+  border-radius: 15px;
+  vertical-align: top;
+  height: 350px;
+  width: 250px;
+  object-fit: cover;
 }
 
 .caption {
-    display: block;
+  display: block;
 }
 
 
 // Showing the tooltip text on mobile
 .blurb {
-    display: none;
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
-    .blurb {
-        display: block;
-        font-size: calc(12px + 0.5vw);
-    }
+  .blurb {
+    display: block;
+    font-size: calc(12px + 0.5vw);
+  }
 }
 
 
@@ -93,8 +123,6 @@ img.rcornersimage {
   font-size: 16px;
   border-radius: 6px;
   padding: 5px 5px;
-
-  /* Position the tooltip */
   position: absolute;
   z-index: 1;
   top: 100%;
@@ -109,7 +137,7 @@ img.rcornersimage {
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
-  bottom: 100%;  /* At the top of the tooltip */
+  bottom: 100%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
@@ -119,46 +147,40 @@ img.rcornersimage {
 
 
 // Research page formatting
+#rcornersbox1, #rcornersbox2 {
+  border-radius: 15px;
+  padding: 20px;
+  display: block;
+  width: calc(100% - 40px); /* Subtracting padding from total width */
+  max-width: 100%;
+  min-width: 300px;
+}
+
 #rcornersbox1 {
-  border-radius: 15px;
-  background: #44BAAA; /* or #73BC78 for rcornersbox2 */
-  padding: 20px;
-  display: block;
-  height: auto;
-  width: 100%; /* Adjusted for full width */
-  min-width: 300px;
-  max-width: 100%; /* Adjusted for full width */
+  background: #44BAAA;
 }
 
-#rcornersbox2 {  
-  border-radius: 15px;
-  background: #73BC78; 
-  padding: 20px;
-  display: block;
-  height: auto;
-  width: 100%; /* Adjusted for full width */
-  min-width: 300px;
-  max-width: 100%; /* Adjusted for full width */
+#rcornersbox2 {
+  background: #73BC78;
 }
-
 
 
 // Software page formatting
 img.floatleft-small {
-    float: left;
-    width: 40%;
-    max-width: 150px;
-    min-width: 50px;
-    margin-right: 2%;
-    margin-bottom: 2%;
+  float: left;
+  width: 40%;
+  max-width: 150px;
+  min-width: 50px;
+  margin-right: 2%;
+  margin-bottom: 2%;
 }
 
 /* Adjust the container class to span the full width */
 .container {
-  width: 100%;
+  width: calc(100% - 40px);
   max-width: 100%;
-  padding: 0;
-  margin: 0;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 /* Optional: Add some padding to the content for better readability */

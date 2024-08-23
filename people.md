@@ -26,8 +26,8 @@ permalink: /people/
         I’m a computational biologist with focus on Bayesian phylogenetic inference. Natural selection by means of adaptation and genetic inheritance are key principles in evolutionary biology. Evolutionary relationships are commonly depicted by phylogenetic trees. Using phylogenetic methods we can learn about the evolutionary history of species and the processes that have contributed to present diversity. I’m developing statistical and computational methods to infer phylogenies from molecular sequence data. These methods additionally identify periods of adaptive genetic evolution at lineage or genes. Furthermore, I develop mathematical models to study macroevolutionary patterns, such as, diversification rate variation over time and among lineages and episodes of global mass extinctions.
     </div>
 </div>
-    
-    
+
+
 <div class="item">
     <img class="rcornersimage" src="/assets/images/John_Clarke.jpg">
     <h5><div class="tooltip"><p class="ttext">John Clarke</p>
@@ -44,8 +44,8 @@ I'm an evolutionary biologist and palaeontologist interested in testing drivers 
 I'm an evolutionary biologist and palaeontologist interested in testing drivers of phenotypic and species diversity using phylogenetic comparative methods. Having first applied these methods to Mesozoic fishes, I now apply them to large datasets of extant fishes, plants and insects.
     </div>
 </div>
-    
-    
+
+
 <div class="item">
     <img class="rcornersimage" src="/assets/images/Alessio_Capobianco.jpg">
     <h5><div class="tooltip"><p class="ttext">Alessio Capobianco</p>
@@ -61,7 +61,7 @@ I am a paleontologist and evolutionary biologist investigating how biological di
 I am a paleontologist and evolutionary biologist investigating how biological diversity evolves in concert with changes in the Earth system, mainly focusing on fishes. My research explores how fossils reveal fundamental and entirely unexpected aspects of the evolutionary history of living organisms, and examines diversity and biogeographic patterns through the lens of paleontological data. I am also interested in how sampling and coding of morphological data impacts phylogenetic inference and the estimation of evolutionary timescales.
     </div>
 </div>
-    
+
 <div class="item">
     <img class="rcornersimage" src="/assets/images/Nicola_Heckeberg.jpg">
     <h5><div class="tooltip"><p class="ttext">Nicola Heckeberg</p>
@@ -202,7 +202,7 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
             I am an evolutionary biologist with a backgournd in genomics and phylogenetics, specializing in evolution models of gene families and gene expression. My current project is to investigate the sexual dimorphism in fireflies (Family: Lampyridae) within a phylogenetic framework, and I am developing methods to study gene expression of multiple species and individuals across a phylogeny. Besides, I am also interested in speciation and hybridization events, having worked on avian hybridization during my Master thesis. In my free time, I enjoy playing basketball and mountain hiking.
         </span>
     </div></h5>
-        <p class="title"><em>Graduate Student</em></p>
+        <p class="title"><em>PhD Student</em></p>
         <a href="https://github.com/HaoqingDu" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
         <a href="mailto:Haoqing.Du@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
 
@@ -216,7 +216,7 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
     <img class="rcornersimage" src="/assets/images/Priscilla_Lau.jpg">
     <h5><div class="tooltip"><p class="ttext">Priscilla Lau</p>
         <span class="tooltiptext">
-            I am a computational evolutionary biologist interested in macroevolution and trait evolution. I am currently working with Sebastian, Bjørn and John in developing a state-dependent Ornstein-Uhlenbeck model for continuous character evolution in RevBayes. During my undergrad, I studied the phylogenetics of Hawaiian Doryopteris (Pteridaceae) using target enrichment probe set GoFlag. Besides research, I also enjoy curating herbarium specimens, observing linguistics behaviors (sound production and perception), watching baseball games, and playing classic, abstract games (currently minesweeper). 
+            I am a computational evolutionary biologist interested in macroevolution and trait evolution. I am currently working with Sebastian, Bjørn and John in developing a state-dependent Ornstein-Uhlenbeck model for continuous character evolution in RevBayes. During my undergrad, I studied the phylogenetics of Hawaiian Doryopteris (Pteridaceae) using target enrichment probe set GoFlag. Besides research, I also enjoy curating herbarium specimens, observing linguistics behaviors (sound production and perception), watching baseball games, and playing classic, abstract games (currently minesweeper).
         </span>
     </div></h5>
         <p class="title"><em>Master's Student</em></p>
@@ -225,7 +225,7 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
-            I am a computational evolutionary biologist interested in macroevolution and trait evolution. I am currently working with Sebastian, Bjørn and John in developing a state-dependent Ornstein-Uhlenbeck model for continuous character evolution in RevBayes. During my undergrad, I studied the phylogenetics of Hawaiian Doryopteris (Pteridaceae) using target enrichment probe set GoFlag. Besides research, I also enjoy curating herbarium specimens, observing linguistics behaviors (sound production and perception), watching baseball games, and playing classic, abstract games (currently minesweeper). 
+            I am a computational evolutionary biologist interested in macroevolution and trait evolution. I am currently working with Sebastian, Bjørn and John in developing a state-dependent Ornstein-Uhlenbeck model for continuous character evolution in RevBayes. During my undergrad, I studied the phylogenetics of Hawaiian Doryopteris (Pteridaceae) using target enrichment probe set GoFlag. Besides research, I also enjoy curating herbarium specimens, observing linguistics behaviors (sound production and perception), watching baseball games, and playing classic, abstract games (currently minesweeper).
     </div>
 </div>
 
@@ -246,7 +246,7 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
             I am a Master's student in the Paleobiology and Geobiology program. My undergraduate research at Washington University in St. Louis focused on developing an empirical hominin phylogeny and investigating the problems that entailed. I am currently working to understand lineage diversification models and developing models to infer phylogeny from morphological data. Outside of the lab, I enjoy traveling, juggling, and exploring the many cultural opportunities Munich has to offer!
     </div>
 </div>
-    
+
 </div>
 
 
@@ -290,4 +290,3 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
 </div>
 
 </div>
-

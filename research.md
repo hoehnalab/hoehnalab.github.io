@@ -78,10 +78,26 @@ Phylogenetic inferences from genomic data consist of many loci. Each locus is as
 <div class="container-small">
 <img class="floatright" src="/assets/images/MacDrive.png">
 <div id="rcornersbox2">
-    <h2> State Dependent OU process </h2>
+    <h2> Modeling Trait Evolution </h2>
 
     <p class="text">
-        State Dependent Speciation and Extinction Model using Ornstein-Uhlenbeck process.  
+        Joint inference of continuous trait adaptation and selective regime history using the state-dependent Ornstein-Uhlenbeck model.
+
+        Trait evolution studies the evolution of homologous characters across phylogeny.
+        These characters are at above-sequence level, including but not limited to gene expression, physiological, and morphological data.
+        Many phylogenetic comparative methods (PCMs) have been developed to study trait evolution, yet to what extent these models reflect realistic evolutionary processes is still under debate.
+
+        For example, macroevolutionary 'adaptation' is a prevailing hypothesis regarding continuous trait evolution, where a given trait 'adapts' differently under different 'selective regimes'.
+        This hypothesis can be modelled by the Ornstein-Uhlenbeck (OU) process, a stochastic process where the continuous trait experiences a pulling towards an optimum.
+        In particular, we can test whether a continuous trait is drawn towards different optima for species in different discrete regimes.
+        Traditionally, the discrete regime history is first stochastically mapped on a phylogenetic tree, followed by inference of OU parameters for the continuous trait evolution.
+        In the first step, the regime history inferred is usually treated as known without error.
+        Alternatively, the OU model can be applied on hundreds to thousands of regime history maps to account for the uncertainty, but the computational efficiency would be severely compromised.
+
+        Here, we have developed the state-dependent Ornstein-Uhlenbeck model, a Bayesian approach to jointly infer the evolution of a continuous trait and the discrete selective regimes.
+        Our Bayesian approach treats positions of regime shifts as a parameter to be estimated, a data-augmentation method initially used in MuSSCRat.
+        Moreover, we overcome the computational barrier by extending the pruning algorithm for computing the likelihood to state-dependent models instead of using the conventional generalised least square method.
+        Overall, we provide a novel method to directly test the adaptation hypothesis of continuous trait evolution in comparative phylogenetics.
     </p>
 
 </div>
@@ -97,7 +113,7 @@ Phylogenetic inferences from genomic data consist of many loci. Each locus is as
     <h2> Gene Family Evolution in Fireflies </h2>
 
     <p class="text">
-        Using Firefly as a model organism to study Gene Family Evolution. 
+        Using Firefly as a model organism to study Gene Family Evolution.
     </p>
 
 </div>
@@ -114,13 +130,13 @@ Phylogenetic inferences from genomic data consist of many loci. Each locus is as
 
     <p class="text">
         Biodiversity is modeled by the process of speciation and extinction.
-        There is clear evidence from both living and extinct species that biodiversity is extremely variable through time and among species. 
-        However, we still do not know what factors drive speciation and extinction rates on a macroevolutionary level (that is, beyond species boundaries). 
-        The goal of this project is to combine statistical, computational, neontological – i.e. relating to species living today – and paleobiological approaches to study macroevolutionary dynamics. 
-        We plan to develop new statistical models to estimate time varying and lineage-specific speciation and extinction rates. 
-        To test the new methods, we will analyze the evolution of four large systematic groups and investigate whether diversification and extinction rates are correlated with environmental factors or species-specific traits. 
-        Ultimately, we will test if specific traits are correlated with mass extinction survival probabilities, as for example the Lilliput Effect predicts smaller species to have higher survival probabilities. 
-        With this project,the major goal is to contribute to a better understanding of the effects of the current biodiversity crisis.
+        There is clear evidence from both living and extinct species that biodiversity is extremely variable through time and among species.
+        However, we still do not know what factors drive speciation and extinction rates on a macroevolutionary level (that is, beyond species boundaries).
+        The goal of this project is to combine statistical, computational, neontological – i.e. relating to species living today – and paleobiological approaches to study macroevolutionary dynamics.
+        We plan to develop new statistical models to estimate time varying and lineage-specific speciation and extinction rates.
+        To test the new methods, we will analyze the evolution of four large systematic groups and investigate whether diversification and extinction rates are correlated with environmental factors or species-specific traits.
+        Ultimately, we will test if specific traits are correlated with mass extinction survival probabilities, as for example the Lilliput Effect predicts smaller species to have higher survival probabilities.
+        With this project, the major goal is to contribute to a better understanding of the effects of the current biodiversity crisis.
     </p>
 
 </div>

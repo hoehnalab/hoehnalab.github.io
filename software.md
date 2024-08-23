@@ -4,11 +4,13 @@ title: Software
 permalink: /software/
 ---
 
-
+<!-- RevBayes -->
 <div class="container-small">
 <img class="floatleft-small" src="/assets/images/RevBayes_logo.png">
+<div id="rcornersbox1">
 <p class="text">
-<a href="https://revbayes.github.io/" target="_blank">RevBayes</a> - <span style="background-color: #CECECE">Bayesian phylogenetic inference using probabilistic graphical models and an interpreted language.</span> RevBayes provides a flexible framework for performing Bayesian statistical analysis of phylogeny and related topics, such as divergence time estimation, diversification rate estimation, continuous and discrete trait evolution and historical biogeography.
+<a href="https://revbayes.github.io/" target="_blank">RevBayes</a> - <span style="background-color: #CECECE">Bayesian phylogenetic inference using probabilistic graphical models and an interpreted language.</span>
+RevBayes provides a flexible framework for performing Bayesian statistical analysis of phylogeny and related topics, such as divergence time estimation, diversification rate estimation, continuous and discrete trait evolution and historical biogeography.
 </p>
 </div>
 
@@ -17,25 +19,51 @@ Recently, we introduced the concept of probabilistic graphical models to phyloge
 
 Development in RevBayes is ongoing and extremely active. Specifically, we use RevBayes as a framework to implement and test new statistical models as well as new algorithms and methods for more efficient inference and hypothesis testing.
 -->
-
+</div>
 <br>
 <br>
 
+
+<!-- TESS -->
 <div class="container-small">
-<p class="text">
 <img class="floatleft-small" src="/assets/images/TESS_logo.png">
-<a href="https://cran.r-project.org/web/packages/TESS/" target="_blank">TESS</a> - An R package for <span style="background-color: #CECECE">Diversification Rate Estimation and Fast Simulation of Reconstructed Phylogenetic Trees</span> under Tree-Wide Time-Heterogeneous Birth-Death Processes Including Mass-Extinction Events. TESS both provides the likelihood function as well as reversible-jump method to estimate global diversification rates and rate shifts.
-</p>
-</div>
-
-<br>
-<br>
-
-<div class="container-small">
+<div id="rcornersbox2">
 <p class="text">
-<img class="floatleft-small" src="/assets/images/PESTO_logo.png">
-<a href="https://github.com/kopperud/Pesto.jl" target="_blank">Pesto.jl</a> - A <a href="https://julialang.org/" target="_blank">Julia</a> module for <span style="background-color: #CECECE">Phylogenetic Estimation of Shifts in the Tempo of Origination</span>. Under the birth-death-shift process (Höhna et al. 2019, biorxiv), the diversification rate is allowed to shift across the phylogeny, where branch-specific diversification rates, as well as the number of rate shifts can be inferred. Pesto is implemented using an efficient estimation algorithm, allowing for fast inferences even for large phylogenies with thousands of species.
+<a href="https://cran.r-project.org/web/packages/TESS/" target="_blank">TESS</a> - An R package for <span style="background-color: #CECECE">Diversification Rate Estimation and Fast Simulation of Reconstructed Phylogenetic Trees</span> under Tree-Wide Time-Heterogeneous Birth-Death Processes Including Mass-Extinction Events.
+TESS both provides the likelihood function as well as reversible-jump method to estimate global diversification rates and rate shifts.
 </p>
 </div>
 
+</div>
+<br>
+<br>
+
+<!-- PESTO -->
+<div class="container-small">
+<img class="floatleft-small" src="/assets/images/PESTO_logo.png">
+<div id="rcornersbox1">
+<p class="text">
+<a href="https://github.com/kopperud/Pesto.jl" target="_blank">Pesto.jl</a> - A <a href="https://julialang.org/" target="_blank">Julia</a> module for <span style="background-color: #CECECE">Phylogenetic Estimation of Shifts in the Tempo of Origination</span>.
+Under the birth-death-shift process (Höhna et al. 2019, biorxiv), the diversification rate is allowed to shift across the phylogeny, where branch-specific diversification rates, as well as the number of rate shifts can be inferred.
+Pesto is implemented using an efficient estimation algorithm, allowing for fast inferences even for large phylogenies with thousands of species.
+</p>
+</div>
+</div>
+
+<br>
+<br>
+
+
+<!-- Convenience -->
+<div class="container-small">
+<img class="floatleft-small" src="/assets/images/convenience_results_plots.png">
+<div id="rcornersbox1">
+<p class="text">
+<a href="https://github.com/lfabreti/convenience" target="_blank">Convenience</a> - A R package for <span style="background-color: #CECECE">convergence diagnostics in Bayesian Phylogenetic MCMC</span>.
+This R package helps in convergence assessment for phylogenetic inference not only in continuous parameters but also in the trees sampled as well. 
+</p>
+</div>
+</div>
+
+<br>
 <br>
