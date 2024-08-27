@@ -56,11 +56,11 @@ Pesto is implemented using an efficient estimation algorithm, allowing for fast 
 
 <!-- Convenience -->
 <div class="container-small">
-<img class="floatleft-small" src="/assets/images/convenience_results_plots.png">
+<img class="floatleft-small" src="/assets/images/Convenience_Logo.png">
 <div id="rcornersbox1">
 <p class="text">
 <a href="https://github.com/lfabreti/convenience" target="_blank">Convenience</a> - A R package for <span style="background-color: #CECECE">convergence diagnostics in Bayesian Phylogenetic MCMC</span>.
-This R package helps in convergence assessment for phylogenetic inference not only in continuous parameters but also in the trees sampled as well. 
+This R package helps in convergence assessment for phylogenetic inference not only in continuous parameters but also in the trees sampled as well.
 </p>
 </div>
 </div>
