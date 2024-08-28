@@ -4,9 +4,16 @@ title: People
 permalink: /people/
 ---
 
-# Current Members
+<header class="page-header">
+  <h2 class="page-title">People</h2>
+  <br>
+</header>
+
 
 <div class="center">
+
+<h2> Current Members </h2>
+
 
 <div class="item">
     <img class="rcornersimage" src="/assets/images/Sebastian_Höhna.jpg">
@@ -249,11 +256,13 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
 
 </div>
 
-
-# Past Members
-
-
 <div class="center">
+
+
+<!-- Can their descriptions be removed? Can Ronja and Killian be moved here? -->
+
+
+<h2> Past Members </h2>
 
 <div class="item">
     <img class="rcornersimage" src="/assets/images/Allison_Hsiang.jpg">
