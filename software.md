@@ -9,7 +9,6 @@ permalink: /software/
   <br>
 </header>
 
-
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 20px;">
 
   <!-- RevBayes -->
@@ -54,7 +53,7 @@ permalink: /software/
     <div id="rcornersimage" style="background-color: #CECECE; padding: 10px; border-radius: 5px;">
       <p class="text" style="margin: 0;">
         <a href="https://github.com/lfabreti/convenience" target="_blank"><strong>Convenience</strong></a> -
-        A R package for <span style="background-color: #CECECE">convergence diagnostics in Bayesian Phylogenetic MCMC</span>.
+        An R package for <span style="background-color: #CECECE">convergence diagnostics in Bayesian Phylogenetic MCMC</span>.
         This R package helps in convergence assessment for phylogenetic inference not only in continuous parameters but also in the trees sampled as well.
       </p>
     </div>
