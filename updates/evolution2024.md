@@ -38,22 +38,22 @@ Below you can find the titles of their presentation.
 <br>
 
 1. Basanta Khakurel -
-An Efficient Model of Heterotachy
+An efficient heterotachy model for morphological phylogenetics.
 
 2. Gustavo Darlim -
-Crocs
+Incorporation of cryptic species affects diversification dynamic analysis in Crocodylia.
 
 3. Alessio Capobianco -
-TECTOR
+Among-character rate variation and the quest for an appropriate morphological model in Bayesian phylogenetics.
 
 4. Sebastian Höhna -
-RevBayes 2.0
+RevBayes 2.0: New Features and Applications.
 
 5. Haoqing Du -
-Gene Family Evolution in Fireflies
+Gene Family Evolution Modeling in RevBayes with Examples in Fireflies.
 
 6. Bjørn T. Kopperud -
-PESTO
+Phylogenetic Estimation of Shifts in the Tempo of Origination.
 
 7. Priscila Lau -
-State-Dependent OU
+A Bayesian joint inference approach to model continuous trait adaptation using the state dependent Ornstein-Uhlenbeck model.

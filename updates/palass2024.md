@@ -37,18 +37,19 @@ Below you can find the titles of their presentation.
 <br>
 
 1. Basanta Khakurel -
-Evidence of covarion rate variation in empirical morphological datasets.
+Evidence of Covarion rate variation in empirical morphological datasets.
 
 2. Walker Sexton -
-PoMo model in morphological datasets
+Can polymorphism-aware phylogenetic models improve inference with discrete morphological data?
 
 3. Alessio Capobianco -
-ACRV in Mkv model
+Modelling among-character rate variation with the Mkv model: lessons learned and perspectives for morphological phylogenetics.
 
 4. Fernanda Landim -
+Quantitative investigation of extinction patterns in sloths (Xenarthra, Folivora) during the Cenozoic
 
 5. Bjørn T. Kopperud -
-PESTO Empirical
+Estimating lineage-specific diversification rates on phylogenies.
 
 6. Gustavo Darlim -
-Crocs diversification dynamics
+Effects of cryptic diversity on diversification dynamic analyses in Crocodylia.
