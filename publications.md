@@ -8,6 +8,8 @@ permalink: /publications/
   <br>
 </header>
 
+<!-- 2025 Papers -->
+<h3>2025</h3>
 
 <!-- 2024 Papers -->
 <h3>2024</h3>
@@ -21,8 +23,15 @@ permalink: /publications/
 <li> <strong>Billenstein RJ</strong>, <strong>Höhna S</strong> (2024): Comparison of Bayesian Coalescent Skyline Plot Models for Inferring Demographic Histories. Molecular Biology and Evolution, 41(5), msae073. <a href = "https://academic.oup.com/mbe/article/41/5/msae073/7648822" > link </a> </li>
 </ul>
 
-
 -->
+
+- Mulvey LPA, May MR, Brown JM, <strong>Höhna S</strong>, Wright AM, Warnock RCM (2024): Assessing the Adequacy of Morphological Models Using Posterior Predictive Simulations. Systematic Biology, syae055, [link](https://doi.org/10.1093/sysbio/syae055)
+
+- <strong>Höhna S</strong>, Lower SE, Duchen P, Catalán A (2024): Robustness of divergence time estimation despite gene tree estimation error: a case study of fireflies (Coleoptera: Lampyridae). Systematic Biology, syae065. [link](https://doi.org/10.1093/sysbio/syae065)
+
+- Karapunar B, <strong>Höhna S</strong>, Nützel A (2024): Phylogeny of the longest existing gastropod clade (Pleurotomariida) reconstructed with Bayesian and parsimony methods and its implications on gastropod shell characters. Journal of Systematic Paleontology, 22(1). [link](https://doi.org/10.1080/14772019.2024.2384141)
+
+- <strong>Capobianco A.</strong>, Friedman M (2024): Fossils indicate marine dispersal in osteoglossid fishes, a classic example of continental vicariance. Proceedings of the Royal Society B, 291:20241293. [link](https://doi.org/10.1098/rspb.2024.1293)
 
 - <strong>Khakurel B</strong>, Grigsby C, Tran TD, Zariwala J, <strong>Höhna S</strong>, Wright AM (2024): The fundamental role of character coding in Bayesian morphological phylogenetics. Systematic Biology, syae033. [link](https://doi.org/10.1093/sysbio/syae033)
 
