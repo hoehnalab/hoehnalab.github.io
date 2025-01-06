@@ -33,23 +33,6 @@ permalink: /people/
 </div>
 
 <div class="item">
-    <img class="rcornersimage" src="/assets/images/John_Clarke.jpg">
-    <h5><div class="tooltip"><p class="ttext">John Clarke</p>
-        <span class="tooltiptext">
-I'm an evolutionary biologist and palaeontologist interested in testing drivers of phenotypic and species diversity using phylogenetic comparative methods. Having first applied these methods to Mesozoic fishes, I now apply them to large datasets of extant fishes, plants and insects.
-        </span>
-    </div></h5>
-        <p class="title"><em>Postdoc (Humboldt fellow)</em></p>
-        <a href="mailto:j.clarke.paleo@gmail.com"><img src="/assets/icons/mail.svg" width="25px"></a>
-        <a href="https://twitter.com/jclarkepaleo?lang=en" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
-
-    <!-- Show tooltip text when on mobile -->
-    <div class="blurb">
-I'm an evolutionary biologist and palaeontologist interested in testing drivers of phenotypic and species diversity using phylogenetic comparative methods. Having first applied these methods to Mesozoic fishes, I now apply them to large datasets of extant fishes, plants and insects.
-    </div>
-</div>
-
-<div class="item">
     <img class="rcornersimage" src="/assets/images/Alessio_Capobianco.jpg">
     <h5><div class="tooltip"><p class="ttext">Alessio Capobianco</p>
         <span class="tooltiptext">
@@ -285,6 +268,23 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
         I'm interested in computational and evolutionary biology. Specially, improving the way we model evolution. My research involves Bayesian phylogenetic inference and underlying topics such as, model selection, testing the adequacy of the most commonly used substitution models and assessing convergence of the Markov Chain Monte Carlo.
+    </div>
+</div>
+
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/John_Clarke.jpg">
+    <h5><div class="tooltip"><p class="ttext">John Clarke</p>
+        <span class="tooltiptext">
+          I'm an evolutionary biologist and palaeontologist interested in testing drivers of phenotypic and species diversity using phylogenetic comparative methods. Having first applied these methods to Mesozoic fishes, I now apply them to large datasets of extant fishes, plants and insects.
+        </span>
+    </div></h5>
+        <p class="title"><em>Postdoc at German Centre for Integrative Biodiversity Research Halle-Jena-Leipzig</em></p>
+        <a href="mailto:j.clarke.paleo@gmail.com"><img src="/assets/icons/mail.svg" width="25px"></a>
+        <a href="https://twitter.com/jclarkepaleo?lang=en" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
+
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+      I'm an evolutionary biologist and palaeontologist interested in testing drivers of phenotypic and species diversity using phylogenetic comparative methods. Having first applied these methods to Mesozoic fishes, I now apply them to large datasets of extant fishes, plants and insects.
     </div>
 </div>
 

@@ -10,7 +10,6 @@ permalink: /research/
   <br>
 </header>
 
-
 <div class="center">
 
 <p class="intro-text">

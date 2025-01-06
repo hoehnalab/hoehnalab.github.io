@@ -9,7 +9,7 @@ permalink: /publications/
 </header>
 
 <!-- 2025 Papers -->
-<h3>2025</h3>
+<!-- <h3>2025</h3> -->
 
 <!-- 2024 Papers -->
 <h3>2024</h3>
