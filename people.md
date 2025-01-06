@@ -9,11 +9,9 @@ permalink: /people/
   <br>
 </header>
 
-
 <div class="center">
 
 <h2> Current Members </h2>
-
 
 <div class="item">
     <img class="rcornersimage" src="/assets/images/Sebastian_Höhna.jpg">
@@ -34,7 +32,6 @@ permalink: /people/
     </div>
 </div>
 
-
 <div class="item">
     <img class="rcornersimage" src="/assets/images/John_Clarke.jpg">
     <h5><div class="tooltip"><p class="ttext">John Clarke</p>
@@ -43,7 +40,7 @@ I'm an evolutionary biologist and palaeontologist interested in testing drivers 
         </span>
     </div></h5>
         <p class="title"><em>Postdoc (Humboldt fellow)</em></p>
-        <a href="mailto:j.clarke.paleo@gmail.com"><img src="/assets/icons/mail.svg" width="25px"></a>    
+        <a href="mailto:j.clarke.paleo@gmail.com"><img src="/assets/icons/mail.svg" width="25px"></a>
         <a href="https://twitter.com/jclarkepaleo?lang=en" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
 
     <!-- Show tooltip text when on mobile -->
@@ -51,7 +48,6 @@ I'm an evolutionary biologist and palaeontologist interested in testing drivers 
 I'm an evolutionary biologist and palaeontologist interested in testing drivers of phenotypic and species diversity using phylogenetic comparative methods. Having first applied these methods to Mesozoic fishes, I now apply them to large datasets of extant fishes, plants and insects.
     </div>
 </div>
-
 
 <div class="item">
     <img class="rcornersimage" src="/assets/images/Alessio_Capobianco.jpg">
@@ -80,7 +76,6 @@ Functional trait evolution in ruminants and other artiodactyls are the focus of 
         <p class="title"><em>Postdoc</em></p>
         <a href="mailto:n.heckeberg@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
         <a href="https://twitter.com/heckeberg" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
-
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
@@ -181,7 +176,6 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
     </div>
 </div>
 
-
 <div class="item">
     <img class="rcornersimage" src="/assets/images/Basanta_Khakurel.jpg">
     <h5><div class="tooltip"><p class="ttext">Basanta Khakurel</p>
@@ -200,7 +194,6 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
             I am a computational biologist working mostly in morphological character evolution models. My research involves estimating phylogenetic trees in a more robust manner using more adequate models of evolution. In the past, I have worked on species delimitation studies on Mexican livebearer fishes and Eastern Pine snakes. My work also involved assessing the impact of morphological state space on phylogenetic inferences and trying to allow for different stationary frequencies in morphological character evolution. I will be exploring more on the use of various models for morphological character evolution.
     </div>
 </div>
-
 
 <div class="item">
     <img class="rcornersimage" src="/assets/images/Haoqing_Du.jpg">
@@ -236,7 +229,6 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
     </div>
 </div>
 
-
 <div class="item">
     <img class="rcornersimage" src="/assets/images/Walker_Sexton.jpeg">
     <h5><div class="tooltip"><p class="ttext">Walker Sexton</p>
@@ -258,9 +250,7 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
 
 <div class="center">
 
-
 <!-- Can their descriptions be removed? Can Ronja and Killian be moved here? -->
-
 
 <h2> Past Members </h2>
 
@@ -288,7 +278,7 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
             I'm interested in computational and evolutionary biology. Specially, improving the way we model evolution. My research involves Bayesian phylogenetic inference and underlying topics such as, model selection, testing the adequacy of the most commonly used substitution models and assessing convergence of the Markov Chain Monte Carlo.
         </span>
     </div></h5>
-        <p class="title"><em>Software Developer at </em></p>
+        <p class="title"><em>Software Engineer, Data Analyst at camLine</em></p>
         <a href="https://github.com/lfabreti" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
         <a href="mailto:l.fabreti@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
 

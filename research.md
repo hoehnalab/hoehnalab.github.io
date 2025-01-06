@@ -65,7 +65,7 @@ permalink: /research/
 
   <!-- Section 4 -->
   <div class="project">
-    <img class="project-image floatright" src="/assets/images/trait_evolution_placeholder.jpg" alt="Modeling Trait Evolution">
+    <img class="project-image floatright" src="/assets/images/trait_evolution.png" alt="Modeling Trait Evolution">
     <div class="project-content">
         <h3>Modeling Trait Evolution</h3>
         <p class="project-description">
@@ -81,7 +81,7 @@ permalink: /research/
 
   <!-- Section 5 -->
   <div class="project">
-    <img class="project-image floatleft" src="/assets/images/gene_family_placeholder.jpg" alt="Gene Family Evolution in Fireflies">
+    <img class="project-image floatleft" src="/assets/images/gene_family.png" alt="Gene Family Evolution in Fireflies">
     <div class="project-content">
         <h3>Gene Family Evolution in Fireflies</h3>
         <p class="project-description">

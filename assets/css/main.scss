@@ -6,6 +6,25 @@
 @import "main";
 
 /* Navigation styles */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 5px;
+  width: 80px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+
 .nav {
   background-color: #44BAAA;
   border-radius: 10px;
@@ -19,12 +38,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-.logo a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 2rem;
+  height: fit-content;
 }
 
 .navbar {
@@ -41,7 +55,8 @@
 .navbar a {
   color: #333;
   text-decoration: none;
-  font-size: 1.6rem;
+  align-items: center;
+  font-size: 1.7rem;
 }
 
 body {
