@@ -1,12 +1,14 @@
 <nav class="nav">
   <div class="container">
-    <a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}">
-      <img src="{{ '/assets/images/lab_logo.png' | prepend: site.baseurl | prepend: site.url }}" alt="Site Logo"
-        style="max-width: 100%; width: 80px; ">
-    </a>
+    <h1 class="logo">
+      <a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}">
+        <img src="{{ '/assets/images/lab_logo.png' | prepend: site.baseurl | prepend: site.url }}" alt="Site Logo"
+          style="max-width: 100%; width: 80px; "> {{ site.title_left }}<span>{{ site.title_right }}</span>
+      </a>
+    </h1>
     <ul class="navbar">
       <li><a href="{{ '/people' | prepend: site.baseurl | prepend: site.url }}">People</a></li>
-      <li><a href="{{ '/updates' | prepend: site.baseurl | prepend: site.url }}">Updates</a></li>
+      <li><a href="{{ '/news' | prepend: site.baseurl | prepend: site.url }}">News</a></li>
       <li><a href="{{ '/research' | prepend: site.baseurl | prepend: site.url }}">Research</a></li>
       <li><a href="{{ '/publications' | prepend: site.baseurl | prepend: site.url }}">Publications</a></li>
       <li><a href="{{ '/software' | prepend: site.baseurl | prepend: site.url }}">Software</a></li>

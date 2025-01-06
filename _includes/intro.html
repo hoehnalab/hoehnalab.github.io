@@ -1,11 +1,13 @@
 <section class="intro">
-
   <div class="container">
     <img class="floatleft" src="/assets/images/lab_logo.png" alt="Lab Logo">
     <div id="rcornersbox">
       <p class="lead">
-        <strong>Welcome to the lab of Sebastian Höhna at Ludwig-Maximilians-Universität München.</strong>
-        <br /><br />
+        <strong>Welcome to the lab of Sebastian Höhna at <a
+            href="https://www.en.palaeontologie.geowissenschaften.uni-muenchen.de/index.html">Ludwig-Maximilians-Universität
+            München.</a>
+        </strong>
+        <br />
       </p>
       <p class="follow">
         Our primary aim is to develop new statistical models and computational methods to answer research questions in
@@ -22,4 +24,24 @@
   <div class="container">
     <img class="centerimage" src="/assets/images/lab_picture.jpg" alt="Hoehna Lab Members">
   </div>
+  <div id="rcornersbox" style="background: white;">
+    <ul style="list-style-type: none; padding-left: -10;">
+      <li>
+        <h3>Latest News:</h3>
+      </li>
+      {% for update in site.pages %}
+      {% if update.layout == "page" and update.permalink contains "/updates/" %}
+      <li>
+        <h4><a href="{{ update.url }}" style=" text-decoration: none;">{{ update.title }}</b>
+        </h4>
+        <p>{{ update.exerpt }}</p>
+      </li>
+      {% endif %}
+      {% endfor %}
+      <a href="/news" style="text-decoration: none; font-size: 18px; font-style: italic;">
+        Visit our News Page
+      </a>
+    </ul>
+  </div>
+
 </section>
