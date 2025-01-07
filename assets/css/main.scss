@@ -24,32 +24,29 @@
   font-size: 1.6rem;
 }
 
-
 .nav {
   background-color: #44BAAA;
   border-radius: 10px;
-  padding: -50px 0;
+  padding: 10px 0;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  height: fit-content;
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+  }
 }
 
-.navbar {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+  }
 
-.navbar li {
-  margin: 0 5px;
+  .navbar li {
+    margin: 5px 0;
+  }
 }
 
 .navbar a {
@@ -74,23 +71,24 @@ body {
 }
 
 // Main page formatting
-#rcornersbox {
-  border-radius: 15px;
-  background: #44BAAA;
-  padding: 20px;
-  height: auto;
-  width: auto;
-  max-width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  min-width: 60%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  position: relative;
+@media screen and (max-width: 768px) {
+  #rcornersbox {
+    max-width: 90%;
+    margin: 10px auto;
+  }
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img.floatleft,
+img.floatright {
+  float: none;
+  display: block;
+  margin: 10px auto;
+}
 
 img.floatleft {
   float: left;
@@ -140,7 +138,6 @@ img.centerimage:hover {
   }
 }
 
-
 // People page formatting
 .item {
   vertical-align: top;
@@ -170,7 +167,6 @@ img.rcornersimage:hover {
   display: block;
 }
 
-
 // Showing the tooltip text on mobile
 .blurb {
   display: none;
@@ -182,7 +178,6 @@ img.rcornersimage:hover {
     font-size: calc(12px + 0.5vw);
   }
 }
-
 
 // Hover text
 .tooltip {
@@ -222,7 +217,6 @@ img.rcornersimage:hover {
   border-color: transparent transparent #44BAAA transparent;
 }
 
-
 // Research page formatting
 #rcornersbox1,
 #rcornersbox2 {
@@ -248,13 +242,15 @@ img.rcornersimage:hover {
     margin-bottom: 20px;
 }
 
-.projects-container {
-    display: grid;
-    width: 90%;
-    grid-auto-columns: 2;
-    grid-gap: 10px;
-    padding: 0 20px;
-    margin: 0 auto;
+@media screen and (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project {
+    width: 100%;
+  }
 }
 
 .project {
@@ -303,7 +299,6 @@ img.rcornersimage:hover {
     color: #666;
 }
 
-
 // Software page formatting
 img.floatleft-small {
   float: left;
@@ -332,4 +327,10 @@ img.floatright-small {
 
 .page-content {
   padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
