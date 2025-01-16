@@ -80,7 +80,7 @@ permalink: /research/
 
   <!-- Section 5 -->
   <div class="project">
-    <img class="project-image floatleft" src="/assets/images/gene_family.png" alt="Gene Family Evolution in Fireflies">
+    <img class="project-image floatleft" src="/assets/images/gene_family.jpg" alt="Gene Family Evolution in Fireflies">
     <div class="project-content">
         <h3>Gene Family Evolution in Fireflies</h3>
         <p class="project-description">

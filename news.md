@@ -59,15 +59,4 @@ permalink: /news/
 
   <br><br>
 
-  <div class="updates">
-    <article class="updates-content">
-      <h4>Sebastian Got Tenured</h4>
-        <p>
-        Date: <time datetime="2024-05-06">May 06,2024</time>
-        </p>
-        <p>Sebastian got a Professorship position at LMU-Munich.
-        </p>
-    </article>
-  </div>
-
 </div>
