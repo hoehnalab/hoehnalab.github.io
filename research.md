@@ -64,9 +64,9 @@ permalink: /research/
 
   <!-- Section 4 -->
   <div class="project">
-    <img class="project-image floatright" src="/assets/images/trait_evolution.png" alt="Modeling Trait Evolution">
+    <img class="project-image floatright" src="/assets/images/trait_evolution.png" alt="The State-Dependent OU Model">
     <div class="project-content">
-        <h3>Modeling Trait Evolution</h3>
+        <h3>The State-Dependent OU Model</h3>
         <p class="project-description">
             Joint inference of continuous trait adaptation and selective regime history using the state-dependent Ornstein-Uhlenbeck model.
             Trait evolution studies the evolution of homologous characters across phylogeny. These characters are at above-sequence level, including but not limited to gene expression, physiological, and morphological data.
@@ -80,11 +80,12 @@ permalink: /research/
 
   <!-- Section 5 -->
   <div class="project">
-    <img class="project-image floatleft" src="/assets/images/gene_family.png" alt="Gene Family Evolution in Fireflies">
+    <img class="project-image floatleft" src="/assets/images/gene_family.jpg" alt="Gene Family Evolution in Fireflies">
     <div class="project-content">
-        <h3>Gene Family Evolution in Fireflies</h3>
+        <h3>Modeling Gene Family Evolution in Fireflies</h3>
         <p class="project-description">
-            Using Firefly as a model organism to study Gene Family Evolution.
+          Gene expression is a key driver of trait variation, particularly among closely related species. This project aims to develop innovative methods to model gene expression evolution using Brownian motion and Ornstein-Uhlenbeck processes. Specially, we focus on within-species variance, a critical yet underexplored aspect of gene expression.
+          The firefly family (Lampyridae) serves as a novel study system due to their recurrent sexual dimorphism across the phylogeny. As sexual dimorphism is inherently linked to sex-biased gene expression, this makes fireflies an ideal model for investigating sex-biased gene expression evolution.
         </p>
     </div>
   </div>
