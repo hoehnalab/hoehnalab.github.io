@@ -1,0 +1,213 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+@import "main";
+
+/* Universal Box Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 100%;
+  }
+}
+
+/* Navigation Styles */
+.nav {
+  background-color: #44BAAA;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 5px;
+  width: 80px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar li {
+    margin: 5px 0;
+  }
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+/* Image Styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img.floatleft,
+img.floatright {
+  float: none;
+  display: block;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 768px) {
+
+  img.floatleft,
+  img.floatright {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+img.rcornersimage {
+  border-radius: 15px;
+  object-fit: cover;
+  width: 100%;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+
+img.rcornersimage:hover {
+  transform: scale(1.05);
+}
+
+/* Tooltip Adjustments */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: #44BAAA;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+  .tooltip .tooltiptext {
+    width: calc(100% - 20px);
+    left: 10px;
+    transform: none;
+  }
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* Intro Text Scaling */
+.intro-text {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .intro-text {
+    font-size: 2rem;
+  }
+}
+
+/* Container and Page Content */
+.container {
+  width: calc(100% - 40px);
+  max-width: 80%;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.page-content {
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+  }
+}
+
+/* Project Section */
+.project {
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project:nth-child(odd) {
+  background-color: #44BAAA;
+}
+
+.project:nth-child(even) {
+  background-color: #73BC78;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project {
+    width: 100%;
+  }
+}
