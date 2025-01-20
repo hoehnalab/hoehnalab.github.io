@@ -82,7 +82,7 @@ permalink: /research/
   <div class="project">
     <img class="project-image floatleft" src="/assets/images/gene_family.jpg" alt="Gene Family Evolution in Fireflies">
     <div class="project-content">
-        <h3>Modeling Gene Family Evolution in Fireflies</h3>
+        <h3>Modeling gene expression evolution in fireflies</h3>
         <p class="project-description">
           Gene expression is a key driver of trait variation, particularly among closely related species. This project aims to develop innovative methods to model gene expression evolution using Brownian motion and Ornstein-Uhlenbeck processes. Specially, we focus on within-species variance, a critical yet underexplored aspect of gene expression.
           The firefly family (Lampyridae) serves as a novel study system due to their recurrent sexual dimorphism across the phylogeny. As sexual dimorphism is inherently linked to sex-biased gene expression, this makes fireflies an ideal model for investigating sex-biased gene expression evolution.
