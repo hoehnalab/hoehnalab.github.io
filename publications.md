@@ -27,14 +27,14 @@ permalink: /publications/
 
 
 <h3>2023</h3>
-- <strong>Darlim, G.<strong>, Suraprasit, K., Chaimanee, Y., Tian, P., Yamee, C., Rugbumrung, M., ... & Rabi, M. An extinct deep-snouted Alligator species from the Quaternary of Thailand and comments on the evolution of crushing dentition in alligatorids. *Scientific Reports*, 13(1), 10406.
+- <strong>Darlim, G.</strong>, Suraprasit, K., Chaimanee, Y., Tian, P., Yamee, C., Rugbumrung, M., ... & Rabi, M. An extinct deep-snouted Alligator species from the Quaternary of Thailand and comments on the evolution of crushing dentition in alligatorids. *Scientific Reports*, 13(1), 10406.
 - <strong>Heckeberg NS</strong>, Zachos FE, Kierdorf U. Antler tine homologies and cervid systematics: A review of past and present controversies with special emphasis on Elaphurus davidianus. *The Anatomical Record*, 306(1), 5-28. [link](https://anatomypubs.onlinelibrary.wiley.com/doi/full/10.1002/ar.24956)
 - Meng Y, Davison J, <strong>Clarke JT</strong>, Zobel M, Gerz M, Moora M, Öpik M, Bueno CG. Environmental modulation of plant mycorrhizal traits in the global flora. *Ecology Letters*, 26(11), 1862-1876. [link](https://onlinelibrary.wiley.com/doi/full/10.1111/ele.14309)
 - <strong>Fabreti L</strong> and <strong>H&ouml;hna S</strong>. Nucleotide Substitution Model Selection Is Not Necessary for Bayesian Inference of Phylogeny With Well-Behaved Priors, *Systematic Biology*, 72(6), 1418-1432. [link](https://doi.org/10.1093/sysbio/syad041)
 - Grabowski M, Pienaar J, Voje KJ, Andersson S, Fuentes-González J, <strong>Kopperud BT</strong>, Moen DS, Tsuboi M, Uyeda J and Hansen TF. A Cautionary Note on “A Cautionary Note on the Use of Ornstein Uhlenbeck Models in Macroevolutionary Studies”. *Systematic Biology*, 72(4), 955-963, [link](https://doi.org/10.1093/sysbio/syad012)
 - Grabowski M, <strong>Kopperud BT</strong>, Tsuboi M and Hansen TF. Both diet and sociality affect primate brain-size evolution. *Systematic Biology*, 72(2), 404-418, [link](https://doi.org/10.1093/sysbio/syac075)
 - Juravel K, Porras L, <strong>H&ouml;hna S</strong>, Pisani D and Wörheide G. Exploring genome gene content and morphological analysis to test recalcitrant nodes in the animal phylogeny, *PLoS one*, 18 (3): e0282444. [link](https://doi.org/10.1371/journal.pone.0282444)
-- <strong>Kopperud BT</strong>, Magee AF, <strong>H&ouml;hna S</strong. Rapidly changing speciation and extinction rates can be inferred in spite of nonidentifiability. *Proceedings of the National Academy of Sciences*, 120(7), e2208851120. [link](https://www.pnas.org/doi/abs/10.1073/pnas.2208851120)
+- <strong>Kopperud BT</strong>, Magee AF, <strong>H&ouml;hna S</strong>. Rapidly changing speciation and extinction rates can be inferred in spite of nonidentifiability. *Proceedings of the National Academy of Sciences*, 120(7), e2208851120. [link](https://www.pnas.org/doi/abs/10.1073/pnas.2208851120)
 
 
 <h3>2022</h3>
@@ -83,4 +83,3 @@ permalink: /publications/
 - <strong>H&ouml;hna S</strong>, Landis MJ, Heath TA, Boussau B, Moore BR, Lartillot N, Huelsenbeck JP and Ronquist F. RevBayes: Bayesian Phylogenetic Inference Using Graphical Models and an Interactive Model-Speci cation Language, *Systematic Biology*, 65(4), 726-736, [link](https://academic.oup.com/sysbio/article/65/4/726/1753608/RevBayes-Bayesian-Phylogenetic-Inference-Using)
 - Conroy CR, Patton JL, Lim M, Phuong M, Parmenter B and <strong>H&ouml;hna S</strong>. Following the rivers: historical reconstruction of California voles (Microtus californicus, Muridae, Rodentia) in the deserts of eastern California, *Biological Journal of the Linnean Society*, 119(1), 80–98, [link](http://onlinelibrary.wiley.com/doi/10.1111/bij.12808/full)
 - <strong>H&ouml;hna S</strong>, May MR and Moore BR. TESS: an R package for efficiently simulating phylogenetic trees and performing Bayesian inference of lineage diversification rates, *Bioinformatics*, 32(5): 789-791, [link](https://academic.oup.com/bioinformatics/article/32/5/789/1744433/TESS-an-R-package-for-efficiently-simulating)
-
