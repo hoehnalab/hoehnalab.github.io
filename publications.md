@@ -4,7 +4,8 @@ title: Publications
 permalink: /publications/
 ---
 <h3>2025 and in press</h3>
-<!--- <strong>Höhna S</strong> and Catalán A. Bayesian StairwayPlot for Inferring Single Population Demographic Histories from Site Frequency Spectra. *Molecular Ecology Resources*. [link](https://doi.org/10.1093/sysbio/syae065) -->
+<!--- <strong>Höhna S</strong> and Catalán A. Bayesian StairwayPlot for Inferring Single Population Demographic Histories from Site Frequency Spectra. *Molecular Ecology Resources*. [link](https://doi.org/10.1111/1755-0998.14087) -->
+<!-- <strong>Darlim, G.</strong> and <strong>Höhna S</strong>. The effects of cryptic diversity on diversification dynamics analyses in Crocodylia. *Proceedings of the Royal Society B* -->
 - <strong>Höhna S</strong>, Lower SE, Duchen P, Catalán A. Robustness of divergence time estimation despite gene tree estimation error: a case study of fireflies (Coleoptera: Lampyridae). *Systematic Biology*, syae065. [link](https://doi.org/10.1093/sysbio/syae065)
 - Mulvey LPA, May MR, Brown JM, <strong>Höhna S</strong>, Wright AM, Warnock RCM (2024): Assessing the Adequacy of Morphological Models Using Posterior Predictive Simulations. *Systematic Biology*, syae055, [link](https://doi.org/10.1093/sysbio/syae055)
 - <strong>Capobianco A</strong>, Zouhri S, Friedman M. A long-snouted marine bonytongue (Teleostei: Osteoglossidae) from the early Eocene of Morocco and the phylogenetic affinities of marine osteoglossids. *Zoological Journal of the Linnean Society*, in press. [link](https://academic.oup.com/zoolinnean/advance-article/doi/10.1093/zoolinnean/zlae015/7648739)
