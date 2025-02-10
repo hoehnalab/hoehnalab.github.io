@@ -27,7 +27,7 @@ permalink: /publications/
 
 
 <h3>2023</h3>
-- <strong>Darlim, G.</strong>, Suraprasit, K., Chaimanee, Y., Tian, P., Yamee, C., Rugbumrung, M., ... & Rabi, M. An extinct deep-snouted Alligator species from the Quaternary of Thailand and comments on the evolution of crushing dentition in alligatorids. *Scientific Reports*, 13(1), 10406.
+- <strong>Darlim, G.</strong>, Suraprasit, K., Chaimanee, Y., Tian, P., Yamee, C., Rugbumrung, M., ... & Rabi, M. An extinct deep-snouted Alligator species from the Quaternary of Thailand and comments on the evolution of crushing dentition in alligatorids. *Scientific Reports*, 13(1), 10406. [link](https://www.nature.com/articles/s41598-023-36559-6)
 - <strong>Heckeberg NS</strong>, Zachos FE, Kierdorf U. Antler tine homologies and cervid systematics: A review of past and present controversies with special emphasis on Elaphurus davidianus. *The Anatomical Record*, 306(1), 5-28. [link](https://anatomypubs.onlinelibrary.wiley.com/doi/full/10.1002/ar.24956)
 - Meng Y, Davison J, <strong>Clarke JT</strong>, Zobel M, Gerz M, Moora M, Öpik M, Bueno CG. Environmental modulation of plant mycorrhizal traits in the global flora. *Ecology Letters*, 26(11), 1862-1876. [link](https://onlinelibrary.wiley.com/doi/full/10.1111/ele.14309)
 - <strong>Fabreti L</strong> and <strong>H&ouml;hna S</strong>. Nucleotide Substitution Model Selection Is Not Necessary for Bayesian Inference of Phylogeny With Well-Behaved Priors, *Systematic Biology*, 72(6), 1418-1432. [link](https://doi.org/10.1093/sysbio/syad041)
