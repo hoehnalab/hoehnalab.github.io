@@ -1,0 +1,336 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+@import "main";
+
+/* Navigation styles */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 5px;
+  width: 80px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.nav {
+  background-color: #44BAAA;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar li {
+    margin: 5px 0;
+  }
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  align-items: center;
+  font-size: 1.7rem;
+}
+
+body {
+  font-family: 'PT Sans', 'Arial', sans-serif; /* to change the font you have to specify the source as well */
+  line-height: 1.6;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 80%;
+}
+
+.center {
+  text-align: center;
+}
+
+// Main page formatting
+@media screen and (max-width: 768px) {
+  #rcornersbox {
+    max-width: 90%;
+    margin: 10px auto;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img.floatleft,
+img.floatright {
+  float: none;
+  display: block;
+  margin: 10px auto;
+}
+
+img.floatleft {
+  float: left;
+  width: 50%;
+  max-width: 400px;
+  min-width: 200px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+img.floatright {
+  float: right;
+  width: 50%;
+  max-width: 400px;
+  min-width: 300px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+img.centerimage {
+  display: block;
+  width: 70%;
+  max-width: 1000px;
+  margin: 10px auto;
+  transition: transform 0.3s ease;
+}
+
+
+img.floatleft:hover,
+img.floatright:hover,
+img.centerimage:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+
+  img.floatleft,
+  img.floatright,
+  img.centerimage {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #rcornersbox {
+    width: calc(100% - 30px);
+    padding: 15px;
+  }
+}
+
+// People page formatting
+.item {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  max-width: 250px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+
+img.rcornersimage {
+  border-radius: 15px;
+  vertical-align: top;
+  height: 350px;
+  width: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+img.rcornersimage:hover {
+  transform: scale(1.05);
+}
+
+
+.caption {
+  display: block;
+}
+
+// Showing the tooltip text on mobile
+.blurb {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .blurb {
+    display: block;
+    font-size: calc(12px + 0.5vw);
+  }
+}
+
+// Hover text
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: #44BAAA;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -200px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #44BAAA transparent;
+}
+
+// Research page formatting
+#rcornersbox1,
+#rcornersbox2 {
+  border-radius: 15px;
+  padding: 20px;
+  display: block;
+  width: calc(100% - 40px);
+  max-width: 100%;
+  min-width: 300px;
+}
+
+#rcornersbox1 {
+  background: #44BAAA;
+}
+
+#rcornersbox2 {
+  background: #73BC78;
+}
+
+.intro-text {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project {
+    width: 100%;
+  }
+}
+
+.project {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flow-root;
+    position: relative;
+    text-align: center;
+}
+
+.project:nth-child(odd) {
+    background-color: #44BAAA;
+}
+
+.project:nth-child(even) {
+    background-color: #73BC78;
+}
+
+.project-image {
+    border-radius: 8px;
+    width: 100px;
+    height: auto;
+}
+
+.floatleft {
+    margin-right: 20px;
+}
+
+.floatright {
+    margin-left: 20px;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 2rem;
+    margin: 0 0 10px;
+}
+
+.project-description {
+    font-size: 1.8rem;
+    color: #666;
+}
+
+// Software page formatting
+img.floatleft-small {
+  float: left;
+  width: 40%;
+  max-width: 150px;
+  min-width: 50px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+img.floatright-small {
+  float: right;
+  width: 40%;
+  max-width: 150px;
+  min-width: 50px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+.container {
+  width: calc(100% - 40px);
+  max-width: 100%;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.page-content {
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
