@@ -29,11 +29,27 @@ permalink: /news/
 
 <div class="updates-container">
 
+
+  <div class="updates">
+    <article class="updates-content">
+      <h4>🎓 Congratulations to Priscila on Completing Her Master’s! 🎉</h4>
+        <p>
+        Date: <time datetime="2025-03-14">March 14, 2025</time>
+        </p>
+        <p>
+            Master's student Priscila Lau successfully defended her thesis.
+       </p>
+        <a href="/updates/priscila_defense" class="read-more">Read more</a>
+    </article>
+  </div>
+
+  <br><br>
+
   <div class="updates">
     <article class="updates-content">
       <h4>Lab Visit to PalAss 2024</h4>
         <p>
-        Date: <time datetime="2024-12-14">December 14,2024</time>
+        Date: <time datetime="2024-12-14">December 14, 2024</time>
         </p>
         <p>
         Some lab members attended and presented on the 68<sup>th</sup> Annual Meeting of the Palaeontological Association held at Friedrich-Alexander-Universität (FAU) Erlangen-Nürnberg from 9<sup>th</sup> to 13<sup>th</sup> December 2024.
@@ -48,7 +64,7 @@ permalink: /news/
     <article class="updates-content">
       <h4>Lab Visit to Evolution 2024</h4>
         <p>
-        Date: <time datetime="2024-07-25">July 25,2024</time>
+        Date: <time datetime="2024-07-25">July 25, 2024</time>
         </p>
         <p>
         Some lab members attended and presented on the 3<sup>rd</sup> Joint Congress on Evolutionary Biology held in Montréal from July 26, 2024 to July 31, 2024.
