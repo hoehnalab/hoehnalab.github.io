@@ -29,6 +29,20 @@ permalink: /news/
 
 <div class="updates-container">
 
+  <div class="updates">
+    <article class="updates-content">
+      <h4> New Paper Published! 🎉</h4>
+        <p>
+        Date: <time datetime="2025-03-14">March 19, 2025</time>
+        </p>
+        <p>
+            <a href="https://royalsocietypublishing.org/doi/full/10.1098/rspb.2025.0091">"The Effects of Cryptic Diversity on Diversification Dynamics Analyses in Crocodylia"</a> is now published in the journal <a href="https://royalsocietypublishing.org/journal/rspb"> Proceedings of the Royal Society B </a>.
+       </p>
+        <a href="/updates/gustavo2025_paper" class="read-more">Read more</a>
+    </article>
+  </div>
+
+  <br><br>
 
   <div class="updates">
     <article class="updates-content">
