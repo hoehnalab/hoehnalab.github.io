@@ -4,8 +4,8 @@ title: Publications
 permalink: /publications/
 ---
 <h3>2025 and in press</h3>
-<!-- <strong>Darlim, G.</strong> and <strong>Höhna S</strong>. The effects of cryptic diversity on diversification dynamics analyses in Crocodylia. *Proceedings of the Royal Society B* -->
-- Olroyd, SL and <strong>Kopperud, BT</strong>. Allometry of sound reception structures and evidence for a mandibular middle ear in non-mammalian synapsids. *Evolution*, . [link](https://doi.org/10.1093/evolut/qpaf041)
+- <strong>Darlim, G.</strong> and <strong>Höhna S</strong>. The effects of cryptic diversity on diversification dynamics analyses in Crocodylia. *Proceedings of the Royal Society B*. [link](https://doi.org/10.1098/rspb.2025.0091)
+- Olroyd, SL and <strong>Kopperud, BT</strong>. Allometry of sound reception structures and evidence for a mandibular middle ear in non-mammalian synapsids. *Evolution*. [link](https://doi.org/10.1093/evolut/qpaf041)
 - <strong>Höhna S</strong> and Catalán A. Bayesian StairwayPlot for Inferring Single Population Demographic Histories from Site Frequency Spectra. *Molecular Ecology Resources*. [link](https://doi.org/10.1111/1755-0998.14087)
 - <strong>Höhna S</strong>, Lower SE, Duchen P, Catalán A. Robustness of divergence time estimation despite gene tree estimation error: a case study of fireflies (Coleoptera: Lampyridae). *Systematic Biology*,  syae065. [link](https://doi.org/10.1093/sysbio/syae065)
 - Mulvey LPA, May MR, Brown JM, <strong>Höhna S</strong>, Wright AM, Warnock RCM. Assessing the Adequacy of Morphological Models Using Posterior Predictive Simulations. *Systematic Biology*, 74(1), 34-52, [link](https://doi.org/10.1093/sysbio/syae055)
