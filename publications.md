@@ -4,6 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 <h3>2025 and in press</h3>
+- Catalán A, Gygax D, Candolin U, Tusso S, Duchen P and <strong>Höhna S</strong>. Sex-biased migration and demographic history of the big European firefly *Lampyris noctiluca*. *Molecular Biology and Evolution*. [link](https://doi.org/10.1093/molbev/msaf123)
 - <strong>Kopperud, BT</strong> and <strong>Höhna S</strong>. Phylogenetic Estimation of Branch-specific Shifts in the Tempo of Origination. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syaf041)
 - <strong>Capobianco, A</strong> and <strong>Höhna S</strong>. On the Mkv Model with Among-Character Rate Variation. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syaf038)
 - <strong>Darlim, G</strong> and <strong>Höhna S</strong>. The effects of cryptic diversity on diversification dynamics analyses in Crocodylia. *Proceedings of the Royal Society B*. [link](https://doi.org/10.1098/rspb.2025.0091)
