@@ -5,7 +5,7 @@ permalink: /publications/
 ---
 <h3>2025 and in press</h3>
 - <strong>Kopperud, BT</strong> and <strong>Höhna S</strong>. Phylogenetic Estimation of Branch-specific Shifts in the Tempo of Origination. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syaf041)
-- - <strong>Capobianco, A</strong> and <strong>Höhna S</strong>. On the Mkv Model with Among-Character Rate Variation. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syaf038)
+- <strong>Capobianco, A</strong> and <strong>Höhna S</strong>. On the Mkv Model with Among-Character Rate Variation. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syaf038)
 - <strong>Darlim, G</strong> and <strong>Höhna S</strong>. The effects of cryptic diversity on diversification dynamics analyses in Crocodylia. *Proceedings of the Royal Society B*. [link](https://doi.org/10.1098/rspb.2025.0091)
 - Olroyd, SL and <strong>Kopperud, BT</strong>. Allometry of sound reception structures and evidence for a mandibular middle ear in non-mammalian synapsids. *Evolution*. [link](https://doi.org/10.1093/evolut/qpaf041)
 - <strong>Höhna S</strong> and Catalán A. Bayesian StairwayPlot for Inferring Single Population Demographic Histories from Site Frequency Spectra. *Molecular Ecology Resources*. [link](https://doi.org/10.1111/1755-0998.14087)
