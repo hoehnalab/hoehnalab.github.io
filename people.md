@@ -199,10 +199,10 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
     <img class="rcornersimage" src="/assets/images/Priscilla_Lau.jpg">
     <h5><div class="tooltip"><p class="ttext">Priscilla Lau</p>
         <span class="tooltiptext">
-            I am a computational evolutionary biologist interested in macroevolution and trait evolution. I am currently working with Sebastian, Bjørn and John in developing a state-dependent Ornstein-Uhlenbeck model for continuous character evolution in RevBayes. During my undergrad, I studied the phylogenetics of Hawaiian Doryopteris (Pteridaceae) using target enrichment probe set GoFlag. Besides research, I also enjoy curating herbarium specimens, observing linguistics behaviors (sound production and perception), watching baseball games, and playing classic, abstract games (currently minesweeper).
+            I am a computational evolutionary biologist interested in phylogenetics and macroevolution. I joined Höhna lab in 2022 as a Master's student and has been developing the state-dependent Ornstein-Uhlenbeck model for continuous character evolution in RevBayes. As of 2025, I graduated with MSc in Evolution, Ecology, and Systematics from LMU Munich, and am currently working as a research assistant for the said project.
         </span>
     </div></h5>
-        <p class="title"><em>Master's Student</em></p>
+        <p class="title"><em>Research Assistant</em></p>
         <a href="https://github.com/prilau" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
         <a href="mailto:pri.lau@campus.lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
 
