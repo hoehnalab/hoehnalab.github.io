@@ -199,7 +199,7 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
     <img class="rcornersimage" src="/assets/images/Priscilla_Lau.jpg">
     <h5><div class="tooltip"><p class="ttext">Priscilla Lau</p>
         <span class="tooltiptext">
-            I am a computational evolutionary biologist interested in phylogenetics and macroevolution. I joined Höhna lab in 2022 as a Master's student and has been developing the state-dependent Ornstein-Uhlenbeck model for continuous character evolution in RevBayes. As of 2025, I graduated with MSc in Evolution, Ecology, and Systematics from LMU Munich, and am currently working as a research assistant for the said project.
+            I am a computational evolutionary biologist interested in phylogenetics and macroevolution. I joined Höhna lab in 2023 as a Master's student and has been developing the state-dependent Ornstein-Uhlenbeck model for continuous character evolution in RevBayes. As of 2025, I graduated with MSc in Evolution, Ecology, and Systematics from LMU Munich, and am currently working as a research assistant for the said project.
         </span>
     </div></h5>
         <p class="title"><em>Research Assistant</em></p>
