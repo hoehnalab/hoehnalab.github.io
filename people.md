@@ -49,25 +49,6 @@ I am a paleontologist and evolutionary biologist investigating how biological di
 </div>
 
 <div class="item">
-    <img class="rcornersimage" src="/assets/images/Nicola_Heckeberg.jpg">
-    <h5><div class="tooltip"><p class="ttext">Nicola Heckeberg</p>
-        <span class="tooltiptext">
-As an evolutionary palaeobiologist, I am interested in morphological character changes of vertebrates, especially mammals, through time.
-Functional trait evolution in ruminants and other artiodactyls are the focus of my research, integrating fossil and extant taxa and molecular and phenotypic data in comprehensive time calibrated analyses.
-        </span>
-    </div></h5>
-        <p class="title"><em>Postdoc</em></p>
-        <a href="mailto:n.heckeberg@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
-        <a href="https://twitter.com/heckeberg" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
-
-    <!-- Show tooltip text when on mobile -->
-    <div class="blurb">
-As an evolutionary palaeobiologist, I am interested in morphological character changes of vertebrates, especially mammals, through time.
-Functional trait evolution in ruminants and other artiodactyls are the focus of my research, integrating fossil and extant taxa and molecular and phenotypic data in comprehensive time calibrated analyses.
-    </div>
-</div>
-
-<div class="item">
     <img class="rcornersimage" src="/assets/images/Gustavo_Darlim.jpg">
     <h5><div class="tooltip"><p class="ttext">Gustavo Darlim</p>
         <span class="tooltiptext">
@@ -75,8 +56,9 @@ I’m a vertebrate paleontologist working on macroevolution of crocodylomorphs (
         </span>
     </div></h5>
         <p class="title"><em>Postdoc</em></p>
-        <a href="mailto:g.darlim@lrz.uni-muenchen.de"><img src="/assets/icons/mail.svg" width="25px"></a>
         <a href="https://twitter.com/GDarlim" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
+        <a href="mailto:g.darlim@lrz.uni-muenchen.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
@@ -169,7 +151,7 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
         <p class="title"><em>PhD Student</em></p>
         <a href="https://github.com/basanta33" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
         <a href="https://basanta33.github.io/" target="_blank"><img src="/assets/icons/globe.svg" width="25px"></a>
-        <a href="https://twitter.com/basantakhakurel" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
+        <a href="https://bsky.app/profile/basantakhakurel.bsky.social" target="_blank"><img src="/assets/icons/bsky.svg" width="25px"></a>
         <a href="mailto:b.khakurel@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
 
     <!-- Show tooltip text when on mobile -->
@@ -279,12 +261,31 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
         </span>
     </div></h5>
         <p class="title"><em>Postdoc at German Centre for Integrative Biodiversity Research Halle-Jena-Leipzig</em></p>
-        <a href="mailto:j.clarke.paleo@gmail.com"><img src="/assets/icons/mail.svg" width="25px"></a>
         <a href="https://twitter.com/jclarkepaleo?lang=en" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
+        <a href="mailto:j.clarke.paleo@gmail.com"><img src="/assets/icons/mail.svg" width="25px"></a>
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
       I'm an evolutionary biologist and palaeontologist interested in testing drivers of phenotypic and species diversity using phylogenetic comparative methods. Having first applied these methods to Mesozoic fishes, I now apply them to large datasets of extant fishes, plants and insects.
+    </div>
+</div>
+
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/Nicola_Heckeberg.jpg">
+    <h5><div class="tooltip"><p class="ttext">Nicola Heckeberg</p>
+        <span class="tooltiptext">
+          As an evolutionary palaeobiologist, I am interested in morphological character changes of vertebrates, especially mammals, through time.
+          Functional trait evolution in ruminants and other artiodactyls are the focus of my research, integrating fossil and extant taxa and molecular and phenotypic data in comprehensive time calibrated analyses.
+        </span>
+    </div></h5>
+        <p class="title"><em></em></p>
+        <a href="https://bsky.app/profile/heckeberg.bsky.social" target="_blank"><img src="/assets/icons/bsky.svg" width="25px"></a>
+        <a href="mailto:n.heckeberg@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+As an evolutionary palaeobiologist, I am interested in morphological character changes of vertebrates, especially mammals, through time.
+Functional trait evolution in ruminants and other artiodactyls are the focus of my research, integrating fossil and extant taxa and molecular and phenotypic data in comprehensive time calibrated analyses.
     </div>
 </div>
 
