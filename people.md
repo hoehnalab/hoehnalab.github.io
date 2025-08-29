@@ -40,7 +40,7 @@ I am a paleontologist and evolutionary biologist investigating how biological di
         </span>
     </div></h5>
         <p class="title"><em>Postdoc</em></p>
-        <a href="mailto:acapo@umich.edu"><img src="/assets/icons/mail.svg" width="25px"></a>
+        <a href="mailto:a.capobianco@lrz.uni-muenchen.de"><img src="/assets/icons/mail.svg" width="25px"></a>
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
