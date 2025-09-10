@@ -177,6 +177,25 @@ I am a master's student in Evolutionary Biology. My research passion lies in com
     </div>
 </div>
 
+
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/Junru_Zhang.jpg">
+    <h5><div class="tooltip"><p class="ttext">Junru Zhang 张钧儒</p>
+        <span class="tooltiptext">
+            I am a computational biologist with a research focus on model error in phylogenetic inference, particularly the problem of heterotachy. My work employs simulation-based approaches to examine the impacts of heterotachy on various stages of the phylogenetic inference process, with the aim of developing robust strategies to address these challenges. In addition, I maintain broad interests in speciation, genomics, and morphology. Beyond research, I pursue insect rearing and specimen collection as personal interests and also enjoy other nature-related outdoor activities.
+        </span>
+    </div></h5>
+        <p class="title"><em>Visiting PhD Student</em></p>
+        <a href="mailto:curiosusjr@outlook.com"><img src="/assets/icons/mail.svg" width="25px"></a>
+
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+           I am a computational biologist with a research focus on model error in phylogenetic inference, particularly the problem of heterotachy. My work employs simulation-based approaches to examine the impacts of heterotachy on various stages of the phylogenetic inference process, with the aim of developing robust strategies to address these challenges. In addition, I maintain broad interests in speciation, genomics, and morphology. Beyond research, I pursue insect rearing and specimen collection as personal interests and also enjoy other nature-related outdoor activities.
+    </div>
+</div>
+
+
+
 <div class="item">
     <img class="rcornersimage" src="/assets/images/Priscilla_Lau.jpg">
     <h5><div class="tooltip"><p class="ttext">Priscilla Lau</p>
