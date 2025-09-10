@@ -31,6 +31,36 @@ permalink: /news/
 
   <div class="updates">
     <article class="updates-content">
+      <h4>🎓 Congratulations to Walker on Completing His Master’s! 🎉</h4>
+        <p>
+        Date: <time datetime="2025-09-09">September 10, 2025</time>
+        </p>
+        <p>
+            Master's student Walker Sexton successfully defended his thesis.
+       </p>
+        <a href="/updates/walker_defense" class="read-more">Read more</a>
+    </article>
+  </div>
+
+  <br><br>
+
+  <div class="updates">
+    <article class="updates-content">
+      <h4>Lab Visit to ESEB 2025</h4>
+        <p>
+        Date: <time datetime="2025-08-17">August 17, 2025</time>
+        </p>
+        <p>
+        Some lab members attended and presented on the Congress of the European Society for Evolutionary Biology held at Barcelona, Spain from 17<sup>th</sup> to 22<sup>nd</sup> August 2025.
+        </p>
+        <a href="/updates/eseb2025" class="read-more">Read more</a>
+    </article>
+  </div>
+
+  <br><br>
+
+  <div class="updates">
+    <article class="updates-content">
       <h4> New Paper Published! 🎉</h4>
         <p>
         Date: <time datetime="2025-03-14">March 19, 2025</time>
