@@ -4,6 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 <h3>2025 and in press</h3>
+- <strong>Zhu W</strong> and <strong>Höhna S</strong>. Two-step Species Tree Inference under the Multispecies Coalescent Using Full-Likelihood. *Evolutionary Journal of the Linnean Society*. [link](https://doi.org/10.1093/evolinnean/kzaf018)
 <!-- - <strong>Heckeberg NS</strong>, <strong>Capobianco A</strong>, <strong>Khakurel B</strong>, <strong>Darlim G</strong> and <strong>Höhna S</strong>. Practical Guide and Review of Fossil Tip-Dating in Phylogenetics. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/) -->
 - Paterson RS, Mackie M, <strong>Capobianco A</strong>, <strong>Heckeberg NS</strong>, Fraser D, Demarchi B, Munir F, Patramanis I, Ramos-Madrigal J, Liu S, Ramsøe AD, Dickinson MR, Baldreki C, Gilbert M, Sardella R, Bellucci L, Scorrano G, Leonardi M, Manica A, Racimo F, Willerslev E, Penkman KEH, Olsen JV, MacPhee RDE, Rybczynski N, <strong>Höhna S</strong> and Cappellini E. Phylogenetically-informative proteins from an Early Miocene rhinocerotid. *Nature*. [link](https://doi.org/10.1038/s41586-025-09231-4)
 - Blanco F, Lazagabaster IA, Sanisidro Ó, Bibi F, <strong>Heckeberg NS</strong>, Ríos M, Mennecart B, Alberdi MT, Prado SL, Saarinen J, Silvestro D, Müller J, Calatayud J, Cantalapiedra JL. Two major ecological shifts shaped 60 million years of ungulate faunal evolution. *Nature Communications*, 16:4648. [link](https://doi.org/10.1038/s41467-025-59974-x)
