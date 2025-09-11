@@ -67,6 +67,24 @@ I’m a vertebrate paleontologist working on macroevolution of crocodylomorphs (
 </div>
 
 <div class="item">
+    <img class="rcornersimage" src="/assets/images/Nicolas_Lichilin.jpg">
+    <h5><div class="tooltip"><p class="ttext">Nicolas Lichilin</p>
+        <span class="tooltiptext">
+            I am an evolutionary biologist and bioinformatician with a focus on sex determination systems, sex-biased gene expression, sexual dimorphism, comparative genomics, and phylogenetics. My research explores how genetic and molecular mechanisms shape biodiversity, with particular interest in adaptive radiations, sex-biased gene expression, and the evolution of sex chromosomes. I have studied diverse groups, ranging from Neotropical primates and carnivores to mollusks and cichlid fishes, integrating molecular data with computational methods to investigate evolutionary processes at multiple scales. Currently, I am studying genome evolution in firefly species with similar and extreme sexual dimorphism. This requires basic but important bioinformatic analyses that I have been implementing, such as chromosome-level genome assembly, genomic (re)annotation, ortholog assessment, sex-biased gene expression, among other statistical approaches to better understand genome evolution in fireflies.
+        </span>
+    </div></h5>
+        <p class="title"><em>PostDoc</em></p>
+        <a href="https://twitter.com/NikoLichii" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
+        <a href="https://github.com/NikoLichi" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
+        <a href="mailto:nlichilin@bio.lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+        I am an evolutionary biologist and bioinformatician with a focus on sex determination systems, sex-biased gene expression, sexual dimorphism, comparative genomics, and phylogenetics. My research explores how genetic and molecular mechanisms shape biodiversity, with particular interest in adaptive radiations, sex-biased gene expression, and the evolution of sex chromosomes. I have studied diverse groups, ranging from Neotropical primates and carnivores to mollusks and cichlid fishes, integrating molecular data with computational methods to investigate evolutionary processes at multiple scales. Currently, I am studying genome evolution in firefly species with similar and extreme sexual dimorphism. This requires basic but important bioinformatic analyses that I have been implementing, such as chromosome-level genome assembly, genomic (re)annotation, ortholog assessment, sex-biased gene expression, among other statistical approaches to better understand genome evolution in fireflies.
+    </div>
+</div>
+
+<div class="item">
     <img class="rcornersimage" src="/assets/images/Ronja_Billenstein.jpg">
     <h5><div class="tooltip"><p class="ttext">Ronja Billenstein</p>
         <span class="tooltiptext">

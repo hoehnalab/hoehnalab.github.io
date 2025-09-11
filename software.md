@@ -62,7 +62,7 @@ permalink: /software/
 
   <!-- Convenience -->
   <div class="project">
-    <img class="project-image floatleft" src="/assets/images/convenience_1.jpg" alt="Convenience Logo" style="width: 100px; height: auto;">
+    <img class="project-image floatleft" src="/assets/images/convenience_ai_logo.jpg" alt="Convenience Logo" style="width: 100px; height: auto;">
     <div class="project-content">
       <h3><a href="https://github.com/lfabreti/convenience" target="_blank"><strong>Convenience</strong></a></h3>
       <p class="project-description">
