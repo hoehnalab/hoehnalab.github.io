@@ -147,15 +147,15 @@ I am an evolutionary biologist who is interested in estimating speciation- and e
     <img class="rcornersimage" src="/assets/images/Wenjie_Zhu.jpg">
     <h5><div class="tooltip"><p class="ttext">Wenjie Zhu 祝雯洁</p>
         <span class="tooltiptext">
-I am a master's student in Evolutionary Biology. My research passion lies in computational and statistical phylogenetics, especially species tree inference from molecular data. I am currently working on evaluating the performance and properties of coalescent-based species tree inference methods using simulations. To offset my screen time, I enjoy exploring nature through hiking and botanizing.
+As an evolutionary biologist, my research passion lies in computational and statistical phylogenetics and population genetics. Previous work focused on multispecies coalescent models for optimizing species tree inference, while current research applies polymorphism-aware phylogenetic models (PoMos) to species delimitation using genome-wide SNP data. Both models operate at the interface of phylogenetics and population genetics. While these research interests reflect my methodological focus, my fundamental draw to evolutionary biology comes from a more philosophical realization. Coalescent theory unveils a profound truth that we are connected to everything. Tracing lineages backward through time, we connect not only to all life but, beyond the origin of life about 3.9 billion years ago, we become continuous with abiotic matter and ultimately the entire universe. This perspective shapes both my research curiosity and my appreciation for nature. To further explore nature's beauty and biodiversity while offsetting screen time, I enjoy hiking and botanizing.
         </span>
     </div></h5>
         <p class="title"><em>PhD Student</em></p>
-        <a href="mailto:Wenjie.Zhu@campus.lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+        <a href="mailto:Wenjie.Zhu@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
-I am a master's student in Evolutionary Biology. My research passion lies in computational and statistical phylogenetics, especially species tree inference from molecular data. I am currently working on evaluating the performance and properties of coalescent-based species tree inference methods using simulations. To offset my screen time, I enjoy exploring nature through hiking and botanizing.
+As an evolutionary biologist, my research passion lies in computational and statistical phylogenetics and population genetics. Previous work focused on multispecies coalescent models for optimizing species tree inference, while current research applies polymorphism-aware phylogenetic models (PoMos) to species delimitation using genome-wide SNP data. Both models operate at the interface of phylogenetics and population genetics. While these research interests reflect my methodological focus, my fundamental draw to evolutionary biology comes from a more philosophical realization. Coalescent theory unveils a profound truth that we are connected to everything. Tracing lineages backward through time, we connect not only to all life but, beyond the origin of life about 3.9 billion years ago, we become continuous with abiotic matter and ultimately the entire universe. This perspective shapes both my research curiosity and my appreciation for nature. To further explore nature's beauty and biodiversity while offsetting screen time, I enjoy hiking and botanizing.
     </div>
 </div>
 
