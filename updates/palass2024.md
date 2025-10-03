@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Lab Visit to Annual Meeting of the Paleontological Association
+date: 2024-12-13
 permalink: /updates/palass2024/
 ---
 <header class="page-header">

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Walker's Thesis Defense
+date: 2025-09-09
 permalink: /updates/walker_defense/
 ---
 <header class="page-header">

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: New Paper Published
+date: 2025-03-19
 permalink: /updates/gustavo2025_paper/
 ---
 <header class="page-header">

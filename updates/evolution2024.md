@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Lab Visit to Joint Evolution Meeting at Montréal
+date: 2024-07-31
 permalink: /updates/evolution2024/
 ---
 <header class="page-header">

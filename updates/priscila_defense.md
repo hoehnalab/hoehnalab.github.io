@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Priscila's Thesis Defense
+date: 2025-03-14
 permalink: /updates/priscila_defense/
 ---
 <header class="page-header">
