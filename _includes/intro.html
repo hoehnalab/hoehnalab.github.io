@@ -29,15 +29,21 @@
       <li>
         <h3>Latest News:</h3>
       </li>
-      {% for update in site.pages %}
-      {% if update.layout == "page" and update.permalink contains "/updates/" %}
+
+      {% comment %}
+        - create a variable called 'news_items'
+        - find all pages and sort them by 'date'
+        - reverse the order so the newest are first
+      {% endcomment %}
+      {% assign news_items = site.pages | where: "layout", "page" | where_exp: "item", "item.permalink contains '/updates/'" | sort: 'date' | reverse %}
+
+      {% for update in news_items limit: 4 %}
       <li>
-        <h4><a href="{{ update.url }}" style=" text-decoration: none;">{{ update.title }}</b>
-        </h4>
-        <p>{{ update.exerpt }}</p>
+        <h4><a href="{{ update.url }}" style="text-decoration: none;">{{ update.title }}</a></h4>
+        <p>{{ update.excerpt }}</p>
       </li>
-      {% endif %}
       {% endfor %}
+
       <a href="/news" style="text-decoration: none; font-size: 18px; font-style: italic;">
         Visit our News Page
       </a>
