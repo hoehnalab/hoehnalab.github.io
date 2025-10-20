@@ -85,22 +85,6 @@ I’m a vertebrate paleontologist working on macroevolution of crocodylomorphs (
 </div>
 
 <div class="item">
-    <img class="rcornersimage" src="/assets/images/Ronja_Billenstein.jpg">
-    <h5><div class="tooltip"><p class="ttext">Ronja Billenstein</p>
-        <span class="tooltiptext">
-            I’m a biologist working on statistical methods for inferring the evolutionary history of closely related populations. These methods are based on coalescent theory and a mutation process. I am using simulated as well as empirical data to test and to validate these methods, hoping to provide an accurate, powerful and computationally feasible approach.
-        </span>
-    </div></h5>
-        <p class="title"><em>PhD Student</em></p>
-        <a href="mailto:r.billenstein@lrz.uni-muenchen.de"><img src="/assets/icons/mail.svg" width="25px"></a>
-
-    <!-- Show tooltip text when on mobile -->
-    <div class="blurb">
-        I’m a biologist working on statistical methods for inferring the evolutionary history of closely related populations. These methods are based on coalescent theory and a mutation process. I am using simulated as well as empirical data to test and to validate these methods, hoping to provide an accurate, powerful and computationally feasible approach.
-    </div>
-</div>
-
-<div class="item">
     <img class="rcornersimage" src="/assets/images/Killian_Smith.jpg">
     <h5><div class="tooltip"><p class="ttext">Killian Smith</p>
         <span class="tooltiptext">
@@ -257,36 +241,21 @@ As an evolutionary biologist, my research passion lies in computational and stat
 <h2> Past Members </h2>
 
 <div class="item">
-    <img class="rcornersimage" src="/assets/images/Allison_Hsiang.jpg">
-    <h5><div class="tooltip"><p class="ttext">Allison Hsiang</p>
+    <img class="rcornersimage" src="/assets/images/Nicola_Heckeberg.jpg">
+    <h5><div class="tooltip"><p class="ttext">Nicola Heckeberg</p>
         <span class="tooltiptext">
-            My research uses statistical modeling, Bayesian inference, Big Data, and machine learning to understand morphological evolution and macroevolutionary patterns and processes. I am particularly interested in bringing a ‘next-generation’ approach (e.g., high-throughput automated data generation) to studying fossils and morphology in a phylogenetic context. I am also interested in the interplay between morphology and genetics, including methodological considerations during phylogenetic inference.
+          As an evolutionary palaeobiologist, I am interested in morphological character changes of vertebrates, especially mammals, through time.
+          Functional trait evolution in ruminants and other artiodactyls are the focus of my research, integrating fossil and extant taxa and molecular and phenotypic data in comprehensive time calibrated analyses.
         </span>
     </div></h5>
-        <p class="title"><em>Independent Researcher (VR Grant) at Stockholm University</em></p>
-        <a href="https://github.com/ahsiang" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
-        <a href="https://ahsiang.github.io/" target="_blank"><img src="/assets/icons/globe.svg" width="25px"></a>
-        <a href="mailto:allison.hsiang@gmail.com"><img src="/assets/icons/mail.svg" width="25px"></a>
-    <!-- Show tooltip text when on mobile -->
-    <div class="blurb">
-        My research uses statistical modeling, Bayesian inference, Big Data, and machine learning to understand morphological evolution and macroevolutionary patterns and processes. I am particularly interested in bringing a ‘next-generation’ approach (e.g., high-throughput automated data generation) to studying fossils and morphology in a phylogenetic context. I am also interested in the interplay between morphology and genetics, including methodological considerations during phylogenetic inference.
-    </div>
-</div>
-
-<div class="item">
-    <img class="rcornersimage" src="/assets/images/Luiza_Fabreti.jpg">
-    <h5><div class="tooltip"><p class="ttext">Luiza Fabreti</p>
-        <span class="tooltiptext">
-            I'm interested in computational and evolutionary biology. Specially, improving the way we model evolution. My research involves Bayesian phylogenetic inference and underlying topics such as, model selection, testing the adequacy of the most commonly used substitution models and assessing convergence of the Markov Chain Monte Carlo.
-        </span>
-    </div></h5>
-        <p class="title"><em>Software Engineer, Data Analyst at camLine</em></p>
-        <a href="https://github.com/lfabreti" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
-        <a href="mailto:l.fabreti@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+        <p class="title"><em></em></p>
+        <a href="https://bsky.app/profile/heckeberg.bsky.social" target="_blank"><img src="/assets/icons/bsky.svg" width="25px"></a>
+        <a href="mailto:n.heckeberg@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
-        I'm interested in computational and evolutionary biology. Specially, improving the way we model evolution. My research involves Bayesian phylogenetic inference and underlying topics such as, model selection, testing the adequacy of the most commonly used substitution models and assessing convergence of the Markov Chain Monte Carlo.
+As an evolutionary palaeobiologist, I am interested in morphological character changes of vertebrates, especially mammals, through time.
+Functional trait evolution in ruminants and other artiodactyls are the focus of my research, integrating fossil and extant taxa and molecular and phenotypic data in comprehensive time calibrated analyses.
     </div>
 </div>
 
@@ -308,21 +277,52 @@ As an evolutionary biologist, my research passion lies in computational and stat
 </div>
 
 <div class="item">
-    <img class="rcornersimage" src="/assets/images/Nicola_Heckeberg.jpg">
-    <h5><div class="tooltip"><p class="ttext">Nicola Heckeberg</p>
+    <img class="rcornersimage" src="/assets/images/Ronja_Billenstein.jpg">
+    <h5><div class="tooltip"><p class="ttext">Ronja Billenstein</p>
         <span class="tooltiptext">
-          As an evolutionary palaeobiologist, I am interested in morphological character changes of vertebrates, especially mammals, through time.
-          Functional trait evolution in ruminants and other artiodactyls are the focus of my research, integrating fossil and extant taxa and molecular and phenotypic data in comprehensive time calibrated analyses.
+            I’m a biologist working on statistical methods for inferring the evolutionary history of closely related populations. These methods are based on coalescent theory and a mutation process. I am using simulated as well as empirical data to test and to validate these methods, hoping to provide an accurate, powerful and computationally feasible approach.
         </span>
     </div></h5>
-        <p class="title"><em></em></p>
-        <a href="https://bsky.app/profile/heckeberg.bsky.social" target="_blank"><img src="/assets/icons/bsky.svg" width="25px"></a>
-        <a href="mailto:n.heckeberg@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+        <p class="title"><em>Software Engineer</em></p>
+        <!--<a href="mailto:ronja@billenstein.com"><img src="/assets/icons/mail.svg" width="25px"></a>-->
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
-As an evolutionary palaeobiologist, I am interested in morphological character changes of vertebrates, especially mammals, through time.
-Functional trait evolution in ruminants and other artiodactyls are the focus of my research, integrating fossil and extant taxa and molecular and phenotypic data in comprehensive time calibrated analyses.
+        I’m a biologist working on statistical methods for inferring the evolutionary history of closely related populations. These methods are based on coalescent theory and a mutation process. I am using simulated as well as empirical data to test and to validate these methods, hoping to provide an accurate, powerful and computationally feasible approach.
+    </div>
+</div>
+
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/Luiza_Fabreti.jpg">
+    <h5><div class="tooltip"><p class="ttext">Luiza Fabreti</p>
+        <span class="tooltiptext">
+            I'm interested in computational and evolutionary biology. Specially, improving the way we model evolution. My research involves Bayesian phylogenetic inference and underlying topics such as, model selection, testing the adequacy of the most commonly used substitution models and assessing convergence of the Markov Chain Monte Carlo.
+        </span>
+    </div></h5>
+        <p class="title"><em>Software Engineer, Data Analyst at camLine</em></p>
+        <a href="https://github.com/lfabreti" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
+        <a href="mailto:l.fabreti@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+        I'm interested in computational and evolutionary biology. Specially, improving the way we model evolution. My research involves Bayesian phylogenetic inference and underlying topics such as, model selection, testing the adequacy of the most commonly used substitution models and assessing convergence of the Markov Chain Monte Carlo.
+    </div>
+</div>
+
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/Allison_Hsiang.jpg">
+    <h5><div class="tooltip"><p class="ttext">Allison Hsiang</p>
+        <span class="tooltiptext">
+            My research uses statistical modeling, Bayesian inference, Big Data, and machine learning to understand morphological evolution and macroevolutionary patterns and processes. I am particularly interested in bringing a ‘next-generation’ approach (e.g., high-throughput automated data generation) to studying fossils and morphology in a phylogenetic context. I am also interested in the interplay between morphology and genetics, including methodological considerations during phylogenetic inference.
+        </span>
+    </div></h5>
+        <p class="title"><em>Independent Researcher (VR Grant) at Stockholm University</em></p>
+        <a href="https://github.com/ahsiang" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
+        <a href="https://ahsiang.github.io/" target="_blank"><img src="/assets/icons/globe.svg" width="25px"></a>
+        <a href="mailto:allison.hsiang@gmail.com"><img src="/assets/icons/mail.svg" width="25px"></a>
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+        My research uses statistical modeling, Bayesian inference, Big Data, and machine learning to understand morphological evolution and macroevolutionary patterns and processes. I am particularly interested in bringing a ‘next-generation’ approach (e.g., high-throughput automated data generation) to studying fossils and morphology in a phylogenetic context. I am also interested in the interplay between morphology and genetics, including methodological considerations during phylogenetic inference.
     </div>
 </div>
 
