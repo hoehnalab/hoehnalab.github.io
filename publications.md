@@ -5,8 +5,8 @@ permalink: /publications/
 ---
 <h3>2025 and in press</h3>
 - <strong>Capobianco A</strong>. How many characters are needed to
-reconstruct a phylogeny? *Evolutionary Journal of the Linnean Society*. [link](https://doi.org/10.1093/evolinnean/kzaf018)
-- <strong>Zhu W</strong> and <strong>Höhna S</strong>. Two-step Species Tree Inference under the Multispecies Coalescent Using Full-Likelihood. *Biology Letters*. [link](https://doi.org/10.1098/rsbl.2025.0288)
+reconstruct a phylogeny? *Biology Letters*. [link](https://doi.org/10.1093/evolinnean/kzaf018)
+- <strong>Zhu W</strong> and <strong>Höhna S</strong>. Two-step Species Tree Inference under the Multispecies Coalescent Using Full-Likelihood. *Evolutionary Journal of the Linnean Society*. [link](https://doi.org/10.1098/rsbl.2025.0288)
 - <strong>Heckeberg NS</strong>, <strong>Capobianco A</strong>, <strong>Khakurel B</strong>, <strong>Darlim G</strong> and <strong>Höhna S</strong>. Practical Guide and Review of Fossil Tip-Dating in Phylogenetics. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syaf050)
 - Paterson RS, Mackie M, <strong>Capobianco A</strong>, <strong>Heckeberg NS</strong>, Fraser D, Demarchi B, Munir F, Patramanis I, Ramos-Madrigal J, Liu S, Ramsøe AD, Dickinson MR, Baldreki C, Gilbert M, Sardella R, Bellucci L, Scorrano G, Leonardi M, Manica A, Racimo F, Willerslev E, Penkman KEH, Olsen JV, MacPhee RDE, Rybczynski N, <strong>Höhna S</strong> and Cappellini E. Phylogenetically-informative proteins from an Early Miocene rhinocerotid. *Nature*. [link](https://doi.org/10.1038/s41586-025-09231-4)
 - <strong>Zhu W</strong>, Chen L, van der Burgt XM, Haba PM, Garaeva D, <strong>Lau P</strong>, Morales-Briones DF, Veranso-Libalah MC. Rediscovery and phylogenomic placement of *Feliciadamia stenocarpa* (Feliciadamieae: Melastomataceae): assessing gene tree discordance. *Botanical Journal of the Linnean Society*. [link](https://doi.org/10.1093/botlinnean/boaf047)
