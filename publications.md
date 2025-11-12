@@ -4,6 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 <h3>2025 and in press</h3>
+- Brenen M Wynd, <strong>Basanta Khakurel</strong>, Christian F Kammerer, Peter J Wagner, April M Wright. Incorporating continuous characters in joint estimation of dicynodont phylogeny. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syaf078)
 - <strong>Capobianco A</strong>. How many characters are needed to reconstruct a phylogeny? *Biology Letters*. [link](https://doi.org/10.1098/rsbl.2025.0288)
 - Pienaar J, Bartoszek K, Brahmantio B, Fierst JL, Fuentes-González JA, Hansen TF, Kiang WHC, <strong>Kopperud BT</strong>, Voje KL. Phylogenetic Comparative Methods for Studying Adaptation: The Adaptation-Inertia Framework. *Journal of Evolutionary Biology*. [link](https://academic.oup.com/jeb/article-abstract/doi/10.1093/jeb/voaf113/8262911) 
 - <strong>Zhu W</strong> and <strong>Höhna S</strong>. Two-step Species Tree Inference under the Multispecies Coalescent Using Full-Likelihood. *Evolutionary Journal of the Linnean Society*. [link](https://doi.org/10.1093/evolinnean/kzaf018)
