@@ -151,8 +151,8 @@ As an evolutionary biologist, my research passion lies in computational and stat
         </span>
     </div></h5>
         <p class="title"><em>PhD Student</em></p>
-        <a href="https://github.com/basanta33" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
-        <a href="https://basanta33.github.io/" target="_blank"><img src="/assets/icons/globe.svg" width="25px"></a>
+        <a href="https://github.com/basantakhakurel" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
+        <a href="https://basantakhakurel.github.io/" target="_blank"><img src="/assets/icons/globe.svg" width="25px"></a>
         <a href="https://bsky.app/profile/basantakhakurel.bsky.social" target="_blank"><img src="/assets/icons/bsky.svg" width="25px"></a>
         <a href="mailto:b.khakurel@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
 
