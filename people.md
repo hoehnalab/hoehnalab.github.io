@@ -85,6 +85,24 @@ I’m a vertebrate paleontologist working on macroevolution of crocodylomorphs (
 </div>
 
 <div class="item">
+    <img class="rcornersimage" src="/assets/images/David_Cerny.jpg">
+    <h5><div class="tooltip"><p class="ttext">David Černý</p>
+        <span class="tooltiptext">
+            I am a computational biologist focusing on the development, evaluation, and application of Bayesian methods for phylogenetic and macroevolutionary inference, with vertebrates as my main study system (and a soft spot for dinosaurs). My current research involves estimating large time-calibrated phylogenies of fossil taxa in ways that circumvent the challenges such efforts usually face, such as the need to score hundreds of specimens for the same set of characters, and assessing our confidence in fossil-based phylogenies in light of the underlying data and alternative hypotheses. I am also interested in improving and extending the models used in Bayesian paleo-phylogenetics and diversification rate inference: this includes making sure that our Markov models properly account for the properties of real-world morphological characters, and generalizing the fossilized birth-death models for estimating macroevolutionary rates from fossil occurrence data.
+        </span>
+    </div></h5>
+        <p class="title"><em>PostDoc</em></p>
+        <a href="https://github.com/davidcerny" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
+        <a href="https://davidcerny.github.io/" target="_blank"><img src="/assets/icons/globe.svg" width="25px"></a>
+        <a href="d.cerny@lrz.uni-muenchen.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+        I am a computational biologist focusing on the development, evaluation, and application of Bayesian methods for phylogenetic and macroevolutionary inference, with vertebrates as my main study system (and a soft spot for dinosaurs). My current research involves estimating large time-calibrated phylogenies of fossil taxa in ways that circumvent the challenges such efforts usually face, such as the need to score hundreds of specimens for the same set of characters, and assessing our confidence in fossil-based phylogenies in light of the underlying data and alternative hypotheses. I am also interested in improving and extending the models used in Bayesian paleo-phylogenetics and diversification rate inference: this includes making sure that our Markov models properly account for the properties of real-world morphological characters, and generalizing the fossilized birth-death models for estimating macroevolutionary rates from fossil occurrence data.
+    </div>
+</div>
+
+<div class="item">
     <img class="rcornersimage" src="/assets/images/Killian_Smith.jpg">
     <h5><div class="tooltip"><p class="ttext">Killian Smith</p>
         <span class="tooltiptext">
