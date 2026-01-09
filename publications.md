@@ -3,14 +3,15 @@ layout: page
 title: Publications
 permalink: /publications/
 ---
-<h3>2025 and in press</h3>
+<h3>2026 and in press</h3>
 - Wynd BM, <strong>Khakurel B</strong>, Kammerer CF, Wagner PJ, Wright AM. Incorporating continuous characters in joint estimation of dicynodont phylogeny. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syaf078)
 - <strong>Heckeberg NS</strong>, <strong>Capobianco A</strong>, <strong>Khakurel B</strong>, <strong>Darlim G</strong> and <strong>Höhna S</strong>. Practical Guide and Review of Fossil Tip-Dating in Phylogenetics. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syaf050)
+- Pienaar J, Bartoszek K, Brahmantio B, Fierst JL, Fuentes-González JA, Hansen TF, Kiang WHC, <strong>Kopperud BT</strong>, Voje KL. Phylogenetic Comparative Methods for Studying Adaptation: The Adaptation-Inertia Framework. *Journal of Evolutionary Biology*, 39 (1), 1-17. [link](https://doi.org/10.1093/jeb/voaf113) 
+<h3>2025</h3>
 - <strong>Zhu W</strong>, Chen L, van der Burgt XM, Haba PM, Garaeva D, <strong>Lau P</strong>, Morales-Briones DF, Veranso-Libalah MC. Rediscovery and phylogenomic placement of *Feliciadamia stenocarpa* (Feliciadamieae: Melastomataceae): assessing gene tree discordance. *Botanical Journal of the Linnean Society*. [link](https://doi.org/10.1093/botlinnean/boaf047)
-- Pienaar J, Bartoszek K, Brahmantio B, Fierst JL, Fuentes-González JA, Hansen TF, Kiang WHC, <strong>Kopperud BT</strong>, Voje KL. Phylogenetic Comparative Methods for Studying Adaptation: The Adaptation-Inertia Framework. *Journal of Evolutionary Biology*. [link](https://doi.org/10.1093/jeb/voaf113) 
 - <strong>Kopperud BT</strong> and <strong>Höhna S</strong>. Phylogenetic Estimation of Branch-specific Shifts in the Tempo of Origination. *Systematic Biology*, 74(6), 985-1006. [link](https://doi.org/10.1093/sysbio/syaf041)
 - <strong>Capobianco A</strong> and <strong>Höhna S</strong>. On the Mkv Model with Among-Character Rate Variation. *Systematic Biology*, 74(6), 952-966. [link](https://doi.org/10.1093/sysbio/syaf038)
-- <strong>Capobianco A</strong>. How many characters are needed to reconstruct a phylogeny? *Biology Letters*. [link](https://doi.org/10.1098/rsbl.2025.0288)
+- <strong>Capobianco A</strong>. How many characters are needed to reconstruct a phylogeny? *Biology Letters*, 21 (10): 20250288. [link](https://doi.org/10.1098/rsbl.2025.0288)
 - <strong>Zhu W</strong> and <strong>Höhna S</strong>. Two-step Species Tree Inference under the Multispecies Coalescent Using Full-Likelihood. *Evolutionary Journal of the Linnean Society*, 4(1), kzaf018. [link](https://doi.org/10.1093/evolinnean/kzaf018)
 - Paterson RS, Mackie M, <strong>Capobianco A</strong>, <strong>Heckeberg NS</strong>, Fraser D, Demarchi B, Munir F, Patramanis I, Ramos-Madrigal J, Liu S, Ramsøe AD, Dickinson MR, Baldreki C, Gilbert M, Sardella R, Bellucci L, Scorrano G, Leonardi M, Manica A, Racimo F, Willerslev E, Penkman KEH, Olsen JV, MacPhee RDE, Rybczynski N, <strong>Höhna S</strong> and Cappellini E. Phylogenetically-informative proteins from an Early Miocene rhinocerotid. *Nature*. [link](https://doi.org/10.1038/s41586-025-09231-4)
 - Blanco F, Lazagabaster IA, Sanisidro Ó, Bibi F, <strong>Heckeberg NS</strong>, Ríos M, Mennecart B, Alberdi MT, Prado SL, Saarinen J, Silvestro D, Müller J, Calatayud J, Cantalapiedra JL. Two major ecological shifts shaped 60 million years of ungulate faunal evolution. *Nature Communications*, 16:4648. [link](https://doi.org/10.1038/s41467-025-59974-x)
