@@ -5,8 +5,8 @@ permalink: /publications/
 ---
 <h3>2026 and in press</h3>
 - Wynd BM, <strong>Khakurel B</strong>, Kammerer CF, Wagner PJ, Wright AM. Incorporating continuous characters in joint estimation of dicynodont phylogeny. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syaf078)
-- <strong>Heckeberg NS</strong>, <strong>Capobianco A</strong>, <strong>Khakurel B</strong>, <strong>Darlim G</strong> and <strong>Höhna S</strong>. Practical Guide and Review of Fossil Tip-Dating in Phylogenetics. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syaf050)
 - <strong>Zhu W</strong>, Chen L, van der Burgt XM, Haba PM, Garaeva D, <strong>Lau P</strong>, Morales-Briones DF, Veranso-Libalah MC. Rediscovery and phylogenomic placement of *Feliciadamia stenocarpa* (Feliciadamieae: Melastomataceae): assessing gene tree discordance. *Botanical Journal of the Linnean Society*. [link](https://doi.org/10.1093/botlinnean/boaf047)
+- <strong>Heckeberg NS</strong>, <strong>Capobianco A</strong>, <strong>Khakurel B</strong>, <strong>Darlim G</strong> and <strong>Höhna S</strong>. Practical Guide and Review of Fossil Tip-Dating in Phylogenetics. *Systematic Biology*, 75(1), 156-192. [link](https://doi.org/10.1093/sysbio/syaf050)
 - Pienaar J, Bartoszek K, Brahmantio B, Fierst JL, Fuentes-González JA, Hansen TF, Kiang WHC, <strong>Kopperud BT</strong>, Voje KL. Phylogenetic Comparative Methods for Studying Adaptation: The Adaptation-Inertia Framework. *Journal of Evolutionary Biology*, 39 (1), 1-17. [link](https://doi.org/10.1093/jeb/voaf113) 
 
 
