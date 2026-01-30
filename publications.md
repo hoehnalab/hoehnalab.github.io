@@ -4,7 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 <h3>2026 and in press</h3>
-
+- <strong>Kopperud BT</strong>, <strong>Capobianco A</strong>, <strong>Clarke JT</strong>, Palazzesi L and <strong>Höhna S</strong>. The nature and prevalence of diversification rate shifts across the Tree of Life. *Evolution Letters*. [link](https://doi.org/10.1093/evlett/qrag005)
 - <strong>Höhna S</strong>, Freyman W, Nolen Z, Huelsenbeck JP, May MR, Rannala B and Moore BR. Inferring branch-specific rates of lineage diversification under the birth-death-shift process. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syag003)
 - Wynd BM, <strong>Khakurel B</strong>, Kammerer CF, Wagner PJ, Wright AM. Incorporating continuous characters in joint estimation of dicynodont phylogeny. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syaf078)
 - <strong>Zhu W</strong>, Chen L, van der Burgt XM, Haba PM, Garaeva D, <strong>Lau P</strong>, Morales-Briones DF, Veranso-Libalah MC. Rediscovery and phylogenomic placement of *Feliciadamia stenocarpa* (Feliciadamieae: Melastomataceae): assessing gene tree discordance. *Botanical Journal of the Linnean Society*. [link](https://doi.org/10.1093/botlinnean/boaf047)
