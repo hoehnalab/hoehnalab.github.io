@@ -211,3 +211,107 @@ img.rcornersimage:hover {
     width: 100%;
   }
 }
+
+.main-container {
+  padding: 15px;
+  width: 100%;
+}
+
+.intro-header {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro-header .logo {
+  width: 120px;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.lab-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.rcornersbox {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.follow {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.follow ul li {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.nav-toggle-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.nav-toggle-label span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.nav-links {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  flex-direction: column;
+  background: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  text-align: center;
+  border-top: 1px solid #f0f0f0;
+}
+
+.nav-links li a {
+  display: block;
+  padding: 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+#nav-toggle:checked~.nav-links {
+  max-height: 500px;
+}
+
+#nav-toggle:checked~.nav-toggle-label span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+
+#nav-toggle:checked~.nav-toggle-label span:nth-child(2) {
+  opacity: 0;
+}
+
+#nav-toggle:checked~.nav-toggle-label span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
+}

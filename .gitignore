@@ -10,3 +10,5 @@ vendor
 # Mac OS files
 .DS_store
 .DS_Store
+assets/css/main-desktop.scss
+assets/css/main-mobile.scss

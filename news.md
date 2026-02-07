@@ -31,6 +31,21 @@ permalink: /news/
 
   <div class="updates">
     <article class="updates-content">
+      <h4>Big Congratulations to Dr. Bjørn</h4>
+        <p>
+        Date: <time datetime="2026-01-15">January 15, 2026</time>
+        </p>
+        <p>
+            Bjørn completed his PhD successfully defending his thesis.
+       </p>
+        <a href="/updates/bjorn_defense" class="read-more">Read more</a>
+    </article>
+  </div>
+
+  <br><br>
+  
+  <div class="updates">
+    <article class="updates-content">
       <h4>🎓 Congratulations to Walker on Completing His Master’s! 🎉</h4>
         <p>
         Date: <time datetime="2025-09-09">September 10, 2025</time>

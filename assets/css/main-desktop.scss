@@ -334,3 +334,72 @@ img.floatright-small {
   padding: 0;
   box-sizing: border-box;
 }
+
+.main-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.intro-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.intro-header .logo {
+  width: 160px;
+  flex-shrink: 0;
+}
+
+.image-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.lab-photo {
+  width: 70%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.rcornersbox {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.follow {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.follow ul li {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.nav-toggle-label,
+#nav-toggle {
+  display: none !important;
+}
+
+.nav-links {
+  display: flex !important;
+  max-height: none !important;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  border: none;
+}

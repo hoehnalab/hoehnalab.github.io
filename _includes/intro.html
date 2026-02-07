@@ -1,53 +1,63 @@
 <section class="intro">
-  <div class="container">
-    <img class="floatleft" src="/assets/images/lab_logo.png" alt="Lab Logo">
-    <div id="rcornersbox">
-      <p class="lead">
-        <strong>Welcome to the lab of Sebastian Höhna at <a
+  <div class="main-container">
+
+    <div class="intro-header">
+      <img class="floatleft" src="/assets/images/lab_logo.png" alt="Lab Logo">
+
+      <div id="rcornersbox">
+        <p class="lead">
+          <strong>Welcome to the lab of Sebastian Höhna at <a
             href="https://www.en.palaeontologie.geowissenschaften.uni-muenchen.de/index.html">Ludwig-Maximilians-Universität
             München.</a>
-        </strong>
-        <br />
-      </p>
-      <p class="follow">
-        Our primary aim is to develop new statistical models and computational methods to answer research questions in
-        phylogenetics, which include:
-      <ul style="list-style-type:none;">
-        <li>(1) Estimating phylogenetic relationships;</li>
-        <li>(2) Estimating divergence times and rates of molecular evolution;</li>
-        <li>(3) Inferring rates and mode of lineage diversification (speciation and extinction);</li>
-        <li>(4) Analyzing causes of conflicting gene trees.</li>
-      </ul>
-      </p>
+          </strong>
+        </p>
+
+        <div class="follow">
+          Our primary aim is to develop new statistical models and computational methods to answer research questions in phylogenetics, which include:
+          <ul style="list-style-type:none;">
+            <li>(1) Estimating phylogenetic relationships;</li>
+            <li>(2) Estimating divergence times and rates of molecular evolution;</li>
+            <li>(3) Inferring rates and mode of lineage diversification (speciation and extinction);</li>
+            <li>(4) Analyzing causes of conflicting gene trees.</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="container">
-    <img class="centerimage" src="/assets/images/lab_picture.jpg" alt="Hoehna Lab Members">
-  </div>
-  <div id="rcornersbox" style="background: white;">
-    <ul style="list-style-type: none; padding-left: -10;">
-      <li>
-        <h3>Latest News:</h3>
-      </li>
+    
+    <div class="image-container">
+      <img class="lab-photo" src="/assets/images/lab_picture.jpg" alt="Hoehna Lab Members">
+    </div>
+  
+  
+    <div class="rcornersbox" style="background: white; border: 1px solid #ddd;">
+      <h3 style="margin-top: 0;">Latest News:</h3>
+
+      <ul style="list-style-type: none; padding-left: 0;">
 
       {% comment %}
         - create a variable called 'news_items'
         - find all pages and sort them by 'date'
         - reverse the order so the newest are first
       {% endcomment %}
+
       {% assign news_items = site.pages | where: "layout", "page" | where_exp: "item", "item.permalink contains '/updates/'" | sort: 'date' | reverse %}
 
       {% for update in news_items limit: 4 %}
-      <li>
-        <h4><a href="{{ update.url }}" style="text-decoration: none;">{{ update.title }}</a></h4>
-        <p>{{ update.excerpt }}</p>
+      <li style="margin-bottom: 15px;">
+        <h4 style="margin-bottom: 5px;">
+          <a href="{{ update.url }}" style="text-decoration: none; color: #0056b3;">{{ update.title }}</a>
+        </h4>
+        <p style="margin: 0; color: #555;">{{ update.excerpt }}</p>
       </li>
       {% endfor %}
-
-      <a href="/news" style="text-decoration: none; font-size: 18px; font-style: italic;">
-        Visit our News Page
-      </a>
-    </ul>
+      </ul>
+      
+      <div style="margin-top: 20px;">
+        <a href="/news" style="text-decoration: none; font-size: 18px; font-style: italic; color: #0056b3;">
+          Visit our News Page &rarr;
+        </a>
+      </div>
+    </div>
+      
   </div>
-
-</section>
+  </section>
