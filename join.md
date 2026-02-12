@@ -16,7 +16,7 @@ permalink: /join/
 New positions in the lab will be advertised here.
 Please contact <a href = "mailto:hoehna@lmu.de"> Sebastian Höhna </a> for inquiries.
 </p>
-* [1 PhD position to work on gene expression evolution in fireflies](/job_adverts/GEvol2_PhD_Position.pdf): Deadline 30th November 2025.
+<!--* [1 PhD position to work on gene expression evolution in fireflies](/job_adverts/GEvol2_PhD_Position.pdf): Deadline 30th November 2025.-->
 
 <br>
 
