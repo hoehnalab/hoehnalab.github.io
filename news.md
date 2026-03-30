@@ -29,6 +29,53 @@ permalink: /news/
 
 <div class="updates-container">
 
+
+<div class="updates">
+    <article class="updates-content">
+      <h4>Recent Publications from the Group</h4>
+        <p>
+        Date: <time datetime="2026-03-30">March 30, 2026</time>
+        </p>
+        <p>
+            Some recent publications from the group.
+       </p>
+        <a href="/updates/publications2026_1" class="read-more">Read more</a>
+    </article>
+  </div>
+
+  <br><br>
+
+
+<div class="updates">
+    <article class="updates-content">
+      <h4>EvoGen Munich 2026</h4>
+        <p>
+        Date: <time datetime="2026-03-20">March 20, 2026</time>
+        </p>
+        <p>
+            Lab visit to EvoGen Munich 2026.
+       </p>
+        <a href="/updates/evogen2026" class="read-more">Read more</a>
+    </article>
+  </div>
+
+  <br><br>
+
+<div class="updates">
+    <article class="updates-content">
+      <h4>Grant Writing Retreat</h4>
+        <p>
+        Date: <time datetime="2026-03-09">March 09, 2026</time>
+        </p>
+        <p>
+            Grant Writing Retreat for the Höhna Lab.
+       </p>
+        <a href="/updates/writing_retreat2026" class="read-more">Read more</a>
+    </article>
+  </div>
+
+  <br><br>
+
   <div class="updates">
     <article class="updates-content">
       <h4>Big Congratulations to Dr. Bjørn</h4>
@@ -43,7 +90,7 @@ permalink: /news/
   </div>
 
   <br><br>
-  
+
   <div class="updates">
     <article class="updates-content">
       <h4>🎓 Congratulations to Walker on Completing His Master’s! 🎉</h4>
