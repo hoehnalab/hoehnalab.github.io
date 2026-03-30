@@ -233,6 +233,14 @@ As an evolutionary biologist, my research passion lies in computational and stat
     </div>
 </div>
 
+
+
+</div>
+
+<div class="center">
+
+<h2> Past Members </h2>
+
 <div class="item">
     <img class="rcornersimage" src="/assets/images/Walker_Sexton.jpeg">
     <h5><div class="tooltip"><p class="ttext">Walker Sexton</p>
@@ -240,9 +248,9 @@ As an evolutionary biologist, my research passion lies in computational and stat
             I am a Master's student in the Paleobiology and Geobiology program. My undergraduate research at Washington University in St. Louis focused on developing an empirical hominin phylogeny and investigating the problems that entailed. I am currently working to understand lineage diversification models and developing models to infer phylogeny from morphological data. Outside of the lab, I enjoy traveling, juggling, and exploring the many cultural opportunities Munich has to offer!
         </span>
     </div></h5>
-        <p class="title"><em>Master's Student</em></p>
+        <p class="title"><em>PhD Student at CNRS</em></p>
         <a href="https://twitter.com/walkerleesexton" target="_blank"><img src="/assets/icons/twitter.png" width="25px"></a>
-        <a href="mailto:Walker.Sexton@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+        <!-- <a href="mailto:Walker.Sexton@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a> -->
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
@@ -250,13 +258,6 @@ As an evolutionary biologist, my research passion lies in computational and stat
     </div>
 </div>
 
-</div>
-
-<div class="center">
-
-<!-- Can their descriptions be removed? Can Ronja and Killian be moved here? -->
-
-<h2> Past Members </h2>
 
 <div class="item">
     <img class="rcornersimage" src="/assets/images/Nicola_Heckeberg.jpg">
@@ -268,12 +269,12 @@ As an evolutionary biologist, my research passion lies in computational and stat
     </div></h5>
         <p class="title"><em></em></p>
         <a href="https://bsky.app/profile/heckeberg.bsky.social" target="_blank"><img src="/assets/icons/bsky.svg" width="25px"></a>
-        <a href="mailto:n.heckeberg@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+        <!-- <a href="mailto:n.heckeberg@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a> -->
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
-As an evolutionary palaeobiologist, I am interested in morphological character changes of vertebrates, especially mammals, through time.
-Functional trait evolution in ruminants and other artiodactyls are the focus of my research, integrating fossil and extant taxa and molecular and phenotypic data in comprehensive time calibrated analyses.
+        As an evolutionary palaeobiologist, I am interested in morphological character changes of vertebrates, especially mammals, through time.
+        Functional trait evolution in ruminants and other artiodactyls are the focus of my research, integrating fossil and extant taxa and molecular and phenotypic data in comprehensive time calibrated analyses.
     </div>
 </div>
 
@@ -290,7 +291,8 @@ Functional trait evolution in ruminants and other artiodactyls are the focus of 
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
-      I'm an evolutionary biologist and palaeontologist interested in testing drivers of phenotypic and species diversity using phylogenetic comparative methods. Having first applied these methods to Mesozoic fishes, I now apply them to large datasets of extant fishes, plants and insects.
+        I'm an evolutionary biologist and palaeontologist interested in testing drivers of phenotypic and species diversity using phylogenetic comparative methods.
+        Having first applied these methods to Mesozoic fishes, I now apply them to large datasets of extant fishes, plants and insects.
     </div>
 </div>
 
@@ -319,7 +321,7 @@ Functional trait evolution in ruminants and other artiodactyls are the focus of 
     </div></h5>
         <p class="title"><em>Software Engineer, Data Analyst at camLine</em></p>
         <a href="https://github.com/lfabreti" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
-        <a href="mailto:l.fabreti@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+        <!-- <a href="mailto:l.fabreti@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a> -->
 
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
