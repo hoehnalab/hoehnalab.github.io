@@ -29,6 +29,20 @@ permalink: /news/
 
 <div class="updates-container">
 
+<div class="updates">
+    <article class="updates-content">
+      <h4>Award presented to Wenjie</h4>
+        <p>
+        Date: <time datetime="2026-05-12">May 12, 2026</time>
+        </p>
+        <p>
+            We are proud to share that lab member Wenjie Zhu has been awarded <a href="https://www.linnean.org/the-society/medals-awards-prizes-grants/phd-medals-and-prizes/the-john-c-marsden-medal"> <strong>The John C. Marsden Medal</strong> </a> for her paper, <em>Two-step species tree inference under the multispecies coalescent using full-likelihood</em>.
+       </p>
+        <a href="/updates/wenjieaward2026" class="read-more">Read more</a>
+    </article>
+  </div>
+
+  <br><br>
 
 <div class="updates">
     <article class="updates-content">
