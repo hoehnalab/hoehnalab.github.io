@@ -4,6 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 <h3>2026 and in press</h3>
+- <strong>Capobianco A</strong>, <strong>Darlim G</strong> and <strong>Höhna S</strong>. How to date a molecular phylogeny: comparison of effective priors between node calibration and fossilized birth–death. *Proceedings of the Royal Society B*, 293 (2070): 20253255. [link](https://doi.org/10.1098/rspb.2025.3255)
 - <strong>Khakurel B</strong> and <strong>Höhna S</strong>. A covarion model for phylogenetic estimation using discrete morphological datasets. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syag014)
 - <strong>Höhna S</strong>, Freyman W, Nolen Z, Huelsenbeck JP, May MR, Rannala B and Moore BR. Inferring branch-specific rates of lineage diversification under the birth-death-shift process. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syag003)
 - Wynd BM, <strong>Khakurel B</strong>, Kammerer CF, Wagner PJ, Wright AM. Incorporating continuous characters in joint estimation of dicynodont phylogeny. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syaf078)
