@@ -4,6 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 <h3>2026 and in press</h3>
+- Mulvey LPA, Brandler T, <strong>Capobianco A</strong>, Warnock RCM and Barido-Sottani J. MorphSim: An R package for simulating discrete morphological data. *Methods in Ecology and Evolution*, 17(6), 1-10. [link](https://doi.org/10.1111/2041-210x.70326)
 - <strong>Capobianco A</strong>, <strong>Darlim G</strong> and <strong>Höhna S</strong>. How to date a molecular phylogeny: comparison of effective priors between node calibration and fossilized birth–death. *Proceedings of the Royal Society B*, 293 (2070): 20253255. [link](https://doi.org/10.1098/rspb.2025.3255)
 - <strong>Khakurel B</strong> and <strong>Höhna S</strong>. A covarion model for phylogenetic estimation using discrete morphological datasets. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syag014)
 - <strong>Höhna S</strong>, Freyman W, Nolen Z, Huelsenbeck JP, May MR, Rannala B and Moore BR. Inferring branch-specific rates of lineage diversification under the birth-death-shift process. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syag003)
@@ -34,7 +35,7 @@ permalink: /publications/
 <h3>2024</h3>
 - <strong>Capobianco A</strong>, Friedman M. Fossils indicate marine dispersal in osteoglossid fishes, a classic example of continental vicariance. *Proceedings of the Royal Society B*, 291:20241293. [link](https://doi.org/10.1098/rspb.2024.1293)
 - <strong>Khakurel B</strong>, Grigsby C, Tran TD, Zariwala J, <strong>Höhna S</strong>, Wright AM. The fundamental role of character coding in Bayesian morphological phylogenetics. *Systematic Biology*, 73(5), 861-871. [link](https://doi.org/10.1093/sysbio/syae033)
-- Bartoszek K, <strong>Clarke JT</strong>, Fuentes-González J, Mitov V, Pienaar J, Piwczyński M, Puchałka R, Spalik K, Voje KL. Fast mvSLOUCH: Multivariate Ornstein–Uhlenbeck-based models of trait evolution on large phylogenies. *Methods in Ecology and Evolution*, 15(9), 1507-1515. [link](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.14376)
+- Bartoszek K, <strong>Clarke JT</strong>, Fuentes-González J, Mitov V, Pienaar J, Piwczyński M, Puchałka R, Spalik K, Voje KL. Fast mvSLOUCH: Multivariate Ornstein–Uhlenbeck-based models of trait evolution on large phylogenies. *Methods in Ecology and Evolution*, 15(9), 1507-1515. [link](https://doi.org/10.1111/2041-210X.14376)
 - <strong>Clarke JT</strong> and Davis, RB. Salinity plays a limited role in determining rates of size evolution in fishes globally across multiple scales. *Global Ecology and Biogeography*, 33(9), e13883. [link](https://onlinelibrary.wiley.com/doi/full/10.1111/geb.13883)
 - Karapunar B, <strong>Höhna S</strong> and Nützel A. Phylogeny of the longest existing gastropod clade (Pleurotomariida) reconstructed with Bayesian and parsimony methods and its implications on gastropod shell characters, *Journal of Systematic Palaeontology*, 22(1), 2384141. [link](https://doi.org/10.1080/14772019.2024.2384141)
 - <strong>Billenstein RJ</strong>, <strong>Höhna S</strong>. Comparison of Bayesian Coalescent Skyline Plot Models for Inferring Demographic Histories. *Molecular Biology and Evolution*, 41(5), msae073. [link](https://academic.oup.com/mbe/article/41/5/msae073/7648822)
