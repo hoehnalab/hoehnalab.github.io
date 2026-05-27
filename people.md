@@ -216,7 +216,23 @@ As an evolutionary biologist, my research passion lies in computational and stat
     </div>
 </div>
 
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/Dennis_Hagemann.png">
+    <h5><div class="tooltip"><p class="ttext">Dennis Hagemann</p>
+        <span class="tooltiptext">
+            I am a master’s student in Geobiology and Paleobiology at LMU, with a special interest in vertebrate paleontology (and dinosaurs in particular). I have been working in the Höhna lab since 2025 as part of my master’s program, where I study geometric morphometrics in extant Crocodylia. For this project, I am currently developing a pipeline to infer phylogeny from landmark-based morphological data in RevBayes, with the aim of making these methods available for fossil crocodilian taxa in the future. Prior to that, I completed my bachelor’s degree in Geosciences at the TU and LMU in Munich, with a thesis based on fieldwork in Cambodia. There, I discovered and documented vertebrate fossils from conglomerates interbedded with the sandstone that was used for the construction of Angkor Wat.
+            On a more personal note: I came for the dinosaurs and stayed for the crocs.
+        </span>
+    </div></h5>
+        <p class="title"><em>Master's Student</em></p>
+        <a href="mailto:dennis.hagemann@campus.lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
 
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+            I am a master’s student in Geobiology and Paleobiology at LMU, with a special interest in vertebrate paleontology (and dinosaurs in particular). I have been working in the Höhna lab since 2025 as part of my master’s program, where I study geometric morphometrics in extant Crocodylia. For this project, I am currently developing a pipeline to infer phylogeny from landmark-based morphological data in RevBayes, with the aim of making these methods available for fossil crocodilian taxa in the future. Prior to that, I completed my bachelor’s degree in Geosciences at the TU and LMU in Munich, with a thesis based on fieldwork in Cambodia. There, I discovered and documented vertebrate fossils from conglomerates interbedded with the sandstone that was used for the construction of Angkor Wat.
+            On a more personal note: I came for the dinosaurs and stayed for the crocs.
+    </div>
+</div>
 
 </div>
 
