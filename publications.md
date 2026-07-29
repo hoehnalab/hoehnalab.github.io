@@ -4,6 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 <h3>2026 and in press</h3>
+- <strong>Lau P</strong>, <strong>Kopperud BT</strong>, <strong>Clarke JT</strong>, Metzler D and <strong>Höhna S</strong>. An efficient Bayesian phylogenetic approach for joint inference of continuous and discrete trait evolution under a state-dependent Ornstein–Uhlenbeck model. *Methods in Evolution and Ecology*, XXX, 1-16. [link](https://doi.org/10.1111/2041-210x.70371)
 - Mulvey LPA, Brandler T, <strong>Capobianco A</strong>, Warnock RCM and Barido-Sottani J. MorphSim: An R package for simulating discrete morphological data. *Methods in Ecology and Evolution*, 17(6), 1-10. [link](https://doi.org/10.1111/2041-210x.70326)
 - <strong>Capobianco A</strong>, <strong>Darlim G</strong> and <strong>Höhna S</strong>. How to date a molecular phylogeny: comparison of effective priors between node calibration and fossilized birth–death. *Proceedings of the Royal Society B*, 293 (2070): 20253255. [link](https://doi.org/10.1098/rspb.2025.3255)
 - <strong>Khakurel B</strong> and <strong>Höhna S</strong>. A covarion model for phylogenetic estimation using discrete morphological datasets. *Systematic Biology*. [link](https://doi.org/10.1093/sysbio/syag014)
