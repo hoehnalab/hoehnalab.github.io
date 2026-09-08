@@ -31,6 +31,21 @@ permalink: /news/
 
 <div class="updates">
     <article class="updates-content">
+      <h4>Recent Conference Attendances</h4>
+        <p>
+        Date: <time datetime="2026-09-15">September 15, 2026</time>
+        </p>
+        <p>
+            As the conference season comes to a halt, here are all the conferences that Höhna lab members attended.
+       </p>
+        <a href="/updates/conferences_summer2026" class="read-more">Read more</a>
+    </article>
+  </div>
+
+  <br><br>
+
+<div class="updates">
+    <article class="updates-content">
       <h4>New PhD Student in the Group</h4>
         <p>
         Date: <time datetime="2026-09-11">September 11, 2026</time>
