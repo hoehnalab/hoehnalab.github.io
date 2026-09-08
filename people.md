@@ -207,6 +207,7 @@ As an evolutionary biologist, my research passion lies in computational and stat
         </span>
     </div></h5>
         <p class="title"><em>PhD Student</em></p>
+        <a href="https://bsky.app/profile/prilau.bsky.social" target="_blank"><img src="/assets/icons/bsky.svg" width="25px"></a>
         <a href="https://github.com/prilau" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
         <a href="mailto:pri.lau@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
 
