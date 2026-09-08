@@ -31,6 +31,22 @@ permalink: /news/
 
 <div class="updates">
     <article class="updates-content">
+      <h4>New PhD Student in the Group</h4>
+        <p>
+        Date: <time datetime="2026-09-11">September 11, 2026</time>
+        </p>
+        <p>
+            We have a new PhD student, Chiara Zanoli, starting October 2026. 
+            She will be working on GEVOL Part 2 (more will be properly updated here).
+       </p>
+        <!-- <a href="/updates/wenjieaward2026" class="read-more">Read more</a> -->
+    </article>
+  </div>
+
+  <br><br>
+
+<div class="updates">
+    <article class="updates-content">
       <h4>Award presented to Wenjie</h4>
         <p>
         Date: <time datetime="2026-05-12">May 12, 2026</time>
