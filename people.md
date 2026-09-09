@@ -197,8 +197,6 @@ As an evolutionary biologist, my research passion lies in computational and stat
     </div>
 </div>
 
-
-
 <div class="item">
     <img class="rcornersimage" src="/assets/images/Priscilla_Lau.jpg">
     <h5><div class="tooltip"><p class="ttext">Priscilla Lau</p>
@@ -214,6 +212,28 @@ As an evolutionary biologist, my research passion lies in computational and stat
     <!-- Show tooltip text when on mobile -->
     <div class="blurb">
             I am a computational evolutionary biologist interested in method development in phylogenetics and macroevolution. For my PhD studies, I am developing state-dependent Ornstein-Uhlenbeck models for continuous character evolution. I am also enthusiastic about science visualization.
+    </div>
+</div>
+
+
+<div class="item">
+    <img class="rcornersimage" src="/assets/images/Chiara_Zanoli.jpg">
+    <h5><div class="tooltip"><p class="ttext">Chiara Zanoli</p>
+        <span class="tooltiptext">
+            I am an evolutionary biologist trying to bring together the wonderful worlds of computational biology, genomics, and phylogenetics to make sense of nature's (weirdest) evolutionary decisions.
+            Driven by a curious, explorative, and dynamic mindset, my research focuses on the extreme sexual dimorphism of fireflies. By analyzing gene expression data, I aim to uncover the evolutionary forces and implications behind gene duplications and losses.
+            When I’m not at my desk turning raw sequence data into beautiful, meaningful evolutionary trees, you’ll find me out in the wild, refueling through sports and adventures, reminding myself what real, non-pixelated nature looks like.
+        </span>
+    </div></h5>
+        <p class="title"><em>PhD Student</em></p>
+        <a href="https://github.com/zenzarina" target="_blank"><img src="/assets/icons/mark-github.svg" width="25px"></a>
+        <a href="mailto:c.zanoli@lmu.de"><img src="/assets/icons/mail.svg" width="25px"></a>
+
+    <!-- Show tooltip text when on mobile -->
+    <div class="blurb">
+            I am an evolutionary biologist trying to bring together the wonderful worlds of computational biology, genomics, and phylogenetics to make sense of nature's (weirdest) evolutionary decisions.
+            Driven by a curious, explorative, and dynamic mindset, my research focuses on the extreme sexual dimorphism of fireflies. By analyzing gene expression data, I aim to uncover the evolutionary forces and implications behind gene duplications and losses.
+            When I’m not at my desk turning raw sequence data into beautiful, meaningful evolutionary trees, you’ll find me out in the wild, refueling through sports and adventures, reminding myself what real, non-pixelated nature looks like.
     </div>
 </div>
 
