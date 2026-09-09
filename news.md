@@ -31,6 +31,22 @@ permalink: /news/
 
 <div class="updates">
     <article class="updates-content">
+      <h4>Recent Conference Attendances</h4>
+        <p>
+        Date: <time datetime="2026-09-15">September 15, 2026</time>
+        </p>
+        <p>
+            As the conference season comes to a halt, here are all the conferences that Höhna lab members attended.
+       </p>
+        <a href="/updates/conferences_summer2026" class="read-more">Read more</a>
+    </article>
+  </div>
+
+  <br><br>
+
+
+<div class="updates">
+    <article class="updates-content">
       <h4>Award presented to Wenjie</h4>
         <p>
         Date: <time datetime="2026-05-12">May 12, 2026</time>
@@ -152,14 +168,14 @@ permalink: /news/
 
   <div class="updates">
     <article class="updates-content">
-      <h4>🎓 Congratulations to Priscila on Completing Her Master’s! 🎉</h4>
+      <h4>🎓 Congratulations to Priscilla on Completing Her Master’s! 🎉</h4>
         <p>
         Date: <time datetime="2025-03-14">March 14, 2025</time>
         </p>
         <p>
-            Master's student Priscila Lau successfully defended her thesis.
+            Master's student Priscilla Lau successfully defended her thesis.
        </p>
-        <a href="/updates/priscila_defense" class="read-more">Read more</a>
+        <a href="/updates/priscilla_defense" class="read-more">Read more</a>
     </article>
   </div>
 
