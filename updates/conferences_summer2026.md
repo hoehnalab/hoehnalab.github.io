@@ -65,8 +65,6 @@ permalink: /updates/conferences_summer2026/
 
 As the conference season comes to a halt, here are some of the talks and posters presented by Höhna lab members this summer.
 
-<br><br>
-
 <div class="conference-entry">
   <img class="centerimage" src="/assets/images/priscilla_probgen.png">
   <h4>Priscilla Lau &mdash; A phylogenetic state-dependent Ornstein-Uhlenbeck model</h4>
@@ -95,8 +93,9 @@ As the conference season comes to a halt, here are some of the talks and posters
 </div>
 
 <div class="conference-entry">
-  <img class="rightimage" src="/assets/images/alessio_paleo4alps.jpg"> <img class="leftimage" src="/assets/images/gustavo_paleo4alps.JPG">
-  <h4>Alessio Capobianco and Gustavo Darlim &mdash; Total-evidence tip-dating reveals macroevolutionary dynamics in deep-sea squaliform sharks & Assessment of Notosuchia phylogenetics through tip-dating Bayesian inference</h4>
+  <img class="rightimage" src="/assets/images/gustavo_paleo4alps.JPG"> <img class="leftimage" src="/assets/images/alessio_paleo4alps.jpg">
+  <h4>Alessio Capobianco &mdash; Total-evidence tip-dating reveals macroevolutionary dynamics in deep-sea squaliform sharks</h4>
+  <h4>Gustavo Darlim &mdash; Assessment of Notosuchia phylogenetics through tip-dating Bayesian inference</h4>
   <p class="conference-meta">Paleo4Alps, Bolzano, Italy, July 2026</p>
   <p>
   Alessio and Gustavo presented their ongoing work in <a href="https://www.unibz.it/en/events/paleo4alps-2026">Paleo4Alps </a> - Joint Meeting of the Italian, German, Austrian and Swiss Paleontological Societies, which took place in Bolzano, Italy between 19 and 23 July.
