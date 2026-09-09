@@ -20,6 +20,24 @@ permalink: /updates/conferences_summer2026/
     max-width: 100%;
   }
 
+  .rightimage {
+    display: block;
+    float: right;
+    margin: 1rem auto;
+    max-width: 49%;
+    border-radius: 15px;
+    transition:transform 0.3s ease;
+  }
+
+  .leftimage {
+    display: block;
+    float: left;
+    margin: 1rem auto;
+    max-width: 49%;
+    border-radius: 15px;
+    transition:transform 0.3s ease;
+  }
+
   p, li {
     font-size: 1.7rem;
   }
@@ -30,6 +48,7 @@ permalink: /updates/conferences_summer2026/
 
   .conference-entry {
     margin-bottom: 3rem;
+    overflow: auto;
   }
 
   .conference-entry h4 {
@@ -42,18 +61,6 @@ permalink: /updates/conferences_summer2026/
     font-style: italic;
     margin-top: 0;
   }
-
-  .column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 </style>
 
 As the conference season comes to a halt, here are some of the talks and posters presented by Höhna lab members this summer.
@@ -61,8 +68,8 @@ As the conference season comes to a halt, here are some of the talks and posters
 <br><br>
 
 <div class="conference-entry">
-  <img class="centerimage" src="/assets/images/PLACEHOLDER.jpg">
-  <h4>Priscilla Lau &mdash; TALK OR POSTER TITLE</h4>
+  <img class="centerimage" src="/assets/images/priscilla_probgen.png">
+  <h4>Priscilla Lau &mdash; A phylogenetic state-dependent Ornstein-Uhlenbeck model</h4>
   <p class="conference-meta">ProbGen 2026, Berkeley, US, March 2026</p>
   <p>
   Priscilla presented a talk in the <a href="https://probgen2026.github.io/">Probabilistic Modeling in Genomics (ProbGen) 2026 </a> between 25-28 March in Berkeley, United States, where she talked about the performance of the state-dependent Ornstein--Uhlenbeck model through simulation studies.
@@ -70,8 +77,8 @@ As the conference season comes to a halt, here are some of the talks and posters
 </div>
 
 <div class="conference-entry">
-  <img class="centerimage" src="/assets/images/PLACEHOLDER.jpg">
-  <h4>Haoqing Du &mdash; TALK OR POSTER TITLE</h4>
+  <img class="centerimage" src="/assets/images/haoqing_smbe.jpg">
+  <h4>Haoqing Du &mdash; A phylogenetic perspective on the sex-biased evolution of gene expression in <em>Drosophila</em></h4>
   <p class="conference-meta">SMBE 2026, Copenhagen, Denmark, June/July 2026</p>
   <p>
   Haoqing presented a poster in <a href="https://smbe2026.org/">SMBE 2026</a>, the annual meeting of the Society of Molecular Biology & Evolution held between 28 June and 2 July in Copenhagen, Denmark, where he shared his phylogenetic study on sex-biased gene expression in Drosophila.
@@ -79,8 +86,8 @@ As the conference season comes to a halt, here are some of the talks and posters
 </div>
 
 <div class="conference-entry">
-  <img class="centerimage" src="/assets/images/PLACEHOLDER.jpg">
-  <h4>Priscilla Lau &mdash; TALK OR POSTER TITLE</h4>
+  <img class="centerimage" src="/assets/images/priscilla_macro.JPG">
+  <h4>Priscilla Lau &mdash; Why you should use a joint inference approach to study macroevolutionary adaptation</h4>
   <p class="conference-meta">MACRO 2026, Reading, United Kingdom, July 2026</p>
   <p>
   Priscilla presented a talk in <a href="https://www.britishecologicalsociety.org/content/macro-2026/">MACRO 2026</a>, which was held by the British Ecological Society between 15 and 17 July in Reading, United Kingdom. She convinced fellow macroevolutionary biolgist and macroecologists that joint inference should be used when studying macroevolutionary adaptation.
@@ -88,14 +95,7 @@ As the conference season comes to a halt, here are some of the talks and posters
 </div>
 
 <div class="conference-entry">
-  <div class="row">
-  <div class="column">
-      <img src="/assets/images/alessio_paleo4alps.jpg" alt="alessio_paleo4alps" style="width:100%">
-  </div>
-  <div class="column">
-      <img src="/assets/images/gustavo_paleo4alps.JPG" alt="gustavo_paleo4alps" style="width:100%">
-  </div>
-  </div>
+  <img class="rightimage" src="/assets/images/alessio_paleo4alps.jpg"> <img class="leftimage" src="/assets/images/gustavo_paleo4alps.JPG">
   <h4>Alessio Capobianco and Gustavo Darlim &mdash; Total-evidence tip-dating reveals macroevolutionary dynamics in deep-sea squaliform sharks & Assessment of Notosuchia phylogenetics through tip-dating Bayesian inference</h4>
   <p class="conference-meta">Paleo4Alps, Bolzano, Italy, July 2026</p>
   <p>
@@ -106,7 +106,7 @@ As the conference season comes to a halt, here are some of the talks and posters
 </div>
 
 <div class="conference-entry">
-  <img class="centerimage" src="/assets/images/PLACEHOLDER.jpg">
+  <img class="centerimage" src="/assets/images/wenjie_MASAMB.png">
   <h4>Wenjie Zhu &mdash; Challenges in genomic species delimitation: insights from European Luciola fireflies</h4>
   <p class="conference-meta">MASAMB 2026, Cambridge, United Kingdom, September 2026</p>
   <p>
