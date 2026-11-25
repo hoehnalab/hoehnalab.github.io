@@ -31,6 +31,21 @@ permalink: /news/
 
 <div class="updates">
     <article class="updates-content">
+      <h4>Big Congratulations to Dr. Basanta!</h4>
+        <p>
+        Date: <time datetime="2026-11-25">November 25, 2026</time>
+        </p>
+        <p>
+            Basanta has successfully defended his PhD thesis!
+       </p>
+        <a href="/updates/basanta_defense" class="read-more">Read more</a>
+    </article>
+  </div>
+
+  <br><br>
+
+<div class="updates">
+    <article class="updates-content">
       <h4>Recent Conference Attendances</h4>
         <p>
         Date: <time datetime="2026-09-15">September 15, 2026</time>
